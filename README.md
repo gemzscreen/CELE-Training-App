@@ -17,9 +17,11 @@ figures/
 ├── psad-2026-03/
 │   ├── sit-01.svg … sit-19.svg
 │   └── sit-20.html        raster (see "Two exceptions" below)
-└── psad-2025-11/
-    ├── sit-01.svg … sit-20.svg
-    └── sit-17.html        raster (interaction diagram C4-60.7)
+├── psad-2025-11/
+│   ├── sit-01.svg … sit-20.svg
+│   └── sit-17.html        raster (interaction diagram C4-60.7)
+└── psad-2025-04/
+    └── sit-01.svg … sit-23.svg
 ```
 
 Figures carried over between sittings record it in `manifest.json` under `reusedFrom`.
@@ -104,3 +106,10 @@ is an `<img>` element rather than an `<svg>`.
   `afv6`, `af16` → `afv12`) so they cannot collide with their originals now that both
   sittings live in the same document. This is the collision trap described above, met in
   practice on the first reuse.
+
+- **psad-2025-04 added.** Seventeen figures, four of them reused: the prestressed joist
+  section and the compound girder from `psad-2026-03`, the welded-angle gusset also from
+  `psad-2026-03`, and the rectangular-column axes drawing from `psad-2025-11`. Marker IDs
+  were renumbered to the `q` series (`af13` → `afq10`, `af9` → `afq12`, `af14` → `afq14`,
+  `afn18` → `afq21`). A full sweep across all three sittings now confirms **zero duplicate
+  marker IDs** among the 51 SVG figures sharing the document.

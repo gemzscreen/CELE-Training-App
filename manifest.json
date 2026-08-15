@@ -2429,6 +2429,1035 @@
           ]
         }
       ]
+    },
+    "psad-2025-04": {
+      "source": "PSAD_APRIL_2025_BOARD.pdf (JDCELearn born-digital)",
+      "figures": [
+        {
+          "id": "sit-01",
+          "file": "psad-2025-04/sit-01.svg",
+          "situation": 1,
+          "viewBox": "0 0 560 400",
+          "format": "svg",
+          "archetype": "boom with hoist pulley and restraining cable",
+          "tags": [
+            "statics",
+            "boom",
+            "pulley",
+            "cable"
+          ],
+          "reusedFrom": null,
+          "labelCount": 10,
+          "labels": [
+            {
+              "t": "A",
+              "x": 88.0,
+              "y": 108.0
+            },
+            {
+              "t": "D",
+              "x": 88.0,
+              "y": 306.0
+            },
+            {
+              "t": "C",
+              "x": 270.0,
+              "y": 228.0
+            },
+            {
+              "t": "B",
+              "x": 434.0,
+              "y": 98.0
+            },
+            {
+              "t": "pulley",
+              "x": 380.0,
+              "y": 80.0
+            },
+            {
+              "t": "cable",
+              "x": 182.0,
+              "y": 141.0
+            },
+            {
+              "t": "W",
+              "x": 414.0,
+              "y": 182.0
+            },
+            {
+              "t": "L&#8321;",
+              "x": 186.0,
+              "y": 44.0
+            },
+            {
+              "t": "L&#8322;",
+              "x": 338.0,
+              "y": 44.0
+            },
+            {
+              "t": "L&#8323;",
+              "x": 58.0,
+              "y": 210.0
+            }
+          ]
+        },
+        {
+          "id": "sit-02",
+          "file": "psad-2025-04/sit-02.svg",
+          "situation": 2,
+          "viewBox": "0 0 380 420",
+          "format": "svg",
+          "archetype": "compound pulley system, two movable pulleys",
+          "tags": [
+            "pulleys",
+            "mechanical-advantage",
+            "statics"
+          ],
+          "reusedFrom": null,
+          "labelCount": 6,
+          "labels": [
+            {
+              "t": "B",
+              "x": 190.0,
+              "y": 86.0
+            },
+            {
+              "t": "A",
+              "x": 120.0,
+              "y": 168.0
+            },
+            {
+              "t": "W&#8321;",
+              "x": 120.0,
+              "y": 287.0
+            },
+            {
+              "t": "C",
+              "x": 230.0,
+              "y": 218.0
+            },
+            {
+              "t": "W&#8322;",
+              "x": 230.0,
+              "y": 338.0
+            },
+            {
+              "t": "frictionless pulleys",
+              "x": 190.0,
+              "y": 392.0
+            }
+          ]
+        },
+        {
+          "id": "sit-03",
+          "file": "psad-2025-04/sit-03.svg",
+          "situation": 3,
+          "viewBox": "0 0 680 300",
+          "format": "svg",
+          "archetype": "towing vehicle and crate, traction limited",
+          "tags": [
+            "friction",
+            "traction",
+            "load-transfer"
+          ],
+          "reusedFrom": null,
+          "labelCount": 10,
+          "labels": [
+            {
+              "t": "crate",
+              "x": 118.0,
+              "y": 184.0
+            },
+            {
+              "t": "G",
+              "x": 470.0,
+              "y": 134.0
+            },
+            {
+              "t": "cable",
+              "x": 248.0,
+              "y": 182.0
+            },
+            {
+              "t": "c",
+              "x": 76.0,
+              "y": 213.0
+            },
+            {
+              "t": "&#956;&#8347;&#8322;",
+              "x": 60.0,
+              "y": 250.0
+            },
+            {
+              "t": "&#956;&#8347;&#8321;",
+              "x": 560.0,
+              "y": 250.0
+            },
+            {
+              "t": "a",
+              "x": 425.0,
+              "y": 258.0
+            },
+            {
+              "t": "b",
+              "x": 509.0,
+              "y": 258.0
+            },
+            {
+              "t": "d",
+              "x": 640.0,
+              "y": 190.0
+            },
+            {
+              "t": "front-wheel drive (right) &#183; rear wheels roll free",
+              "x": 340.0,
+              "y": 282.0
+            }
+          ]
+        },
+        {
+          "id": "sit-04",
+          "file": "psad-2025-04/sit-04.svg",
+          "situation": 4,
+          "viewBox": "0 0 460 400",
+          "format": "svg",
+          "archetype": "pole with a single inclined guy cable (3-D)",
+          "tags": [
+            "3d-statics",
+            "direction-cosines",
+            "cable"
+          ],
+          "reusedFrom": null,
+          "labelCount": 8,
+          "labels": [
+            {
+              "t": "Z",
+              "x": 180.0,
+              "y": 50.0
+            },
+            {
+              "t": "X",
+              "x": 386.0,
+              "y": 350.0
+            },
+            {
+              "t": "Y",
+              "x": 44.0,
+              "y": 340.0
+            },
+            {
+              "t": "T",
+              "x": 292.0,
+              "y": 254.0
+            },
+            {
+              "t": "z",
+              "x": 202.0,
+              "y": 204.0
+            },
+            {
+              "t": "x",
+              "x": 236.0,
+              "y": 330.0
+            },
+            {
+              "t": "y",
+              "x": 128.0,
+              "y": 322.0
+            },
+            {
+              "t": "cable anchored at (x, y, 0); pole height z",
+              "x": 230.0,
+              "y": 372.0
+            }
+          ]
+        },
+        {
+          "id": "sit-05",
+          "file": "psad-2025-04/sit-05.svg",
+          "situation": 5,
+          "viewBox": "0 0 620 360",
+          "format": "svg",
+          "archetype": "beam and its moment diagram, loads back-solved",
+          "tags": [
+            "moment-diagram",
+            "back-analysis",
+            "overhang"
+          ],
+          "reusedFrom": null,
+          "labelCount": 12,
+          "labels": [
+            {
+              "t": "A",
+              "x": 70.0,
+              "y": 100.0
+            },
+            {
+              "t": "B",
+              "x": 320.0,
+              "y": 100.0
+            },
+            {
+              "t": "C",
+              "x": 470.0,
+              "y": 100.0
+            },
+            {
+              "t": "D",
+              "x": 570.0,
+              "y": 100.0
+            },
+            {
+              "t": "P&#8321;",
+              "x": 320.0,
+              "y": 36.0
+            },
+            {
+              "t": "P&#8322;",
+              "x": 570.0,
+              "y": 36.0
+            },
+            {
+              "t": "L&#8321;",
+              "x": 195.0,
+              "y": 178.0
+            },
+            {
+              "t": "L&#8322;",
+              "x": 395.0,
+              "y": 178.0
+            },
+            {
+              "t": "L&#8323;",
+              "x": 520.0,
+              "y": 178.0
+            },
+            {
+              "t": "M&#7386;",
+              "x": 320.0,
+              "y": 214.0
+            },
+            {
+              "t": "M&#7484;",
+              "x": 486.0,
+              "y": 342.0
+            },
+            {
+              "t": "MOMENT DIAGRAM (kN&#183;m)",
+              "x": 310.0,
+              "y": 340.0
+            }
+          ]
+        },
+        {
+          "id": "sit-06",
+          "file": "psad-2025-04/sit-06.svg",
+          "situation": 6,
+          "viewBox": "0 0 420 400",
+          "format": "svg",
+          "archetype": "quarter-circle arc rod with an end load",
+          "tags": [
+            "curved-member",
+            "axial-shear-moment",
+            "arc"
+          ],
+          "reusedFrom": null,
+          "labelCount": 6,
+          "labels": [
+            {
+              "t": "B",
+              "x": 102.0,
+              "y": 316.0
+            },
+            {
+              "t": "A",
+              "x": 338.0,
+              "y": 106.0
+            },
+            {
+              "t": "C",
+              "x": 242.0,
+              "y": 277.2
+            },
+            {
+              "t": "&#952;",
+              "x": 146.0,
+              "y": 190.0
+            },
+            {
+              "t": "P",
+              "x": 138.0,
+              "y": 366.0
+            },
+            {
+              "t": "quarter-circle rod, mean radius R &#183; free end at B",
+              "x": 210.0,
+              "y": 378.0
+            }
+          ]
+        },
+        {
+          "id": "sit-07",
+          "file": "psad-2025-04/sit-07.svg",
+          "situation": 7,
+          "viewBox": "0 0 560 320",
+          "format": "svg",
+          "archetype": "solid circular cantilever, bending plus torsion",
+          "tags": [
+            "combined-stress",
+            "torsion",
+            "transverse-shear"
+          ],
+          "reusedFrom": null,
+          "labelCount": 5,
+          "labels": [
+            {
+              "t": "P",
+              "x": 510.0,
+              "y": 86.0
+            },
+            {
+              "t": "Q",
+              "x": 360.0,
+              "y": 86.0
+            },
+            {
+              "t": "L&#8321;",
+              "x": 235.0,
+              "y": 244.0
+            },
+            {
+              "t": "L&#8322;",
+              "x": 435.0,
+              "y": 244.0
+            },
+            {
+              "t": "solid circular bar, diameter 38 mm",
+              "x": 300.0,
+              "y": 288.0
+            }
+          ]
+        },
+        {
+          "id": "sit-09",
+          "file": "psad-2025-04/sit-09.svg",
+          "situation": 9,
+          "viewBox": "0 0 560 340",
+          "format": "svg",
+          "archetype": "trapezoidal gravity dam",
+          "tags": [
+            "retaining",
+            "overturning",
+            "sliding",
+            "eccentricity"
+          ],
+          "reusedFrom": null,
+          "labelCount": 4,
+          "labels": [
+            {
+              "t": "a",
+              "x": 331.0,
+              "y": 46.0
+            },
+            {
+              "t": "H&#8322;",
+              "x": 56.0,
+              "y": 217.5
+            },
+            {
+              "t": "H&#8321;",
+              "x": 402.0,
+              "y": 192.0
+            },
+            {
+              "t": "b",
+              "x": 229.0,
+              "y": 332.0
+            }
+          ]
+        },
+        {
+          "id": "sit-10",
+          "file": "psad-2025-04/sit-10.svg",
+          "situation": 10,
+          "viewBox": "0 0 620 340",
+          "format": "svg",
+          "archetype": "prestressed joist section",
+          "tags": [
+            "prestressed",
+            "section-properties"
+          ],
+          "reusedFrom": "psad-2026-03/sit-13.svg",
+          "labelCount": 6,
+          "labels": [
+            {
+              "t": "N.A.",
+              "x": 300.0,
+              "y": 168.0
+            },
+            {
+              "t": "b",
+              "x": 310.0,
+              "y": 56.0
+            },
+            {
+              "t": "y",
+              "x": 604.0,
+              "y": 136.0
+            },
+            {
+              "t": "t",
+              "x": 612.0,
+              "y": 141.0
+            },
+            {
+              "t": "y",
+              "x": 604.0,
+              "y": 238.0
+            },
+            {
+              "t": "b",
+              "x": 612.0,
+              "y": 243.0
+            }
+          ]
+        },
+        {
+          "id": "sit-11",
+          "file": "psad-2025-04/sit-11.svg",
+          "situation": 11,
+          "viewBox": "0 0 560 220",
+          "format": "svg",
+          "archetype": "fixed-fixed beam with one internal hinge",
+          "tags": [
+            "indeterminacy",
+            "internal-hinge"
+          ],
+          "reusedFrom": null,
+          "labelCount": 4,
+          "labels": [
+            {
+              "t": "hinge",
+              "x": 280.0,
+              "y": 144.0
+            },
+            {
+              "t": "A",
+              "x": 94.0,
+              "y": 86.0
+            },
+            {
+              "t": "B",
+              "x": 280.0,
+              "y": 86.0
+            },
+            {
+              "t": "C",
+              "x": 466.0,
+              "y": 86.0
+            }
+          ]
+        },
+        {
+          "id": "sit-12",
+          "file": "psad-2025-04/sit-12.svg",
+          "situation": 12,
+          "viewBox": "0 0 660 250",
+          "format": "svg",
+          "archetype": "compound girder with internal hinges",
+          "tags": [
+            "influence-line",
+            "moving-load",
+            "compound-girder"
+          ],
+          "reusedFrom": "psad-2026-03/sit-09.svg",
+          "labelCount": 8,
+          "labels": [
+            {
+              "t": "hinge",
+              "x": 427.0,
+              "y": 70.0
+            },
+            {
+              "t": "A",
+              "x": 62.0,
+              "y": 82.0
+            },
+            {
+              "t": "B",
+              "x": 231.0,
+              "y": 110.0
+            },
+            {
+              "t": "C",
+              "x": 427.0,
+              "y": 128.0
+            },
+            {
+              "t": "D",
+              "x": 620.0,
+              "y": 82.0
+            },
+            {
+              "t": "L",
+              "x": 166.5,
+              "y": 198.0
+            },
+            {
+              "t": "L",
+              "x": 340.0,
+              "y": 198.0
+            },
+            {
+              "t": "L",
+              "x": 513.5,
+              "y": 198.0
+            }
+          ]
+        },
+        {
+          "id": "sit-13",
+          "file": "psad-2025-04/sit-13.svg",
+          "situation": 13,
+          "viewBox": "0 0 520 420",
+          "format": "svg",
+          "archetype": "eccentrically loaded bolt group on a bracket",
+          "tags": [
+            "bolted-connection",
+            "bolt-group",
+            "torsion"
+          ],
+          "reusedFrom": null,
+          "labelCount": 9,
+          "labels": [
+            {
+              "t": "P",
+              "x": 378.0,
+              "y": 10.0
+            },
+            {
+              "t": "e",
+              "x": 303.0,
+              "y": 48.0
+            },
+            {
+              "t": "s&#8321;",
+              "x": 82.0,
+              "y": 140.0
+            },
+            {
+              "t": "s&#8321;",
+              "x": 82.0,
+              "y": 192.0
+            },
+            {
+              "t": "s&#8321;",
+              "x": 82.0,
+              "y": 244.0
+            },
+            {
+              "t": "s&#8322;",
+              "x": 158.0,
+              "y": 326.0
+            },
+            {
+              "t": "s&#8323;",
+              "x": 228.0,
+              "y": 326.0
+            },
+            {
+              "t": "s&#8322;",
+              "x": 298.0,
+              "y": 326.0
+            },
+            {
+              "t": "8 bolts, 20 mm diameter, single shear",
+              "x": 260.0,
+              "y": 400.0
+            }
+          ]
+        },
+        {
+          "id": "sit-14",
+          "file": "psad-2025-04/sit-14.svg",
+          "situation": 14,
+          "viewBox": "0 0 900 348",
+          "format": "svg",
+          "archetype": "angles welded to a gusset, balanced welds",
+          "tags": [
+            "welded-connection",
+            "angle",
+            "balanced-weld"
+          ],
+          "reusedFrom": "psad-2026-03/sit-14.svg",
+          "labelCount": 6,
+          "labels": [
+            {
+              "t": "fillet welds",
+              "x": 268.0,
+              "y": 200.0
+            },
+            {
+              "t": "x",
+              "x": 628.0,
+              "y": 146.0
+            },
+            {
+              "t": "P",
+              "x": 738.0,
+              "y": 169.0
+            },
+            {
+              "t": "a",
+              "x": 272.0,
+              "y": 84.0
+            },
+            {
+              "t": "b",
+              "x": 236.0,
+              "y": 326.0
+            },
+            {
+              "t": "c",
+              "x": 108.0,
+              "y": 194.0
+            }
+          ]
+        },
+        {
+          "id": "sit-17",
+          "file": "psad-2025-04/sit-17.svg",
+          "situation": 17,
+          "viewBox": "0 0 700 300",
+          "format": "svg",
+          "archetype": "continuous floor framing, NSCP coefficients",
+          "tags": [
+            "continuous-beam",
+            "nscp-coefficients",
+            "frame"
+          ],
+          "reusedFrom": null,
+          "labelCount": 14,
+          "labels": [
+            {
+              "t": "A",
+              "x": 70.0,
+              "y": 106.0
+            },
+            {
+              "t": "B",
+              "x": 220.2,
+              "y": 106.0
+            },
+            {
+              "t": "C",
+              "x": 358.8,
+              "y": 106.0
+            },
+            {
+              "t": "D",
+              "x": 492.7,
+              "y": 106.0
+            },
+            {
+              "t": "E",
+              "x": 619.8,
+              "y": 106.0
+            },
+            {
+              "t": "F",
+              "x": 145.1,
+              "y": 106.0
+            },
+            {
+              "t": "G",
+              "x": 289.4,
+              "y": 106.0
+            },
+            {
+              "t": "H",
+              "x": 425.7,
+              "y": 106.0
+            },
+            {
+              "t": "I",
+              "x": 556.3,
+              "y": 106.0
+            },
+            {
+              "t": "L1",
+              "x": 145.1,
+              "y": 256.0
+            },
+            {
+              "t": "L2",
+              "x": 289.4,
+              "y": 256.0
+            },
+            {
+              "t": "L3",
+              "x": 425.7,
+              "y": 256.0
+            },
+            {
+              "t": "L4",
+              "x": 556.3,
+              "y": 256.0
+            },
+            {
+              "t": "F, G, H, I are the beam midspans &#183; A&#8211;E are the column joints",
+              "x": 350.0,
+              "y": 276.0
+            }
+          ]
+        },
+        {
+          "id": "sit-21",
+          "file": "psad-2025-04/sit-21.svg",
+          "situation": 21,
+          "viewBox": "0 0 420 360",
+          "format": "svg",
+          "archetype": "rectangular tied column, shear about both axes",
+          "tags": [
+            "column-shear",
+            "ties",
+            "buckling"
+          ],
+          "reusedFrom": "psad-2025-11/sit-18.svg",
+          "labelCount": 6,
+          "labels": [
+            {
+              "t": "Y",
+              "x": 200.0,
+              "y": 57.0
+            },
+            {
+              "t": "X",
+              "x": 372.0,
+              "y": 195.0
+            },
+            {
+              "t": "V&#8341;&#7527;",
+              "x": 252.0,
+              "y": 99.0
+            },
+            {
+              "t": "V&#8341;&#8339;",
+              "x": 350.0,
+              "y": 160.0
+            },
+            {
+              "t": "B",
+              "x": 200.0,
+              "y": 299.0
+            },
+            {
+              "t": "H",
+              "x": 52.0,
+              "y": 194.0
+            }
+          ]
+        },
+        {
+          "id": "sit-22",
+          "file": "psad-2025-04/sit-22.svg",
+          "situation": 22,
+          "viewBox": "0 0 480 460",
+          "format": "svg",
+          "archetype": "pile cap on a 3x3 pile group with biaxial moment",
+          "tags": [
+            "pile-cap",
+            "pile-group",
+            "biaxial"
+          ],
+          "reusedFrom": null,
+          "labelCount": 20,
+          "labels": [
+            {
+              "t": "1",
+              "x": 142.0,
+              "y": 139.0
+            },
+            {
+              "t": "4",
+              "x": 142.0,
+              "y": 245.0
+            },
+            {
+              "t": "7",
+              "x": 142.0,
+              "y": 351.0
+            },
+            {
+              "t": "2",
+              "x": 230.0,
+              "y": 139.0
+            },
+            {
+              "t": "5",
+              "x": 230.0,
+              "y": 245.0
+            },
+            {
+              "t": "8",
+              "x": 230.0,
+              "y": 351.0
+            },
+            {
+              "t": "3",
+              "x": 318.0,
+              "y": 139.0
+            },
+            {
+              "t": "6",
+              "x": 318.0,
+              "y": 245.0
+            },
+            {
+              "t": "9",
+              "x": 318.0,
+              "y": 351.0
+            },
+            {
+              "t": "X",
+              "x": 448.0,
+              "y": 245.0
+            },
+            {
+              "t": "Y",
+              "x": 230.0,
+              "y": 7.0
+            },
+            {
+              "t": "M&#8341;&#8339;",
+              "x": 326.0,
+              "y": 65.0
+            },
+            {
+              "t": "M&#8341;&#8342;",
+              "x": 134.0,
+              "y": 35.0
+            },
+            {
+              "t": "a",
+              "x": 14.0,
+              "y": 82.5
+            },
+            {
+              "t": "b",
+              "x": 14.0,
+              "y": 244.0
+            },
+            {
+              "t": "a",
+              "x": 14.0,
+              "y": 405.5
+            },
+            {
+              "t": "d",
+              "x": 88.0,
+              "y": 471.0
+            },
+            {
+              "t": "c",
+              "x": 175.0,
+              "y": 471.0
+            },
+            {
+              "t": "c",
+              "x": 285.0,
+              "y": 471.0
+            },
+            {
+              "t": "d",
+              "x": 372.0,
+              "y": 471.0
+            }
+          ]
+        },
+        {
+          "id": "sit-23",
+          "file": "psad-2025-04/sit-23.svg",
+          "situation": 23,
+          "viewBox": "0 0 660 380",
+          "format": "svg",
+          "archetype": "combined footing with its factored shear diagram",
+          "tags": [
+            "footing",
+            "combined-footing",
+            "shear-diagram"
+          ],
+          "reusedFrom": null,
+          "labelCount": 13,
+          "labels": [
+            {
+              "t": "A",
+              "x": 163.0,
+              "y": 32.0
+            },
+            {
+              "t": "B",
+              "x": 404.8,
+              "y": 32.0
+            },
+            {
+              "t": "a",
+              "x": 110.3,
+              "y": 0.0
+            },
+            {
+              "t": "c",
+              "x": 163.0,
+              "y": 0.0
+            },
+            {
+              "t": "b",
+              "x": 283.9,
+              "y": 0.0
+            },
+            {
+              "t": "c",
+              "x": 404.8,
+              "y": 0.0
+            },
+            {
+              "t": "d",
+              "x": 448.2,
+              "y": 0.0
+            },
+            {
+              "t": "X",
+              "x": 38.0,
+              "y": 140.0
+            },
+            {
+              "t": "e",
+              "x": 130.6,
+              "y": 230.0
+            },
+            {
+              "t": "f",
+              "x": 168.6,
+              "y": 366.0
+            },
+            {
+              "t": "g",
+              "x": 376.4,
+              "y": 224.0
+            },
+            {
+              "t": "h",
+              "x": 414.4,
+              "y": 324.0
+            },
+            {
+              "t": "factored shear diagram &#183; footing width 4 m",
+              "x": 330.0,
+              "y": 362.0
+            }
+          ]
+        }
+      ]
     }
   }
 }
