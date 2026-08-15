@@ -1,0 +1,1261 @@
+{
+  "library": "CELE figure library",
+  "note": "Redrawn board-exam figures, reusable across sittings. Match a new problem to an archetype, copy the SVG, retune labels and dimension values.",
+  "exams": {
+    "psad-2026-03": {
+      "source": "PSAD_MARCH_2026_BOARD.pdf (JDCELearn born-digital)",
+      "figures": [
+        {
+          "id": "sit-01",
+          "file": "psad-2026-03/sit-01.svg",
+          "situation": 1,
+          "viewBox": "0 0 660 312",
+          "format": "svg",
+          "archetype": "parallel-chord truss, cross-braced panel",
+          "tags": [
+            "truss",
+            "method-of-sections",
+            "cable-brace",
+            "pin-roller"
+          ],
+          "caption": "Panel CDHI is cross-braced by cables CI and DH. Note the supports: A is the ROLLER, F is the PIN.",
+          "labelCount": 17,
+          "labels": [
+            {
+              "t": "G",
+              "x": 168,
+              "y": 88
+            },
+            {
+              "t": "H",
+              "x": 266,
+              "y": 88
+            },
+            {
+              "t": "I",
+              "x": 364,
+              "y": 88
+            },
+            {
+              "t": "J",
+              "x": 462,
+              "y": 88
+            },
+            {
+              "t": "A",
+              "x": 54,
+              "y": 187
+            },
+            {
+              "t": "F",
+              "x": 576,
+              "y": 187
+            },
+            {
+              "t": "B",
+              "x": 168,
+              "y": 215
+            },
+            {
+              "t": "C",
+              "x": 266,
+              "y": 215
+            },
+            {
+              "t": "E",
+              "x": 462,
+              "y": 215
+            },
+            {
+              "t": "D",
+              "x": 349,
+              "y": 215
+            },
+            {
+              "t": "W",
+              "x": 364,
+              "y": 269
+            },
+            {
+              "t": "s",
+              "x": 119,
+              "y": 299
+            },
+            {
+              "t": "s",
+              "x": 217,
+              "y": 299
+            },
+            {
+              "t": "s",
+              "x": 315,
+              "y": 299
+            },
+            {
+              "t": "s",
+              "x": 413,
+              "y": 299
+            },
+            {
+              "t": "s",
+              "x": 511,
+              "y": 299
+            },
+            {
+              "t": "h",
+              "x": 624,
+              "y": 152.5
+            }
+          ]
+        },
+        {
+          "id": "sit-02",
+          "file": "psad-2026-03/sit-02.svg",
+          "situation": 2,
+          "viewBox": "0 0 620 336",
+          "format": "svg",
+          "archetype": "beam on hinge + continuous cable over pulley",
+          "tags": [
+            "beam",
+            "cable",
+            "pulley",
+            "hinge"
+          ],
+          "caption": "One continuous cable over a frictionless pulley at D — the tension is identical in segment BD and segment DC. B is at 3 m, C at 6 m.",
+          "labelCount": 10,
+          "labels": [
+            {
+              "t": "30°",
+              "x": 362,
+              "y": 199
+            },
+            {
+              "t": "cable",
+              "x": 408,
+              "y": 138
+            },
+            {
+              "t": "P",
+              "x": 211.5,
+              "y": 261
+            },
+            {
+              "t": "A",
+              "x": 107,
+              "y": 195
+            },
+            {
+              "t": "B",
+              "x": 296,
+              "y": 199
+            },
+            {
+              "t": "C",
+              "x": 497,
+              "y": 199
+            },
+            {
+              "t": "D",
+              "x": 541,
+              "y": 103
+            },
+            {
+              "t": "a",
+              "x": 146.2,
+              "y": 266
+            },
+            {
+              "t": "3 m",
+              "x": 197.5,
+              "y": 320
+            },
+            {
+              "t": "3 m",
+              "x": 402.5,
+              "y": 320
+            }
+          ]
+        },
+        {
+          "id": "sit-03",
+          "file": "psad-2026-03/sit-03.svg",
+          "situation": 3,
+          "viewBox": "0 0 560 330",
+          "format": "svg",
+          "archetype": "block on inclined plane held by force P",
+          "tags": [
+            "friction",
+            "inclined-plane",
+            "equilibrium"
+          ],
+          "caption": "P pushes UP the incline. θ is measured between P and the inclined surface; the plane itself rises 12° from the ground.",
+          "labelCount": 4,
+          "labels": [
+            {
+              "t": "P",
+              "x": 194.4,
+              "y": 248.8
+            },
+            {
+              "t": "12°",
+              "x": 259,
+              "y": 256
+            },
+            {
+              "t": "ground",
+              "x": 105,
+              "y": 284
+            },
+            {
+              "t": "700 N",
+              "x": 408.4,
+              "y": 157.6
+            }
+          ]
+        },
+        {
+          "id": "sit-04",
+          "file": "psad-2026-03/sit-04.svg",
+          "situation": 4,
+          "viewBox": "0 0 580 400",
+          "format": "svg",
+          "archetype": "guyed pole, two anchor cables (3-D)",
+          "tags": [
+            "space-frame",
+            "cables",
+            "pole",
+            "3d-statics"
+          ],
+          "caption": "Space frame: pole AB along Z, H applied at A along +Y. The dotted construction lines fix the anchors: C = (b, −a, 0) on the +X side, D = (−c, −d, 0) on the −X side — opposite sides, which is what lets their X-components cancel.",
+          "labelCount": 13,
+          "labels": [
+            {
+              "t": "X",
+              "x": 198.5,
+              "y": 337
+            },
+            {
+              "t": "Y",
+              "x": 458.5,
+              "y": 291
+            },
+            {
+              "t": "Z",
+              "x": 300,
+              "y": 52
+            },
+            {
+              "t": "b",
+              "x": 161.8,
+              "y": 249.5
+            },
+            {
+              "t": "a",
+              "x": 200,
+              "y": 294
+            },
+            {
+              "t": "c",
+              "x": 175.8,
+              "y": 199.5
+            },
+            {
+              "t": "d",
+              "x": 281.2,
+              "y": 186.5
+            },
+            {
+              "t": "A",
+              "x": 280,
+              "y": 96
+            },
+            {
+              "t": "B",
+              "x": 304,
+              "y": 272
+            },
+            {
+              "t": "C",
+              "x": 134.5,
+              "y": 285
+            },
+            {
+              "t": "D",
+              "x": 192,
+              "y": 172
+            },
+            {
+              "t": "H",
+              "x": 381.8,
+              "y": 119.3
+            },
+            {
+              "t": "e",
+              "x": 448,
+              "y": 190.3
+            }
+          ]
+        },
+        {
+          "id": "sit-05",
+          "file": "psad-2026-03/sit-05.svg",
+          "situation": 5,
+          "viewBox": "0 0 700 400",
+          "format": "svg",
+          "archetype": "signage on tubular pole, elevation + top view",
+          "tags": [
+            "torsion",
+            "combined-stress",
+            "cantilever-pole"
+          ],
+          "caption": "H is dimensioned from the ground to the TOP of the signage; L is the signage height. In the top view the signage runs off one side of the pole.",
+          "labelCount": 9,
+          "labels": [
+            {
+              "t": "SIGNAGE",
+              "x": 245,
+              "y": 136
+            },
+            {
+              "t": "B",
+              "x": 245,
+              "y": 50
+            },
+            {
+              "t": "L",
+              "x": 386,
+              "y": 136
+            },
+            {
+              "t": "H",
+              "x": 70,
+              "y": 221
+            },
+            {
+              "t": "D",
+              "x": 452,
+              "y": 190
+            },
+            {
+              "t": "o",
+              "x": 461,
+              "y": 194
+            },
+            {
+              "t": "B",
+              "x": 523,
+              "y": 318
+            },
+            {
+              "t": "T",
+              "x": 644,
+              "y": 287
+            },
+            {
+              "t": "TOP VIEW",
+              "x": 512,
+              "y": 372
+            }
+          ]
+        },
+        {
+          "id": "sit-06",
+          "file": "psad-2026-03/sit-06.svg",
+          "situation": 6,
+          "viewBox": "0 0 360 650",
+          "format": "svg",
+          "archetype": "prism with inclined section a-a under axial P",
+          "tags": [
+            "axial-stress",
+            "inclined-plane",
+            "stress-transformation"
+          ],
+          "caption": "Plane a-a is inclined at θ = 30° from the Y-axis (the axis of the load).",
+          "labelCount": 7,
+          "labels": [
+            {
+              "t": "a",
+              "x": 63,
+              "y": 351
+            },
+            {
+              "t": "a",
+              "x": 222,
+              "y": 464
+            },
+            {
+              "t": "Y",
+              "x": 175,
+              "y": 30
+            },
+            {
+              "t": "X",
+              "x": 318,
+              "y": 402.4
+            },
+            {
+              "t": "P",
+              "x": 195,
+              "y": 136
+            },
+            {
+              "t": "P",
+              "x": 195,
+              "y": 612
+            },
+            {
+              "t": "&#952;",
+              "x": 181,
+              "y": 392
+            }
+          ]
+        },
+        {
+          "id": "sit-07",
+          "file": "psad-2026-03/sit-07.svg",
+          "situation": 7,
+          "viewBox": "0 0 740 316",
+          "format": "svg",
+          "archetype": "two-column bent with inclined member, cases A/B",
+          "tags": [
+            "axial-force",
+            "frame",
+            "two-load-cases"
+          ],
+          "caption": "FIGURE A: both P₁ and P₂ vertical. FIGURE B: P₂ inclined at θ. Members AC and DF are the tubular columns; BE is the wide-flange diagonal.",
+          "labelCount": 35,
+          "labels": [
+            {
+              "t": "β",
+              "x": 128.9,
+              "y": 224
+            },
+            {
+              "t": "a",
+              "x": 79,
+              "y": 112
+            },
+            {
+              "t": "a",
+              "x": 145,
+              "y": 112
+            },
+            {
+              "t": "a",
+              "x": 211,
+              "y": 112
+            },
+            {
+              "t": "a",
+              "x": 277,
+              "y": 112
+            },
+            {
+              "t": "P",
+              "x": 108,
+              "y": 12
+            },
+            {
+              "t": "1",
+              "x": 118,
+              "y": 16
+            },
+            {
+              "t": "P",
+              "x": 240,
+              "y": 12
+            },
+            {
+              "t": "2",
+              "x": 250,
+              "y": 16
+            },
+            {
+              "t": "A",
+              "x": 28,
+              "y": 84
+            },
+            {
+              "t": "F",
+              "x": 326,
+              "y": 84
+            },
+            {
+              "t": "E",
+              "x": 178,
+              "y": 68
+            },
+            {
+              "t": "C",
+              "x": 28,
+              "y": 232
+            },
+            {
+              "t": "B",
+              "x": 72.9,
+              "y": 230
+            },
+            {
+              "t": "D",
+              "x": 326,
+              "y": 232
+            },
+            {
+              "t": "H",
+              "x": 362,
+              "y": 155
+            },
+            {
+              "t": "FIGURE A",
+              "x": 178,
+              "y": 296
+            },
+            {
+              "t": "β",
+              "x": 490.9,
+              "y": 224
+            },
+            {
+              "t": "a",
+              "x": 441,
+              "y": 112
+            },
+            {
+              "t": "a",
+              "x": 507,
+              "y": 112
+            },
+            {
+              "t": "a",
+              "x": 573,
+              "y": 112
+            },
+            {
+              "t": "a",
+              "x": 639,
+              "y": 112
+            },
+            {
+              "t": "P",
+              "x": 470,
+              "y": 12
+            },
+            {
+              "t": "1",
+              "x": 480,
+              "y": 16
+            },
+            {
+              "t": "P",
+              "x": 662,
+              "y": 12
+            },
+            {
+              "t": "2",
+              "x": 672,
+              "y": 16
+            },
+            {
+              "t": "θ",
+              "x": 656,
+              "y": 52
+            },
+            {
+              "t": "A",
+              "x": 390,
+              "y": 84
+            },
+            {
+              "t": "F",
+              "x": 688,
+              "y": 84
+            },
+            {
+              "t": "E",
+              "x": 540,
+              "y": 68
+            },
+            {
+              "t": "C",
+              "x": 390,
+              "y": 232
+            },
+            {
+              "t": "B",
+              "x": 434.9,
+              "y": 230
+            },
+            {
+              "t": "D",
+              "x": 688,
+              "y": 232
+            },
+            {
+              "t": "H",
+              "x": 724,
+              "y": 155
+            },
+            {
+              "t": "FIGURE B",
+              "x": 540,
+              "y": 296
+            }
+          ]
+        },
+        {
+          "id": "sit-08",
+          "file": "psad-2026-03/sit-08.svg",
+          "situation": 8,
+          "viewBox": "0 0 620 210",
+          "format": "svg",
+          "archetype": "beam: fixed + roller + pin",
+          "tags": [
+            "indeterminacy",
+            "support-types"
+          ],
+          "caption": "A is FIXED to the wall, B is a roller, C is a pin.",
+          "labelCount": 3,
+          "labels": [
+            {
+              "t": "A",
+              "x": 96,
+              "y": 84
+            },
+            {
+              "t": "B",
+              "x": 320,
+              "y": 84
+            },
+            {
+              "t": "C",
+              "x": 560,
+              "y": 94
+            }
+          ]
+        },
+        {
+          "id": "sit-09",
+          "file": "psad-2026-03/sit-09.svg",
+          "situation": 9,
+          "viewBox": "0 0 660 250",
+          "format": "svg",
+          "archetype": "three-span compound girder with internal hinge",
+          "tags": [
+            "influence-line",
+            "moving-load",
+            "internal-hinge"
+          ],
+          "caption": "Three equal spans of L with an internal hinge at C. Segment CD hangs off the hinge; ABC carries it as an overhang.",
+          "labelCount": 8,
+          "labels": [
+            {
+              "t": "hinge",
+              "x": 427,
+              "y": 70
+            },
+            {
+              "t": "A",
+              "x": 62,
+              "y": 82
+            },
+            {
+              "t": "B",
+              "x": 231,
+              "y": 110
+            },
+            {
+              "t": "C",
+              "x": 427,
+              "y": 128
+            },
+            {
+              "t": "D",
+              "x": 620,
+              "y": 82
+            },
+            {
+              "t": "L",
+              "x": 166.5,
+              "y": 198
+            },
+            {
+              "t": "L",
+              "x": 340,
+              "y": 198
+            },
+            {
+              "t": "L",
+              "x": 513.5,
+              "y": 198
+            }
+          ]
+        },
+        {
+          "id": "sit-11",
+          "file": "psad-2026-03/sit-11.svg",
+          "situation": 11,
+          "viewBox": "0 0 600 400",
+          "format": "svg",
+          "archetype": "anchored sheet pile + stringer detail",
+          "tags": [
+            "sheet-pile",
+            "earth-pressure",
+            "stringer",
+            "tension-rod"
+          ],
+          "caption": "Anchored sheet pile: soil retained to H₂ on the left, water to H₃ on the right, tension rod near the dredge line, wooden stringers spanning between rods.",
+          "labelCount": 13,
+          "labels": [
+            {
+              "t": "tension rod",
+              "x": 196,
+              "y": 240
+            },
+            {
+              "t": "H",
+              "x": 84,
+              "y": 156
+            },
+            {
+              "t": "2",
+              "x": 93,
+              "y": 161
+            },
+            {
+              "t": "H",
+              "x": 84,
+              "y": 296
+            },
+            {
+              "t": "1",
+              "x": 93,
+              "y": 301
+            },
+            {
+              "t": "H",
+              "x": 442,
+              "y": 271
+            },
+            {
+              "t": "3",
+              "x": 451,
+              "y": 276
+            },
+            {
+              "t": "stringer",
+              "x": 483,
+              "y": 116
+            },
+            {
+              "t": "b",
+              "x": 528,
+              "y": 152
+            },
+            {
+              "t": "d",
+              "x": 483,
+              "y": 184
+            },
+            {
+              "t": "sheet pile",
+              "x": 340,
+              "y": 92
+            },
+            {
+              "t": "Soil",
+              "x": 186,
+              "y": 168
+            },
+            {
+              "t": "water",
+              "x": 322,
+              "y": 290
+            }
+          ]
+        },
+        {
+          "id": "sit-12",
+          "file": "psad-2026-03/sit-12.svg",
+          "situation": 12,
+          "viewBox": "0 0 640 380",
+          "format": "svg",
+          "archetype": "bent cantilever tube, 3-D loads + torque",
+          "tags": [
+            "combined-stress",
+            "torsion",
+            "bending",
+            "cantilever"
+          ],
+          "caption": "Cantilever AB (2 × 1.5 m) with a 40 N transverse load, then BC (4 m) inclined at 30° carrying 70 kN and 50 N, plus a 100 N·m torque about the axis of AB.",
+          "labelCount": 11,
+          "labels": [
+            {
+              "t": "40 N",
+              "x": 216,
+              "y": 100
+            },
+            {
+              "t": "1.5 m",
+              "x": 156,
+              "y": 134
+            },
+            {
+              "t": "1.5 m",
+              "x": 276,
+              "y": 134
+            },
+            {
+              "t": "100 N·m",
+              "x": 362,
+              "y": 144
+            },
+            {
+              "t": "70 kN",
+              "x": 494,
+              "y": 183
+            },
+            {
+              "t": "30°",
+              "x": 440,
+              "y": 212
+            },
+            {
+              "t": "50 N",
+              "x": 531.7,
+              "y": 363
+            },
+            {
+              "t": "4 m",
+              "x": 402.9,
+              "y": 280.5
+            },
+            {
+              "t": "A",
+              "x": 102,
+              "y": 218
+            },
+            {
+              "t": "B",
+              "x": 318,
+              "y": 218
+            },
+            {
+              "t": "C",
+              "x": 549.7,
+              "y": 295
+            }
+          ]
+        },
+        {
+          "id": "sit-13",
+          "file": "psad-2026-03/sit-13.svg",
+          "situation": 13,
+          "viewBox": "0 0 620 340",
+          "format": "svg",
+          "archetype": "double-tee prestressed joist cross-section",
+          "tags": [
+            "prestressed",
+            "section-properties",
+            "double-tee"
+          ],
+          "caption": "Double-tee joist section: flange width b, yₜ to the top fibre, yᵇ to the bottom fibre, two webs each carrying a prestressing strand.",
+          "labelCount": 6,
+          "labels": [
+            {
+              "t": "N.A.",
+              "x": 300,
+              "y": 168
+            },
+            {
+              "t": "b",
+              "x": 310,
+              "y": 56
+            },
+            {
+              "t": "y",
+              "x": 604,
+              "y": 136
+            },
+            {
+              "t": "t",
+              "x": 612,
+              "y": 141
+            },
+            {
+              "t": "y",
+              "x": 604,
+              "y": 238
+            },
+            {
+              "t": "b",
+              "x": 612,
+              "y": 243
+            }
+          ]
+        },
+        {
+          "id": "sit-14",
+          "file": "psad-2026-03/sit-14.svg",
+          "situation": 14,
+          "viewBox": "0 0 900 348",
+          "format": "svg",
+          "archetype": "angle lap-welded to gusset, elevation + side view",
+          "tags": [
+            "welded-connection",
+            "angle",
+            "fillet-weld",
+            "eccentric-load"
+          ],
+          "caption": "Single angle lap-welded to a gusset plate. The weld lengths a (near the heel side) and b are proportioned so their resultant lines up with the angle’s centroid at x̄.",
+          "labelCount": 6,
+          "labels": [
+            {
+              "t": "fillet welds",
+              "x": 268,
+              "y": 200
+            },
+            {
+              "t": "x",
+              "x": 628,
+              "y": 146
+            },
+            {
+              "t": "P",
+              "x": 738,
+              "y": 169
+            },
+            {
+              "t": "a",
+              "x": 272,
+              "y": 84
+            },
+            {
+              "t": "b",
+              "x": 236,
+              "y": 326
+            },
+            {
+              "t": "c",
+              "x": 108,
+              "y": 194
+            }
+          ]
+        },
+        {
+          "id": "sit-16",
+          "file": "psad-2026-03/sit-16.svg",
+          "situation": 16,
+          "viewBox": "0 0 580 392",
+          "format": "svg",
+          "archetype": "purlin on sloped truss top chord",
+          "tags": [
+            "purlin",
+            "biaxial-bending",
+            "roof",
+            "sag-rod"
+          ],
+          "caption": "Purlin on a sloped top chord: the load resolves into w cosθ normal to the roof (bending about x) and w sinθ along the slope (bending about y).",
+          "labelCount": 8,
+          "labels": [
+            {
+              "t": "θ",
+              "x": 118,
+              "y": 316
+            },
+            {
+              "t": "Roof Truss",
+              "x": 390,
+              "y": 214
+            },
+            {
+              "t": "x",
+              "x": 350.7,
+              "y": 180.1
+            },
+            {
+              "t": "y",
+              "x": 186.7,
+              "y": 107.1
+            },
+            {
+              "t": "w",
+              "x": 213.8,
+              "y": 50.4
+            },
+            {
+              "t": "LL",
+              "x": 229.8,
+              "y": 54.4
+            },
+            {
+              "t": "w",
+              "x": 239,
+              "y": 126.7
+            },
+            {
+              "t": "DL",
+              "x": 255,
+              "y": 130.7
+            }
+          ]
+        },
+        {
+          "id": "sit-17",
+          "file": "psad-2026-03/sit-17.svg",
+          "situation": 17,
+          "viewBox": "0 0 780 372",
+          "format": "svg",
+          "archetype": "column base plate + equivalent bearing section",
+          "tags": [
+            "base-plate",
+            "bearing",
+            "column",
+            "plate-bending"
+          ],
+          "caption": "Column base plate B×N on concrete. The equivalent column section for bearing is 0.95d × 0.8bf; the cantilever overhangs m and n govern plate bending.",
+          "labelCount": 12,
+          "labels": [
+            {
+              "t": "concrete",
+              "x": 196,
+              "y": 316
+            },
+            {
+              "t": "P",
+              "x": 210,
+              "y": 60
+            },
+            {
+              "t": "V",
+              "x": 64,
+              "y": 165
+            },
+            {
+              "t": "Bearing",
+              "x": 286,
+              "y": 120
+            },
+            {
+              "t": "plate B × N",
+              "x": 286,
+              "y": 136
+            },
+            {
+              "t": "Equivalent Column",
+              "x": 660,
+              "y": 96
+            },
+            {
+              "t": "Section",
+              "x": 660,
+              "y": 110
+            },
+            {
+              "t": "N",
+              "x": 564,
+              "y": 90
+            },
+            {
+              "t": "B",
+              "x": 392,
+              "y": 216
+            },
+            {
+              "t": "0.8b",
+              "x": 736,
+              "y": 212
+            },
+            {
+              "t": "f",
+              "x": 766,
+              "y": 216
+            },
+            {
+              "t": "0.95d",
+              "x": 556,
+              "y": 350
+            }
+          ]
+        },
+        {
+          "id": "sit-18",
+          "file": "psad-2026-03/sit-18.svg",
+          "situation": 18,
+          "viewBox": "0 0 560 428",
+          "format": "svg",
+          "archetype": "beam deflection / span-limit reference",
+          "tags": [
+            "deflection",
+            "serviceability"
+          ],
+          "caption": "T-beam at a column support carrying NEGATIVE moment — the flange is in tension, so the compression block sits in the web. Aₛ is the top steel, Aₛ′ the bottom.",
+          "labelCount": 10,
+          "labels": [
+            {
+              "t": "A",
+              "x": 262,
+              "y": 158
+            },
+            {
+              "t": "s",
+              "x": 272,
+              "y": 163
+            },
+            {
+              "t": "A",
+              "x": 262,
+              "y": 306
+            },
+            {
+              "t": "s",
+              "x": 272,
+              "y": 311
+            },
+            {
+              "t": "'",
+              "x": 279,
+              "y": 302
+            },
+            {
+              "t": "h",
+              "x": 524,
+              "y": 94
+            },
+            {
+              "t": "1",
+              "x": 533,
+              "y": 99
+            },
+            {
+              "t": "h",
+              "x": 524,
+              "y": 245
+            },
+            {
+              "t": "2",
+              "x": 533,
+              "y": 250
+            },
+            {
+              "t": "b",
+              "x": 262,
+              "y": 416
+            }
+          ]
+        },
+        {
+          "id": "sit-19",
+          "file": "psad-2026-03/sit-19.svg",
+          "situation": 19,
+          "viewBox": "0 0 400 112",
+          "format": "svg",
+          "archetype": "formula reference card",
+          "tags": [
+            "reference",
+            "formula-card"
+          ],
+          "caption": "The minimum spiral steel ratio expressions printed with the problem.",
+          "labelCount": 16,
+          "labels": [
+            {
+              "t": "ρ",
+              "x": 24,
+              "y": 44
+            },
+            {
+              "t": "s,min",
+              "x": 33,
+              "y": 49
+            },
+            {
+              "t": "= 0.45 ( A",
+              "x": 56,
+              "y": 44
+            },
+            {
+              "t": "g",
+              "x": 140,
+              "y": 49
+            },
+            {
+              "t": "/ A",
+              "x": 148,
+              "y": 44
+            },
+            {
+              "t": "c",
+              "x": 172,
+              "y": 49
+            },
+            {
+              "t": "− 1 ) f′",
+              "x": 180,
+              "y": 44
+            },
+            {
+              "t": "c",
+              "x": 240,
+              "y": 49
+            },
+            {
+              "t": "/ f",
+              "x": 248,
+              "y": 44
+            },
+            {
+              "t": "yv",
+              "x": 268,
+              "y": 49
+            },
+            {
+              "t": "ρ",
+              "x": 24,
+              "y": 84
+            },
+            {
+              "t": "s,min",
+              "x": 33,
+              "y": 89
+            },
+            {
+              "t": "= 0.12 f′",
+              "x": 56,
+              "y": 84
+            },
+            {
+              "t": "c",
+              "x": 128,
+              "y": 89
+            },
+            {
+              "t": "/ f",
+              "x": 136,
+              "y": 84
+            },
+            {
+              "t": "yv",
+              "x": 156,
+              "y": 89
+            }
+          ]
+        },
+        {
+          "id": "sit-20",
+          "file": "psad-2026-03/sit-20.html",
+          "situation": 20,
+          "viewBox": null,
+          "format": "raster-html",
+          "archetype": "column interaction diagram (source raster)",
+          "tags": [
+            "interaction-diagram",
+            "column",
+            "biaxial"
+          ],
+          "caption": "Interaction diagram for a spiral column, f′_c = 27.5 MPa, f_y = 413 MPa, γ = 0.8. Read Kₙ on the vertical axis against Rₙ on the horizontal.",
+          "labelCount": 0,
+          "labels": []
+        }
+      ]
+    }
+  }
+}

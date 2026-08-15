@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CELE Figure Library</title>
+<style>
+:root{--bg:#F3F6FB;--card:#fff;--ink:#17223B;--muted:#5A6780;--line:#E1E7F2;--navy:#141E3C;--chip:#EEF1F8;--acc:#2F4BD0}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",Inter,system-ui,sans-serif;padding:0 0 60px}
+.wrap{max-width:1080px;margin:0 auto;padding:0 18px}
+header.top{background:var(--navy);color:#fff;padding:26px 0 22px;margin-bottom:20px}
+header.top h1{margin:0 0 6px;font-size:23px;letter-spacing:-.01em}
+header.top p{margin:0;opacity:.78;font-size:13.5px;max-width:70ch}
+.bar{display:flex;gap:10px;align-items:center;margin:18px 0 6px;flex-wrap:wrap}
+input[type=search]{flex:1;min-width:220px;font:inherit;font-size:14px;padding:10px 14px;border:1.5px solid var(--line);border-radius:10px;background:var(--card);color:var(--ink)}
+input[type=search]:focus{outline:2px solid var(--acc);outline-offset:1px}
+.count{font-size:12.5px;color:var(--muted);font-variant-numeric:tabular-nums}
+.fig{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px;margin-top:14px}
+.fig[hidden]{display:none}
+.fig header{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
+.id{font-family:ui-monospace,Menlo,monospace;font-size:12px;color:var(--muted)}
+.fig h3{margin:0;font-size:15.5px;flex:1;min-width:200px}
+.vb{font-family:ui-monospace,Menlo,monospace;font-size:11px;color:var(--muted)}
+.tags{display:flex;gap:6px;flex-wrap:wrap;margin:8px 0 12px}
+.tg{font-size:11px;background:var(--chip);color:var(--muted);padding:3px 9px;border-radius:99px;font-family:ui-monospace,Menlo,monospace}
+.frame{border:1px solid var(--line);border-radius:10px;overflow:auto;background:#fff;padding:6px}
+.frame svg,.frame img{max-width:100%;height:auto;display:block;margin:0 auto}
+.cap{font-size:13px;color:var(--muted);margin:11px 0 6px}
+.lab{font-size:12.5px;color:var(--muted);margin:0 0 6px}
+.lab b{color:var(--ink)}
+.path{margin:0}
+code{font-family:ui-monospace,Menlo,monospace;font-size:11.5px;background:var(--chip);padding:2px 7px;border-radius:5px;color:var(--muted)}
+.note{background:#FFF8E7;border:1px solid #F0DCA8;border-radius:12px;padding:14px 16px;font-size:13.5px;margin-top:18px}
+</style></head>
+<body>
+<header class="top"><div class="wrap">
+  <h1>CELE Figure Library</h1>
+  <p>Redrawn board-exam figures, reusable across sittings. Find the archetype that matches a newly transcribed problem, copy the SVG, and retune the labels and dimension values instead of redrawing from scratch.</p>
+</div></header>
+<div class="wrap">
+  <div class="bar">
+    <input type="search" id="q" placeholder="Search archetype, tag or caption &mdash; e.g. weld, truss, torsion, prestressed">
+    <span class="count" id="count">18 figures</span>
+  </div>
+  
+<article class="fig" data-search="parallel-chord truss, cross-braced panel truss method-of-sections cable-brace pin-roller panel cdhi is cross-braced by cables ci and dh. note the supports: a is the roller, f is the pin.">
+  <header>
+    <span class="id">sit-01</span>
+    <h3>parallel-chord truss, cross-braced panel</h3>
+    <span class="vb">0 0 660 312</span>
+  </header>
+  <div class="tags"><span class="tg">truss</span><span class="tg">method-of-sections</span><span class="tg">cable-brace</span><span class="tg">pin-roller</span></div>
+  <div class="frame" data-src="psad-2026-03/sit-01.svg"></div>
+  <p class="cap">Panel CDHI is cross-braced by cables CI and DH. Note the supports: A is the ROLLER, F is the PIN.</p>
+  <p class="lab"><b>Editable labels (17):</b> G, H, I, J, A, F, B, C, E, D, W, s, s, s &hellip;</p>
+  <p class="path"><code>figures/psad-2026-03/sit-01.svg</code></p>
+</article>
+<article class="fig" data-search="beam on hinge + continuous cable over pulley beam cable pulley hinge one continuous cable over a frictionless pulley at d — the tension is identical in segment bd and segment dc. b is at 3 m, c at 6 m.">
+  <header>
+    <span class="id">sit-02</span>
+    <h3>beam on hinge + continuous cable over pulley</h3>
+    <span class="vb">0 0 620 336</span>
+  </header>
+  <div class="tags"><span class="tg">beam</span><span class="tg">cable</span><span class="tg">pulley</span><span class="tg">hinge</span></div>
+  <div class="frame" data-src="psad-2026-03/sit-02.svg"></div>
+  <p class="cap">One continuous cable over a frictionless pulley at D — the tension is identical in segment BD and segment DC. B is at 3 m, C at 6 m.</p>
+  <p class="lab"><b>Editable labels (10):</b> 30°, cable, P, A, B, C, D, a, 3 m, 3 m</p>
+  <p class="path"><code>figures/psad-2026-03/sit-02.svg</code></p>
+</article>
+<article class="fig" data-search="block on inclined plane held by force p friction inclined-plane equilibrium p pushes up the incline. θ is measured between p and the inclined surface; the plane itself rises 12° from the ground.">
+  <header>
+    <span class="id">sit-03</span>
+    <h3>block on inclined plane held by force P</h3>
+    <span class="vb">0 0 560 330</span>
+  </header>
+  <div class="tags"><span class="tg">friction</span><span class="tg">inclined-plane</span><span class="tg">equilibrium</span></div>
+  <div class="frame" data-src="psad-2026-03/sit-03.svg"></div>
+  <p class="cap">P pushes UP the incline. θ is measured between P and the inclined surface; the plane itself rises 12° from the ground.</p>
+  <p class="lab"><b>Editable labels (4):</b> P, 12°, ground, 700 N</p>
+  <p class="path"><code>figures/psad-2026-03/sit-03.svg</code></p>
+</article>
+<article class="fig" data-search="guyed pole, two anchor cables (3-d) space-frame cables pole 3d-statics space frame: pole ab along z, h applied at a along +y. the dotted construction lines fix the anchors: c = (b, −a, 0) on the +x side, d = (−c, −d, 0) on the −x side — opposite sides, which is what lets their x-components cancel.">
+  <header>
+    <span class="id">sit-04</span>
+    <h3>guyed pole, two anchor cables (3-D)</h3>
+    <span class="vb">0 0 580 400</span>
+  </header>
+  <div class="tags"><span class="tg">space-frame</span><span class="tg">cables</span><span class="tg">pole</span><span class="tg">3d-statics</span></div>
+  <div class="frame" data-src="psad-2026-03/sit-04.svg"></div>
+  <p class="cap">Space frame: pole AB along Z, H applied at A along +Y. The dotted construction lines fix the anchors: C = (b, −a, 0) on the +X side, D = (−c, −d, 0) on the −X side — opposite sides, which is what lets their X-components cancel.</p>
+  <p class="lab"><b>Editable labels (13):</b> X, Y, Z, b, a, c, d, A, B, C, D, H, e</p>
+  <p class="path"><code>figures/psad-2026-03/sit-04.svg</code></p>
+</article>
+<article class="fig" data-search="signage on tubular pole, elevation + top view torsion combined-stress cantilever-pole h is dimensioned from the ground to the top of the signage; l is the signage height. in the top view the signage runs off one side of the pole.">
+  <header>
+    <span class="id">sit-05</span>
+    <h3>signage on tubular pole, elevation + top view</h3>
+    <span class="vb">0 0 700 400</span>
+  </header>
+  <div class="tags"><span class="tg">torsion</span><span class="tg">combined-stress</span><span class="tg">cantilever-pole</span></div>
+  <div class="frame" data-src="psad-2026-03/sit-05.svg"></div>
+  <p class="cap">H is dimensioned from the ground to the TOP of the signage; L is the signage height. In the top view the signage runs off one side of the pole.</p>
+  <p class="lab"><b>Editable labels (9):</b> SIGNAGE, B, L, H, D, o, B, T, TOP VIEW</p>
+  <p class="path"><code>figures/psad-2026-03/sit-05.svg</code></p>
+</article>
+<article class="fig" data-search="prism with inclined section a-a under axial p axial-stress inclined-plane stress-transformation plane a-a is inclined at θ = 30° from the y-axis (the axis of the load).">
+  <header>
+    <span class="id">sit-06</span>
+    <h3>prism with inclined section a-a under axial P</h3>
+    <span class="vb">0 0 360 650</span>
+  </header>
+  <div class="tags"><span class="tg">axial-stress</span><span class="tg">inclined-plane</span><span class="tg">stress-transformation</span></div>
+  <div class="frame" data-src="psad-2026-03/sit-06.svg"></div>
+  <p class="cap">Plane a-a is inclined at θ = 30° from the Y-axis (the axis of the load).</p>
+  <p class="lab"><b>Editable labels (7):</b> a, a, Y, X, P, P, &#952;</p>
+  <p class="path"><code>figures/psad-2026-03/sit-06.svg</code></p>
+</article>
+<article class="fig" data-search="two-column bent with inclined member, cases a/b axial-force frame two-load-cases figure a: both p₁ and p₂ vertical. figure b: p₂ inclined at θ. members ac and df are the tubular columns; be is the wide-flange diagonal.">
+  <header>
+    <span class="id">sit-07</span>
+    <h3>two-column bent with inclined member, cases A/B</h3>
+    <span class="vb">0 0 740 316</span>
+  </header>
+  <div class="tags"><span class="tg">axial-force</span><span class="tg">frame</span><span class="tg">two-load-cases</span></div>
+  <div class="frame" data-src="psad-2026-03/sit-07.svg"></div>
+  <p class="cap">FIGURE A: both P₁ and P₂ vertical. FIGURE B: P₂ inclined at θ. Members AC and DF are the tubular columns; BE is the wide-flange diagonal.</p>
+  <p class="lab"><b>Editable labels (35):</b> β, a, a, a, a, P, 1, P, 2, A, F, E, C, B &hellip;</p>
+  <p class="path"><code>figures/psad-2026-03/sit-07.svg</code></p>
+</article>
+<article class="fig" data-search="beam: fixed + roller + pin indeterminacy support-types a is fixed to the wall, b is a roller, c is a pin.">
+  <header>
+    <span class="id">sit-08</span>
+    <h3>beam: fixed + roller + pin</h3>
+    <span class="vb">0 0 620 210</span>
+  </header>
+  <div class="tags"><span class="tg">indeterminacy</span><span class="tg">support-types</span></div>
+  <div class="frame" data-src="psad-2026-03/sit-08.svg"></div>
+  <p class="cap">A is FIXED to the wall, B is a roller, C is a pin.</p>
+  <p class="lab"><b>Editable labels (3):</b> A, B, C</p>
+  <p class="path"><code>figures/psad-2026-03/sit-08.svg</code></p>
+</article>
+<article class="fig" data-search="three-span compound girder with internal hinge influence-line moving-load internal-hinge three equal spans of l with an internal hinge at c. segment cd hangs off the hinge; abc carries it as an overhang.">
+  <header>
+    <span class="id">sit-09</span>
+    <h3>three-span compound girder with internal hinge</h3>
+    <span class="vb">0 0 660 250</span>
+  </header>
+  <div class="tags"><span class="tg">influence-line</span><span class="tg">moving-load</span><span class="tg">internal-hinge</span></div>
+  <div class="frame" data-src="psad-2026-03/sit-09.svg"></div>
+  <p class="cap">Three equal spans of L with an internal hinge at C. Segment CD hangs off the hinge; ABC carries it as an overhang.</p>
+  <p class="lab"><b>Editable labels (8):</b> hinge, A, B, C, D, L, L, L</p>
+  <p class="path"><code>figures/psad-2026-03/sit-09.svg</code></p>
+</article>
+<article class="fig" data-search="anchored sheet pile + stringer detail sheet-pile earth-pressure stringer tension-rod anchored sheet pile: soil retained to h₂ on the left, water to h₃ on the right, tension rod near the dredge line, wooden stringers spanning between rods.">
+  <header>
+    <span class="id">sit-11</span>
+    <h3>anchored sheet pile + stringer detail</h3>
+    <span class="vb">0 0 600 400</span>
+  </header>
+  <div class="tags"><span class="tg">sheet-pile</span><span class="tg">earth-pressure</span><span class="tg">stringer</span><span class="tg">tension-rod</span></div>
+  <div class="frame" data-src="psad-2026-03/sit-11.svg"></div>
+  <p class="cap">Anchored sheet pile: soil retained to H₂ on the left, water to H₃ on the right, tension rod near the dredge line, wooden stringers spanning between rods.</p>
+  <p class="lab"><b>Editable labels (13):</b> tension rod, H, 2, H, 1, H, 3, stringer, b, d, sheet pile, Soil, water</p>
+  <p class="path"><code>figures/psad-2026-03/sit-11.svg</code></p>
+</article>
+<article class="fig" data-search="bent cantilever tube, 3-d loads + torque combined-stress torsion bending cantilever cantilever ab (2 × 1.5 m) with a 40 n transverse load, then bc (4 m) inclined at 30° carrying 70 kn and 50 n, plus a 100 n·m torque about the axis of ab.">
+  <header>
+    <span class="id">sit-12</span>
+    <h3>bent cantilever tube, 3-D loads + torque</h3>
+    <span class="vb">0 0 640 380</span>
+  </header>
+  <div class="tags"><span class="tg">combined-stress</span><span class="tg">torsion</span><span class="tg">bending</span><span class="tg">cantilever</span></div>
+  <div class="frame" data-src="psad-2026-03/sit-12.svg"></div>
+  <p class="cap">Cantilever AB (2 × 1.5 m) with a 40 N transverse load, then BC (4 m) inclined at 30° carrying 70 kN and 50 N, plus a 100 N·m torque about the axis of AB.</p>
+  <p class="lab"><b>Editable labels (11):</b> 40 N, 1.5 m, 1.5 m, 100 N·m, 70 kN, 30°, 50 N, 4 m, A, B, C</p>
+  <p class="path"><code>figures/psad-2026-03/sit-12.svg</code></p>
+</article>
+<article class="fig" data-search="double-tee prestressed joist cross-section prestressed section-properties double-tee double-tee joist section: flange width b, yₜ to the top fibre, yᵇ to the bottom fibre, two webs each carrying a prestressing strand.">
+  <header>
+    <span class="id">sit-13</span>
+    <h3>double-tee prestressed joist cross-section</h3>
+    <span class="vb">0 0 620 340</span>
+  </header>
+  <div class="tags"><span class="tg">prestressed</span><span class="tg">section-properties</span><span class="tg">double-tee</span></div>
+  <div class="frame" data-src="psad-2026-03/sit-13.svg"></div>
+  <p class="cap">Double-tee joist section: flange width b, yₜ to the top fibre, yᵇ to the bottom fibre, two webs each carrying a prestressing strand.</p>
+  <p class="lab"><b>Editable labels (6):</b> N.A., b, y, t, y, b</p>
+  <p class="path"><code>figures/psad-2026-03/sit-13.svg</code></p>
+</article>
+<article class="fig" data-search="angle lap-welded to gusset, elevation + side view welded-connection angle fillet-weld eccentric-load single angle lap-welded to a gusset plate. the weld lengths a (near the heel side) and b are proportioned so their resultant lines up with the angle’s centroid at x̄.">
+  <header>
+    <span class="id">sit-14</span>
+    <h3>angle lap-welded to gusset, elevation + side view</h3>
+    <span class="vb">0 0 900 348</span>
+  </header>
+  <div class="tags"><span class="tg">welded-connection</span><span class="tg">angle</span><span class="tg">fillet-weld</span><span class="tg">eccentric-load</span></div>
+  <div class="frame" data-src="psad-2026-03/sit-14.svg"></div>
+  <p class="cap">Single angle lap-welded to a gusset plate. The weld lengths a (near the heel side) and b are proportioned so their resultant lines up with the angle’s centroid at x̄.</p>
+  <p class="lab"><b>Editable labels (6):</b> fillet welds, x, P, a, b, c</p>
+  <p class="path"><code>figures/psad-2026-03/sit-14.svg</code></p>
+</article>
+<article class="fig" data-search="purlin on sloped truss top chord purlin biaxial-bending roof sag-rod purlin on a sloped top chord: the load resolves into w cosθ normal to the roof (bending about x) and w sinθ along the slope (bending about y).">
+  <header>
+    <span class="id">sit-16</span>
+    <h3>purlin on sloped truss top chord</h3>
+    <span class="vb">0 0 580 392</span>
+  </header>
+  <div class="tags"><span class="tg">purlin</span><span class="tg">biaxial-bending</span><span class="tg">roof</span><span class="tg">sag-rod</span></div>
+  <div class="frame" data-src="psad-2026-03/sit-16.svg"></div>
+  <p class="cap">Purlin on a sloped top chord: the load resolves into w cosθ normal to the roof (bending about x) and w sinθ along the slope (bending about y).</p>
+  <p class="lab"><b>Editable labels (8):</b> θ, Roof Truss, x, y, w, LL, w, DL</p>
+  <p class="path"><code>figures/psad-2026-03/sit-16.svg</code></p>
+</article>
+<article class="fig" data-search="column base plate + equivalent bearing section base-plate bearing column plate-bending column base plate b×n on concrete. the equivalent column section for bearing is 0.95d × 0.8bf; the cantilever overhangs m and n govern plate bending.">
+  <header>
+    <span class="id">sit-17</span>
+    <h3>column base plate + equivalent bearing section</h3>
+    <span class="vb">0 0 780 372</span>
+  </header>
+  <div class="tags"><span class="tg">base-plate</span><span class="tg">bearing</span><span class="tg">column</span><span class="tg">plate-bending</span></div>
+  <div class="frame" data-src="psad-2026-03/sit-17.svg"></div>
+  <p class="cap">Column base plate B×N on concrete. The equivalent column section for bearing is 0.95d × 0.8bf; the cantilever overhangs m and n govern plate bending.</p>
+  <p class="lab"><b>Editable labels (12):</b> concrete, P, V, Bearing, plate B × N, Equivalent Column, Section, N, B, 0.8b, f, 0.95d</p>
+  <p class="path"><code>figures/psad-2026-03/sit-17.svg</code></p>
+</article>
+<article class="fig" data-search="beam deflection / span-limit reference deflection serviceability t-beam at a column support carrying negative moment — the flange is in tension, so the compression block sits in the web. aₛ is the top steel, aₛ′ the bottom.">
+  <header>
+    <span class="id">sit-18</span>
+    <h3>beam deflection / span-limit reference</h3>
+    <span class="vb">0 0 560 428</span>
+  </header>
+  <div class="tags"><span class="tg">deflection</span><span class="tg">serviceability</span></div>
+  <div class="frame" data-src="psad-2026-03/sit-18.svg"></div>
+  <p class="cap">T-beam at a column support carrying NEGATIVE moment — the flange is in tension, so the compression block sits in the web. Aₛ is the top steel, Aₛ′ the bottom.</p>
+  <p class="lab"><b>Editable labels (10):</b> A, s, A, s, ', h, 1, h, 2, b</p>
+  <p class="path"><code>figures/psad-2026-03/sit-18.svg</code></p>
+</article>
+<article class="fig" data-search="formula reference card reference formula-card the minimum spiral steel ratio expressions printed with the problem.">
+  <header>
+    <span class="id">sit-19</span>
+    <h3>formula reference card</h3>
+    <span class="vb">0 0 400 112</span>
+  </header>
+  <div class="tags"><span class="tg">reference</span><span class="tg">formula-card</span></div>
+  <div class="frame" data-src="psad-2026-03/sit-19.svg"></div>
+  <p class="cap">The minimum spiral steel ratio expressions printed with the problem.</p>
+  <p class="lab"><b>Editable labels (16):</b> ρ, s,min, = 0.45 ( A, g, / A, c, − 1 ) f′, c, / f, yv, ρ, s,min, = 0.12 f′, c &hellip;</p>
+  <p class="path"><code>figures/psad-2026-03/sit-19.svg</code></p>
+</article>
+<article class="fig" data-search="column interaction diagram (source raster) interaction-diagram column biaxial interaction diagram for a spiral column, f′_c = 27.5 mpa, f_y = 413 mpa, γ = 0.8. read kₙ on the vertical axis against rₙ on the horizontal.">
+  <header>
+    <span class="id">sit-20</span>
+    <h3>column interaction diagram (source raster)</h3>
+    <span class="vb">&mdash;</span>
+  </header>
+  <div class="tags"><span class="tg">interaction-diagram</span><span class="tg">column</span><span class="tg">biaxial</span></div>
+  <div class="frame" data-src="psad-2026-03/sit-20.html"></div>
+  <p class="cap">Interaction diagram for a spiral column, f′_c = 27.5 MPa, f_y = 413 MPa, γ = 0.8. Read Kₙ on the vertical axis against Rₙ on the horizontal.</p>
+  <p class="lab"><b>Editable labels (0):</b> &mdash;</p>
+  <p class="path"><code>figures/psad-2026-03/sit-20.html</code></p>
+</article>
+  <div class="note"><b>Two figures are deliberately not redrawn.</b> Situation 4 (isometric space frame) keeps its redrawn form but the anchor geometry is read from the source grid at 4&times; zoom, and situation 20 (column interaction diagram) stays as the booklet's own raster because values must be read off the printed curves &mdash; an approximated curve family would give wrong answers.</div>
+</div>
+<script>
+(function(){
+  document.querySelectorAll('.frame').forEach(function(f){
+    fetch(f.dataset.src).then(function(r){return r.text();})
+      .then(function(t){ f.innerHTML=t; })
+      .catch(function(){ f.innerHTML='<p style="color:#5A6780;font-size:13px;padding:10px">Open this page over a local server (or from the folder) to preview the figure inline.</p>'; });
+  });
+  var q=document.getElementById('q'), c=document.getElementById('count'),
+      cards=[].slice.call(document.querySelectorAll('.fig'));
+  q.addEventListener('input', function(){
+    var v=q.value.trim().toLowerCase(), n=0;
+    cards.forEach(function(card){
+      var show = !v || card.dataset.search.indexOf(v)>-1;
+      card.hidden=!show; if(show) n++;
+    });
+    c.textContent = n+' figure'+(n===1?'':'s');
+  });
+})();
+</script>
+</body></html>
