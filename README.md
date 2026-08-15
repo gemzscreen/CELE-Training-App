@@ -14,10 +14,16 @@ figures/
 ├── manifest.json          machine-readable index: archetype, tags, viewBox, label list
 ├── figures.js             drop-in bundle — window.FIGLIB["psad-2026-03"][6]
 ├── proof-sheet.html       searchable browser, renders every figure inline
-└── psad-2026-03/
-    ├── sit-01.svg … sit-19.svg
-    └── sit-20.html        raster (see "Two exceptions" below)
+├── psad-2026-03/
+│   ├── sit-01.svg … sit-19.svg
+│   └── sit-20.html        raster (see "Two exceptions" below)
+└── psad-2025-11/
+    ├── sit-01.svg … sit-20.svg
+    └── sit-17.html        raster (interaction diagram C4-60.7)
 ```
+
+Figures carried over between sittings record it in `manifest.json` under `reusedFrom`.
+Three of the November 2025 figures came straight out of the March 2026 folder.
 
 ## Finding the figure you need
 
@@ -89,3 +95,12 @@ is an `<img>` element rather than an `<svg>`.
   column plate was lengthened to the source's proportion (≈ half the leg length above and
   below), and the load arrow now springs from the member's broken end rather than
   floating clear of it.
+
+- **psad-2025-11 added.** Eighteen figures, three of them reused from `psad-2026-03`:
+  situation 4 (guyed pole) and situation 12 (purlin) carried over unchanged, and
+  situation 5 reused the March situation-6 inclined-section drawing with **both load
+  arrows reversed** — November 2025 loads that bar in tension where March 2026 loaded it
+  in compression. All three had their marker IDs renumbered (`af4` → `afv4`, `af6` →
+  `afv6`, `af16` → `afv12`) so they cannot collide with their originals now that both
+  sittings live in the same document. This is the collision trap described above, met in
+  practice on the first reuse.
