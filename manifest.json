@@ -3458,6 +3458,4388 @@
           ]
         }
       ]
+    },
+    "psad-2024-11": {
+      "source": "PSAD_NOVEMBER_2024_BOARD.pdf (JDCELearn born-digital)",
+      "figures": [
+        {
+          "id": "sit-01",
+          "file": "psad-2024-11/sit-01.svg",
+          "situation": 1,
+          "viewBox": "0 0 560 340",
+          "format": "svg",
+          "archetype": "single-panel truss with X cable bracing and overhangs",
+          "tags": [
+            "truss",
+            "cables",
+            "tension-only",
+            "reactions"
+          ],
+          "reusedFrom": null,
+          "labelCount": 10,
+          "labels": [
+            {
+              "t": "A",
+              "x": 72.0,
+              "y": 266.0
+            },
+            {
+              "t": "B",
+              "x": 472.0,
+              "y": 266.0
+            },
+            {
+              "t": "C",
+              "x": 154.0,
+              "y": 56.6
+            },
+            {
+              "t": "D",
+              "x": 390.0,
+              "y": 56.6
+            },
+            {
+              "t": "H",
+              "x": 470.0,
+              "y": 104.6
+            },
+            {
+              "t": "a",
+              "x": 129.0,
+              "y": 322.0
+            },
+            {
+              "t": "b",
+              "x": 272.0,
+              "y": 322.0
+            },
+            {
+              "t": "a",
+              "x": 415.0,
+              "y": 322.0
+            },
+            {
+              "t": "c",
+              "x": 514.0,
+              "y": 167.3
+            },
+            {
+              "t": "AD and BC are cables &#8212; tension only",
+              "x": 300.0,
+              "y": 322.0
+            }
+          ]
+        },
+        {
+          "id": "sit-02",
+          "file": "psad-2024-11/sit-02.svg",
+          "situation": 2,
+          "viewBox": "0 0 480 420",
+          "format": "svg",
+          "archetype": "flagpole guyed by four cables (3-D)",
+          "tags": [
+            "3d-statics",
+            "cables",
+            "pole",
+            "displacement"
+          ],
+          "reusedFrom": null,
+          "labelCount": 10,
+          "labels": [
+            {
+              "t": "G",
+              "x": 226.0,
+              "y": 74.0
+            },
+            {
+              "t": "F",
+              "x": 192.0,
+              "y": 181.0
+            },
+            {
+              "t": "A",
+              "x": 64.0,
+              "y": 356.0
+            },
+            {
+              "t": "C",
+              "x": 356.0,
+              "y": 356.0
+            },
+            {
+              "t": "B",
+              "x": 138.0,
+              "y": 290.0
+            },
+            {
+              "t": "D",
+              "x": 282.0,
+              "y": 290.0
+            },
+            {
+              "t": "P",
+              "x": 122.0,
+              "y": 97.0
+            },
+            {
+              "t": "h",
+              "x": 272.0,
+              "y": 204.0
+            },
+            {
+              "t": "a",
+              "x": 275.0,
+              "y": 152.0
+            },
+            {
+              "t": "four cables from F; anchors at radius a, attachment height b",
+              "x": 240.0,
+              "y": 398.0
+            }
+          ]
+        },
+        {
+          "id": "sit-03",
+          "file": "psad-2024-11/sit-03.svg",
+          "situation": 3,
+          "viewBox": "0 0 460 400",
+          "format": "svg",
+          "archetype": "two weights on a smooth cylindrical surface joined by a rigid arc rod",
+          "tags": [
+            "friction",
+            "curved-surface",
+            "equilibrium"
+          ],
+          "reusedFrom": null,
+          "labelCount": 6,
+          "labels": [
+            {
+              "t": "O",
+              "x": 214.0,
+              "y": 152.0
+            },
+            {
+              "t": "W&#8321;",
+              "x": 174.7,
+              "y": 85.1
+            },
+            {
+              "t": "W&#8322;",
+              "x": 378.9,
+              "y": 142.7
+            },
+            {
+              "t": "&#945;",
+              "x": 134.0,
+              "y": 130.0
+            },
+            {
+              "t": "&#952;",
+              "x": 236.0,
+              "y": 104.0
+            },
+            {
+              "t": "rigid curved rod keeps the two &#952; apart on a smooth surface",
+              "x": 230.0,
+              "y": 378.0
+            }
+          ]
+        },
+        {
+          "id": "sit-04",
+          "file": "psad-2024-11/sit-04.svg",
+          "situation": 4,
+          "viewBox": "0 0 520 340",
+          "format": "svg",
+          "archetype": "two-bar pin-jointed frame carrying a hanging load",
+          "tags": [
+            "two-force-member",
+            "axial-stress",
+            "strain"
+          ],
+          "reusedFrom": null,
+          "labelCount": 8,
+          "labels": [
+            {
+              "t": "A",
+              "x": 114.0,
+              "y": 108.5
+            },
+            {
+              "t": "B",
+              "x": 100.0,
+              "y": 246.0
+            },
+            {
+              "t": "C",
+              "x": 336.0,
+              "y": 232.0
+            },
+            {
+              "t": "6 mm &#215; 50 mm",
+              "x": 236.0,
+              "y": 168.3
+            },
+            {
+              "t": "8 mm &#215; 50 mm",
+              "x": 220.0,
+              "y": 264.0
+            },
+            {
+              "t": "&#952;",
+              "x": 244.0,
+              "y": 224.0
+            },
+            {
+              "t": "W",
+              "x": 338.0,
+              "y": 306.0
+            },
+            {
+              "t": "L",
+              "x": 220.0,
+              "y": 288.0
+            }
+          ]
+        },
+        {
+          "id": "sit-05",
+          "file": "psad-2024-11/sit-05.svg",
+          "situation": 5,
+          "viewBox": "0 0 600 320",
+          "format": "svg",
+          "archetype": "hoisting beam on anchor bolts and a bearing plate",
+          "tags": [
+            "lever",
+            "bolt-tension",
+            "bearing-stress"
+          ],
+          "reusedFrom": null,
+          "labelCount": 9,
+          "labels": [
+            {
+              "t": "anchor bolts",
+              "x": 104.0,
+              "y": 274.0
+            },
+            {
+              "t": "plate",
+              "x": 263.0,
+              "y": 166.0
+            },
+            {
+              "t": "A",
+              "x": 110.0,
+              "y": 116.0
+            },
+            {
+              "t": "B",
+              "x": 205.0,
+              "y": 116.0
+            },
+            {
+              "t": "C",
+              "x": 442.5,
+              "y": 116.0
+            },
+            {
+              "t": "P",
+              "x": 460.5,
+              "y": 216.0
+            },
+            {
+              "t": "L&#8321;",
+              "x": 157.5,
+              "y": 80.0
+            },
+            {
+              "t": "L&#8322;",
+              "x": 323.8,
+              "y": 80.0
+            },
+            {
+              "t": "concrete",
+              "x": 300.0,
+              "y": 300.0
+            }
+          ]
+        },
+        {
+          "id": "sit-06",
+          "file": "psad-2024-11/sit-06.svg",
+          "situation": 6,
+          "viewBox": "0 0 440 400",
+          "format": "svg",
+          "archetype": "bent member fixed at the base, shaft in torsion",
+          "tags": [
+            "torsion",
+            "angle-of-twist",
+            "hollow-shaft"
+          ],
+          "reusedFrom": null,
+          "labelCount": 7,
+          "labels": [
+            {
+              "t": "A",
+              "x": 104.0,
+              "y": 54.0
+            },
+            {
+              "t": "B",
+              "x": 212.0,
+              "y": 106.0
+            },
+            {
+              "t": "C",
+              "x": 356.0,
+              "y": 184.0
+            },
+            {
+              "t": "D",
+              "x": 210.0,
+              "y": 334.0
+            },
+            {
+              "t": "P",
+              "x": 136.0,
+              "y": 12.0
+            },
+            {
+              "t": "b",
+              "x": 310.0,
+              "y": 229.0
+            },
+            {
+              "t": "BD is the shaft; P acts at a perpendicular offset from its axis",
+              "x": 230.0,
+              "y": 382.0
+            }
+          ]
+        },
+        {
+          "id": "sit-09",
+          "file": "psad-2024-11/sit-09.svg",
+          "situation": 9,
+          "viewBox": "0 0 580 392",
+          "format": "svg",
+          "archetype": "purlin on a sloped truss top chord",
+          "tags": [
+            "purlin",
+            "biaxial-bending",
+            "roof"
+          ],
+          "reusedFrom": "psad-2026-03/sit-16.svg",
+          "labelCount": 8,
+          "labels": [
+            {
+              "t": "θ",
+              "x": 118.0,
+              "y": 316.0
+            },
+            {
+              "t": "Roof Truss",
+              "x": 390.0,
+              "y": 214.0
+            },
+            {
+              "t": "x",
+              "x": 350.7,
+              "y": 180.1
+            },
+            {
+              "t": "y",
+              "x": 186.7,
+              "y": 107.1
+            },
+            {
+              "t": "w",
+              "x": 213.8,
+              "y": 50.4
+            },
+            {
+              "t": "LL",
+              "x": 229.8,
+              "y": 54.4
+            },
+            {
+              "t": "w",
+              "x": 239.0,
+              "y": 126.7
+            },
+            {
+              "t": "DL",
+              "x": 255.0,
+              "y": 130.7
+            }
+          ]
+        },
+        {
+          "id": "sit-10",
+          "file": "psad-2024-11/sit-10.svg",
+          "situation": 10,
+          "viewBox": "0 0 620 340",
+          "format": "svg",
+          "archetype": "prestressed joist section",
+          "tags": [
+            "prestressed",
+            "section-properties"
+          ],
+          "reusedFrom": "psad-2026-03/sit-13.svg",
+          "labelCount": 6,
+          "labels": [
+            {
+              "t": "N.A.",
+              "x": 300.0,
+              "y": 168.0
+            },
+            {
+              "t": "b",
+              "x": 310.0,
+              "y": 56.0
+            },
+            {
+              "t": "y",
+              "x": 604.0,
+              "y": 136.0
+            },
+            {
+              "t": "t",
+              "x": 612.0,
+              "y": 141.0
+            },
+            {
+              "t": "y",
+              "x": 604.0,
+              "y": 238.0
+            },
+            {
+              "t": "b",
+              "x": 612.0,
+              "y": 243.0
+            }
+          ]
+        },
+        {
+          "id": "sit-11",
+          "file": "psad-2024-11/sit-11.svg",
+          "situation": 11,
+          "viewBox": "0 0 560 220",
+          "format": "svg",
+          "archetype": "fixed-pin-fixed beam",
+          "tags": [
+            "indeterminacy",
+            "support-types"
+          ],
+          "reusedFrom": null,
+          "labelCount": 3,
+          "labels": [
+            {
+              "t": "A",
+              "x": 94.0,
+              "y": 84.0
+            },
+            {
+              "t": "B",
+              "x": 280.0,
+              "y": 84.0
+            },
+            {
+              "t": "C",
+              "x": 466.0,
+              "y": 84.0
+            }
+          ]
+        },
+        {
+          "id": "sit-12",
+          "file": "psad-2024-11/sit-12.svg",
+          "situation": 12,
+          "viewBox": "0 0 640 420",
+          "format": "svg",
+          "archetype": "beam with triangular load plus shear and moment diagrams",
+          "tags": [
+            "beam-diagrams",
+            "triangular-load",
+            "end-moments"
+          ],
+          "reusedFrom": "psad-2025-11/sit-10.svg",
+          "labelCount": 14,
+          "labels": [
+            {
+              "t": "w",
+              "x": 546.0,
+              "y": 40.0
+            },
+            {
+              "t": "M&#7370;",
+              "x": 70.0,
+              "y": 116.0
+            },
+            {
+              "t": "M&#7386;",
+              "x": 570.0,
+              "y": 116.0
+            },
+            {
+              "t": "R&#7370;",
+              "x": 104.0,
+              "y": 166.0
+            },
+            {
+              "t": "R&#7386;",
+              "x": 536.0,
+              "y": 166.0
+            },
+            {
+              "t": "Figure A",
+              "x": 320.0,
+              "y": 18.0
+            },
+            {
+              "t": "L",
+              "x": 320.0,
+              "y": 170.0
+            },
+            {
+              "t": "V&#8321;",
+              "x": 92.0,
+              "y": 210.0
+            },
+            {
+              "t": "V&#8322;",
+              "x": 548.0,
+              "y": 306.0
+            },
+            {
+              "t": "x",
+              "x": 206.6,
+              "y": 180.0
+            },
+            {
+              "t": "Figure B",
+              "x": 320.0,
+              "y": 330.0
+            },
+            {
+              "t": "M&#7370;",
+              "x": 76.0,
+              "y": 384.0
+            },
+            {
+              "t": "M&#7386;",
+              "x": 564.0,
+              "y": 384.0
+            },
+            {
+              "t": "Figure C",
+              "x": 320.0,
+              "y": 414.0
+            }
+          ]
+        },
+        {
+          "id": "sit-13",
+          "file": "psad-2024-11/sit-13.svg",
+          "situation": 13,
+          "viewBox": "0 0 640 400",
+          "format": "svg",
+          "archetype": "two-span continuous beam under patterned loading",
+          "tags": [
+            "continuous-beam",
+            "pattern-loading",
+            "coefficients"
+          ],
+          "reusedFrom": "psad-2025-11/sit-11.svg",
+          "labelCount": 13,
+          "labels": [
+            {
+              "t": "w",
+              "x": 205.0,
+              "y": 48.0
+            },
+            {
+              "t": "A",
+              "x": 74.0,
+              "y": 94.0
+            },
+            {
+              "t": "B",
+              "x": 320.0,
+              "y": 88.0
+            },
+            {
+              "t": "C",
+              "x": 566.0,
+              "y": 94.0
+            },
+            {
+              "t": "L",
+              "x": 205.0,
+              "y": 170.0
+            },
+            {
+              "t": "L",
+              "x": 435.0,
+              "y": 170.0
+            },
+            {
+              "t": "7wL/16",
+              "x": 66.0,
+              "y": 212.0
+            },
+            {
+              "t": "9wL/16",
+              "x": 350.0,
+              "y": 302.0
+            },
+            {
+              "t": "wL/16",
+              "x": 435.0,
+              "y": 232.0
+            },
+            {
+              "t": "SHEAR",
+              "x": 46.0,
+              "y": 254.0
+            },
+            {
+              "t": "49wL&#178;/512",
+              "x": 205.0,
+              "y": 318.0
+            },
+            {
+              "t": "&#8722;wL&#178;/16",
+              "x": 360.0,
+              "y": 404.0
+            },
+            {
+              "t": "MOMENT",
+              "x": 46.0,
+              "y": 368.0
+            }
+          ]
+        },
+        {
+          "id": "sit-14",
+          "file": "psad-2024-11/sit-14.svg",
+          "situation": 14,
+          "viewBox": "0 0 600 230",
+          "format": "svg",
+          "archetype": "propped cantilever, propped at the LEFT and fixed at the RIGHT",
+          "tags": [
+            "propped-cantilever",
+            "deflection",
+            "beam-coefficients"
+          ],
+          "reusedFrom": "psad-2025-11/sit-09.svg (mirrored)",
+          "labelCount": 4,
+          "labels": [
+            {
+              "t": "w",
+              "x": 300.0,
+              "y": 74.0
+            },
+            {
+              "t": "A",
+              "x": 96.0,
+              "y": 116.0
+            },
+            {
+              "t": "B",
+              "x": 506.0,
+              "y": 124.0
+            },
+            {
+              "t": "L",
+              "x": 300.0,
+              "y": 210.0
+            }
+          ]
+        },
+        {
+          "id": "sit-15",
+          "file": "psad-2024-11/sit-15.svg",
+          "situation": 15,
+          "viewBox": "0 0 660 250",
+          "format": "svg",
+          "archetype": "compound girder with internal hinges",
+          "tags": [
+            "influence-line",
+            "compound-girder",
+            "moving-load"
+          ],
+          "reusedFrom": "psad-2025-04/sit-12.svg",
+          "labelCount": 8,
+          "labels": [
+            {
+              "t": "hinge",
+              "x": 427.0,
+              "y": 70.0
+            },
+            {
+              "t": "A",
+              "x": 62.0,
+              "y": 82.0
+            },
+            {
+              "t": "B",
+              "x": 231.0,
+              "y": 110.0
+            },
+            {
+              "t": "C",
+              "x": 427.0,
+              "y": 128.0
+            },
+            {
+              "t": "D",
+              "x": 620.0,
+              "y": 82.0
+            },
+            {
+              "t": "L",
+              "x": 166.5,
+              "y": 198.0
+            },
+            {
+              "t": "L",
+              "x": 340.0,
+              "y": 198.0
+            },
+            {
+              "t": "L",
+              "x": 513.5,
+              "y": 198.0
+            }
+          ]
+        },
+        {
+          "id": "sit-16",
+          "file": "psad-2024-11/sit-16.svg",
+          "situation": 16,
+          "viewBox": "0 0 520 340",
+          "format": "svg",
+          "archetype": "bracket plate fillet-welded to a tee column",
+          "tags": [
+            "welded-connection",
+            "weld-group",
+            "eccentric-load"
+          ],
+          "reusedFrom": null,
+          "labelCount": 5,
+          "labels": [
+            {
+              "t": "fillet weld",
+              "x": 400.0,
+              "y": 94.0
+            },
+            {
+              "t": "P",
+              "x": 374.0,
+              "y": 250.0
+            },
+            {
+              "t": "e",
+              "x": 261.0,
+              "y": 96.0
+            },
+            {
+              "t": "L",
+              "x": 120.0,
+              "y": 184.0
+            },
+            {
+              "t": "welded on each side of the 12 mm plate",
+              "x": 270.0,
+              "y": 322.0
+            }
+          ]
+        },
+        {
+          "id": "sit-17",
+          "file": "psad-2024-11/sit-17.svg",
+          "situation": 17,
+          "viewBox": "0 0 620 360",
+          "format": "svg",
+          "archetype": "three axially loaded members supporting a top member",
+          "tags": [
+            "axial-members",
+            "buckling",
+            "slenderness"
+          ],
+          "reusedFrom": null,
+          "labelCount": 15,
+          "labels": [
+            {
+              "t": "A",
+              "x": 72.0,
+              "y": 116.0
+            },
+            {
+              "t": "E",
+              "x": 304.0,
+              "y": 96.0
+            },
+            {
+              "t": "F",
+              "x": 548.0,
+              "y": 116.0
+            },
+            {
+              "t": "C",
+              "x": 72.0,
+              "y": 294.0
+            },
+            {
+              "t": "B",
+              "x": 182.0,
+              "y": 294.0
+            },
+            {
+              "t": "D",
+              "x": 548.0,
+              "y": 294.0
+            },
+            {
+              "t": "P&#8321;",
+              "x": 200.0,
+              "y": 28.0
+            },
+            {
+              "t": "P&#8322;",
+              "x": 468.0,
+              "y": 38.0
+            },
+            {
+              "t": "&#952;",
+              "x": 478.0,
+              "y": 88.0
+            },
+            {
+              "t": "&#946;",
+              "x": 234.0,
+              "y": 282.0
+            },
+            {
+              "t": "a",
+              "x": 145.0,
+              "y": 152.0
+            },
+            {
+              "t": "a",
+              "x": 255.0,
+              "y": 152.0
+            },
+            {
+              "t": "a",
+              "x": 365.0,
+              "y": 152.0
+            },
+            {
+              "t": "a",
+              "x": 475.0,
+              "y": 152.0
+            },
+            {
+              "t": "H",
+              "x": 592.0,
+              "y": 209.0
+            }
+          ]
+        },
+        {
+          "id": "sit-18",
+          "file": "psad-2024-11/sit-18.svg",
+          "situation": 18,
+          "viewBox": "0 0 420 360",
+          "format": "svg",
+          "archetype": "square tied column, shear about both axes",
+          "tags": [
+            "column-shear",
+            "ties",
+            "axial-capacity"
+          ],
+          "reusedFrom": "psad-2025-11/sit-18.svg",
+          "labelCount": 6,
+          "labels": [
+            {
+              "t": "Y",
+              "x": 200.0,
+              "y": 57.0
+            },
+            {
+              "t": "X",
+              "x": 372.0,
+              "y": 195.0
+            },
+            {
+              "t": "V&#8341;&#7527;",
+              "x": 252.0,
+              "y": 99.0
+            },
+            {
+              "t": "V&#8341;&#8339;",
+              "x": 350.0,
+              "y": 160.0
+            },
+            {
+              "t": "B",
+              "x": 200.0,
+              "y": 299.0
+            },
+            {
+              "t": "H",
+              "x": 52.0,
+              "y": 194.0
+            }
+          ]
+        },
+        {
+          "id": "sit-21",
+          "file": "psad-2024-11/sit-21.svg",
+          "situation": 21,
+          "viewBox": "0 0 560 440",
+          "format": "svg",
+          "archetype": "pile footing on a 4 x 3 pile group",
+          "tags": [
+            "pile-cap",
+            "pile-group",
+            "punching-shear"
+          ],
+          "reusedFrom": null,
+          "labelCount": 15,
+          "labels": [
+            {
+              "t": "1",
+              "x": 138.0,
+              "y": 98.0
+            },
+            {
+              "t": "2",
+              "x": 226.0,
+              "y": 98.0
+            },
+            {
+              "t": "3",
+              "x": 314.0,
+              "y": 98.0
+            },
+            {
+              "t": "4",
+              "x": 402.0,
+              "y": 98.0
+            },
+            {
+              "t": "x",
+              "x": 490.0,
+              "y": 225.0
+            },
+            {
+              "t": "y",
+              "x": 270.0,
+              "y": 46.0
+            },
+            {
+              "t": "a",
+              "x": 46.0,
+              "y": 98.0
+            },
+            {
+              "t": "b",
+              "x": 46.0,
+              "y": 224.0
+            },
+            {
+              "t": "a",
+              "x": 46.0,
+              "y": 350.0
+            },
+            {
+              "t": "a",
+              "x": 104.0,
+              "y": 394.0
+            },
+            {
+              "t": "b",
+              "x": 162.0,
+              "y": 394.0
+            },
+            {
+              "t": "a",
+              "x": 238.0,
+              "y": 394.0
+            },
+            {
+              "t": "a",
+              "x": 302.0,
+              "y": 394.0
+            },
+            {
+              "t": "b",
+              "x": 378.0,
+              "y": 394.0
+            },
+            {
+              "t": "a",
+              "x": 436.0,
+              "y": 394.0
+            }
+          ]
+        },
+        {
+          "id": "sit-23",
+          "file": "psad-2024-11/sit-23.svg",
+          "situation": 23,
+          "viewBox": "0 0 440 400",
+          "format": "svg",
+          "archetype": "conical pendulum",
+          "tags": [
+            "dynamics",
+            "centrifugal-force",
+            "equilibrium"
+          ],
+          "reusedFrom": null,
+          "labelCount": 5,
+          "labels": [
+            {
+              "t": "&#952;",
+              "x": 240.0,
+              "y": 118.0
+            },
+            {
+              "t": "L",
+              "x": 194.0,
+              "y": 200.0
+            },
+            {
+              "t": "CF",
+              "x": 411.0,
+              "y": 256.9
+            },
+            {
+              "t": "W",
+              "x": 343.0,
+              "y": 321.9
+            },
+            {
+              "t": "&#969;",
+              "x": 109.0,
+              "y": 303.9
+            }
+          ]
+        }
+      ]
+    },
+    "psad-2023-04": {
+      "source": "PSADAPRIL23_pdf.pdf (SCAN — no text layer; recovered by watermark removal + OCR)",
+      "figures": [
+        {
+          "id": "sit-01",
+          "file": "psad-2023-04/sit-01.svg",
+          "situation": 1,
+          "viewBox": "0 0 420 360",
+          "format": "svg",
+          "archetype": "three concurrent forces on a hook",
+          "tags": [
+            "statics",
+            "concurrent-forces",
+            "equilibrium"
+          ],
+          "reusedFrom": null,
+          "labelCount": 8,
+          "labels": [
+            {
+              "t": "x",
+              "x": 386.0,
+              "y": 195.0
+            },
+            {
+              "t": "y",
+              "x": 210.0,
+              "y": 40.0
+            },
+            {
+              "t": "A",
+              "x": 64.0,
+              "y": 182.0
+            },
+            {
+              "t": "C",
+              "x": 317.6,
+              "y": 103.4
+            },
+            {
+              "t": "B",
+              "x": 283.0,
+              "y": 307.1
+            },
+            {
+              "t": "&#945;",
+              "x": 286.0,
+              "y": 164.0
+            },
+            {
+              "t": "&#952;",
+              "x": 260.0,
+              "y": 232.0
+            },
+            {
+              "t": "three concurrent forces, no resultant",
+              "x": 210.0,
+              "y": 340.0
+            }
+          ]
+        },
+        {
+          "id": "sit-02",
+          "file": "psad-2023-04/sit-02.svg",
+          "situation": 2,
+          "viewBox": "0 0 620 340",
+          "format": "svg",
+          "archetype": "roof truss with loads perpendicular to the rafter",
+          "tags": [
+            "truss",
+            "roof",
+            "normal-loads",
+            "reactions"
+          ],
+          "reusedFrom": null,
+          "labelCount": 14,
+          "labels": [
+            {
+              "t": "P",
+              "x": 86.0,
+              "y": 195.0
+            },
+            {
+              "t": "P",
+              "x": 146.0,
+              "y": 150.0
+            },
+            {
+              "t": "P",
+              "x": 206.0,
+              "y": 105.0
+            },
+            {
+              "t": "P",
+              "x": 266.0,
+              "y": 60.0
+            },
+            {
+              "t": "A",
+              "x": 52.0,
+              "y": 256.0
+            },
+            {
+              "t": "B",
+              "x": 568.0,
+              "y": 256.0
+            },
+            {
+              "t": "C",
+              "x": 310.0,
+              "y": 76.0
+            },
+            {
+              "t": "a",
+              "x": 100.0,
+              "y": 312.0
+            },
+            {
+              "t": "a",
+              "x": 160.0,
+              "y": 312.0
+            },
+            {
+              "t": "b",
+              "x": 250.0,
+              "y": 312.0
+            },
+            {
+              "t": "b",
+              "x": 370.0,
+              "y": 312.0
+            },
+            {
+              "t": "a",
+              "x": 460.0,
+              "y": 312.0
+            },
+            {
+              "t": "a",
+              "x": 520.0,
+              "y": 312.0
+            },
+            {
+              "t": "loads act perpendicular to the rafter, spaced s along it",
+              "x": 310.0,
+              "y": 322.0
+            }
+          ]
+        },
+        {
+          "id": "sit-03",
+          "file": "psad-2023-04/sit-03.svg",
+          "situation": 3,
+          "viewBox": "0 0 640 330",
+          "format": "svg",
+          "archetype": "parallel-chord truss with tension-only cable diagonals",
+          "tags": [
+            "truss",
+            "cables",
+            "method-of-sections"
+          ],
+          "reusedFrom": "psad-2025-11/sit-03.svg",
+          "labelCount": 17,
+          "labels": [
+            {
+              "t": "A",
+              "x": 90.0,
+              "y": 272.0
+            },
+            {
+              "t": "B",
+              "x": 202.0,
+              "y": 272.0
+            },
+            {
+              "t": "C",
+              "x": 314.0,
+              "y": 272.0
+            },
+            {
+              "t": "D",
+              "x": 426.0,
+              "y": 272.0
+            },
+            {
+              "t": "E",
+              "x": 538.0,
+              "y": 272.0
+            },
+            {
+              "t": "F",
+              "x": 90.0,
+              "y": 128.0
+            },
+            {
+              "t": "G",
+              "x": 202.0,
+              "y": 128.0
+            },
+            {
+              "t": "H",
+              "x": 314.0,
+              "y": 128.0
+            },
+            {
+              "t": "I",
+              "x": 426.0,
+              "y": 128.0
+            },
+            {
+              "t": "J",
+              "x": 538.0,
+              "y": 128.0
+            },
+            {
+              "t": "P",
+              "x": 314.0,
+              "y": 120.0
+            },
+            {
+              "t": "s",
+              "x": 146.0,
+              "y": 316.0
+            },
+            {
+              "t": "s",
+              "x": 258.0,
+              "y": 316.0
+            },
+            {
+              "t": "s",
+              "x": 370.0,
+              "y": 316.0
+            },
+            {
+              "t": "s",
+              "x": 482.0,
+              "y": 316.0
+            },
+            {
+              "t": "h",
+              "x": 598.0,
+              "y": 199.0
+            },
+            {
+              "t": "diagonals are 25-mm-diameter cables (tension only)",
+              "x": 320.0,
+              "y": 308.0
+            }
+          ]
+        },
+        {
+          "id": "sit-04",
+          "file": "psad-2023-04/sit-04.svg",
+          "situation": 4,
+          "viewBox": "0 0 520 330",
+          "format": "svg",
+          "archetype": "rigid beam hung from a vertical rod",
+          "tags": [
+            "axial-deformation",
+            "rigid-beam",
+            "compatibility"
+          ],
+          "reusedFrom": null,
+          "labelCount": 9,
+          "labels": [
+            {
+              "t": "L&#8323;",
+              "x": 336.0,
+              "y": 130.0
+            },
+            {
+              "t": "25 mm &#248;",
+              "x": 374.0,
+              "y": 130.0
+            },
+            {
+              "t": "D",
+              "x": 310.0,
+              "y": 44.0
+            },
+            {
+              "t": "A",
+              "x": 110.0,
+              "y": 208.0
+            },
+            {
+              "t": "C",
+              "x": 310.0,
+              "y": 208.0
+            },
+            {
+              "t": "B",
+              "x": 410.0,
+              "y": 208.0
+            },
+            {
+              "t": "W",
+              "x": 410.0,
+              "y": 318.0
+            },
+            {
+              "t": "L&#8321;",
+              "x": 210.0,
+              "y": 278.0
+            },
+            {
+              "t": "L&#8322;",
+              "x": 360.0,
+              "y": 278.0
+            }
+          ]
+        },
+        {
+          "id": "sit-05",
+          "file": "psad-2023-04/sit-05.svg",
+          "situation": 5,
+          "viewBox": "0 0 560 200",
+          "format": "svg",
+          "archetype": "simple beam with an interior reference point",
+          "tags": [
+            "influence-line",
+            "shear",
+            "moment"
+          ],
+          "reusedFrom": null,
+          "labelCount": 5,
+          "labels": [
+            {
+              "t": "A",
+              "x": 74.0,
+              "y": 70.0
+            },
+            {
+              "t": "O",
+              "x": 150.0,
+              "y": 120.0
+            },
+            {
+              "t": "B",
+              "x": 466.0,
+              "y": 70.0
+            },
+            {
+              "t": "a",
+              "x": 120.0,
+              "y": 156.0
+            },
+            {
+              "t": "b",
+              "x": 300.0,
+              "y": 156.0
+            }
+          ]
+        },
+        {
+          "id": "sit-06",
+          "file": "psad-2023-04/sit-06.svg",
+          "situation": 6,
+          "viewBox": "0 0 640 300",
+          "format": "svg",
+          "archetype": "three beams to classify for determinacy",
+          "tags": [
+            "indeterminacy",
+            "stability",
+            "classification"
+          ],
+          "reusedFrom": null,
+          "labelCount": 4,
+          "labels": [
+            {
+              "t": "Fig. a",
+              "x": 135.0,
+              "y": 148.0
+            },
+            {
+              "t": "Fig. b",
+              "x": 335.0,
+              "y": 148.0
+            },
+            {
+              "t": "Fig. c",
+              "x": 525.0,
+              "y": 148.0
+            },
+            {
+              "t": "classify each as determinate, indeterminate (state the degree), or unstable",
+              "x": 320.0,
+              "y": 220.0
+            }
+          ]
+        },
+        {
+          "id": "sit-07",
+          "file": "psad-2023-04/sit-07.svg",
+          "situation": 7,
+          "viewBox": "0 0 620 300",
+          "format": "svg",
+          "archetype": "shear diagram of a beam with two overhangs",
+          "tags": [
+            "shear-diagram",
+            "back-analysis",
+            "overhang"
+          ],
+          "reusedFrom": null,
+          "labelCount": 13,
+          "labels": [
+            {
+              "t": "A",
+              "x": 80.0,
+              "y": 88.0
+            },
+            {
+              "t": "B",
+              "x": 168.0,
+              "y": 88.0
+            },
+            {
+              "t": "C",
+              "x": 300.0,
+              "y": 88.0
+            },
+            {
+              "t": "D",
+              "x": 432.0,
+              "y": 88.0
+            },
+            {
+              "t": "E",
+              "x": 520.0,
+              "y": 88.0
+            },
+            {
+              "t": "V&#7386;&#8343;",
+              "x": 190.0,
+              "y": 283.0
+            },
+            {
+              "t": "V&#7386;&#7580;",
+              "x": 234.0,
+              "y": 199.0
+            },
+            {
+              "t": "V&#7580;&#7496;",
+              "x": 366.0,
+              "y": 257.0
+            },
+            {
+              "t": "V&#7496;&#8341;",
+              "x": 408.0,
+              "y": 169.0
+            },
+            {
+              "t": "a",
+              "x": 124.0,
+              "y": 162.0
+            },
+            {
+              "t": "b",
+              "x": 234.0,
+              "y": 162.0
+            },
+            {
+              "t": "b",
+              "x": 366.0,
+              "y": 162.0
+            },
+            {
+              "t": "a",
+              "x": 476.0,
+              "y": 162.0
+            }
+          ]
+        },
+        {
+          "id": "sit-09",
+          "file": "psad-2023-04/sit-09.svg",
+          "situation": 9,
+          "viewBox": "0 0 560 340",
+          "format": "svg",
+          "archetype": "plain concrete gravity wall acting as a small dam",
+          "tags": [
+            "retaining",
+            "sliding",
+            "overturning",
+            "no-tension"
+          ],
+          "reusedFrom": "psad-2025-04/sit-09.svg",
+          "labelCount": 4,
+          "labels": [
+            {
+              "t": "a",
+              "x": 331.0,
+              "y": 46.0
+            },
+            {
+              "t": "H&#8322;",
+              "x": 56.0,
+              "y": 217.5
+            },
+            {
+              "t": "H&#8321;",
+              "x": 402.0,
+              "y": 192.0
+            },
+            {
+              "t": "b",
+              "x": 229.0,
+              "y": 332.0
+            }
+          ]
+        },
+        {
+          "id": "sit-10",
+          "file": "psad-2023-04/sit-10.svg",
+          "situation": 10,
+          "viewBox": "0 0 520 300",
+          "format": "svg",
+          "archetype": "prestressed hollow core slab section",
+          "tags": [
+            "prestressed",
+            "section-properties",
+            "hollow-core"
+          ],
+          "reusedFrom": null,
+          "labelCount": 5,
+          "labels": [
+            {
+              "t": "N.A.",
+              "x": 460.0,
+              "y": 146.2
+            },
+            {
+              "t": "t",
+              "x": 42.0,
+              "y": 169.0
+            },
+            {
+              "t": "b",
+              "x": 260.0,
+              "y": 256.0
+            },
+            {
+              "t": "e",
+              "x": 484.0,
+              "y": 180.2
+            },
+            {
+              "t": "prestressed hollow core slab &#183; tendon e below the N.A.",
+              "x": 260.0,
+              "y": 272.0
+            }
+          ]
+        },
+        {
+          "id": "sit-11",
+          "file": "psad-2023-04/sit-11.svg",
+          "situation": 11,
+          "viewBox": "0 0 560 300",
+          "format": "svg",
+          "archetype": "lap plate joined by fillet welds along both edges",
+          "tags": [
+            "welded-connection",
+            "fillet-weld",
+            "plate-capacity"
+          ],
+          "reusedFrom": null,
+          "labelCount": 5,
+          "labels": [
+            {
+              "t": "P",
+              "x": 516.0,
+              "y": 160.0
+            },
+            {
+              "t": "L",
+              "x": 235.0,
+              "y": 52.0
+            },
+            {
+              "t": "140 mm",
+              "x": 22.0,
+              "y": 159.0
+            },
+            {
+              "t": "fillet welds both edges",
+              "x": 235.0,
+              "y": 244.0
+            },
+            {
+              "t": "plate 12 mm thick &#215; 140 mm wide &#183; 6 mm fillet welds",
+              "x": 280.0,
+              "y": 272.0
+            }
+          ]
+        },
+        {
+          "id": "sit-12",
+          "file": "psad-2023-04/sit-12.svg",
+          "situation": 12,
+          "viewBox": "0 0 520 420",
+          "format": "svg",
+          "archetype": "eccentrically loaded bolt group on a bracket",
+          "tags": [
+            "bolted-connection",
+            "bolt-group",
+            "torsion"
+          ],
+          "reusedFrom": "psad-2025-04/sit-13.svg",
+          "labelCount": 9,
+          "labels": [
+            {
+              "t": "P",
+              "x": 378.0,
+              "y": 10.0
+            },
+            {
+              "t": "e",
+              "x": 303.0,
+              "y": 48.0
+            },
+            {
+              "t": "s&#8321;",
+              "x": 82.0,
+              "y": 140.0
+            },
+            {
+              "t": "s&#8321;",
+              "x": 82.0,
+              "y": 192.0
+            },
+            {
+              "t": "s&#8321;",
+              "x": 82.0,
+              "y": 244.0
+            },
+            {
+              "t": "s&#8322;",
+              "x": 158.0,
+              "y": 326.0
+            },
+            {
+              "t": "s&#8323;",
+              "x": 228.0,
+              "y": 326.0
+            },
+            {
+              "t": "s&#8322;",
+              "x": 298.0,
+              "y": 326.0
+            },
+            {
+              "t": "8 bolts, 20 mm diameter, single shear",
+              "x": 260.0,
+              "y": 400.0
+            }
+          ]
+        },
+        {
+          "id": "sit-14",
+          "file": "psad-2023-04/sit-14.svg",
+          "situation": 14,
+          "viewBox": "0 0 400 400",
+          "format": "svg",
+          "archetype": "doubly reinforced beam cross-section",
+          "tags": [
+            "rc-beam",
+            "shear",
+            "doubly-reinforced"
+          ],
+          "reusedFrom": null,
+          "labelCount": 3,
+          "labels": [
+            {
+              "t": "b",
+              "x": 200.0,
+              "y": 353.0
+            },
+            {
+              "t": "h",
+              "x": 338.0,
+              "y": 194.0
+            },
+            {
+              "t": "A&#8347; = 6-28 mm bottom &#183; A&#8347;&#8242; = 4-28 mm top &#183; 10 mm ties",
+              "x": 200.0,
+              "y": 378.0
+            }
+          ]
+        },
+        {
+          "id": "sit-15",
+          "file": "psad-2023-04/sit-15.svg",
+          "situation": 15,
+          "viewBox": "0 0 660 300",
+          "format": "svg",
+          "archetype": "combined footing for two columns",
+          "tags": [
+            "footing",
+            "combined-footing",
+            "uniform-pressure"
+          ],
+          "reusedFrom": "psad-2025-11/sit-20.svg",
+          "labelCount": 10,
+          "labels": [
+            {
+              "t": "A",
+              "x": 160.0,
+              "y": 112.0
+            },
+            {
+              "t": "B",
+              "x": 340.0,
+              "y": 112.0
+            },
+            {
+              "t": "a",
+              "x": 100.0,
+              "y": 82.0
+            },
+            {
+              "t": "c",
+              "x": 160.0,
+              "y": 82.0
+            },
+            {
+              "t": "b",
+              "x": 250.0,
+              "y": 82.0
+            },
+            {
+              "t": "c",
+              "x": 340.0,
+              "y": 82.0
+            },
+            {
+              "t": "d",
+              "x": 430.0,
+              "y": 82.0
+            },
+            {
+              "t": "P&#7370;",
+              "x": 138.0,
+              "y": 60.0
+            },
+            {
+              "t": "P&#7386;",
+              "x": 318.0,
+              "y": 60.0
+            },
+            {
+              "t": "footing width (into the page) = 3 m &#183; uniform soil pressure required",
+              "x": 330.0,
+              "y": 286.0
+            }
+          ]
+        },
+        {
+          "id": "sit-16",
+          "file": "psad-2023-04/sit-16.svg",
+          "situation": 16,
+          "viewBox": "0 0 420 380",
+          "format": "svg",
+          "archetype": "hollow circular pole under torque and lateral load",
+          "tags": [
+            "torsion",
+            "angle-of-twist",
+            "flexure"
+          ],
+          "reusedFrom": null,
+          "labelCount": 4,
+          "labels": [
+            {
+              "t": "H",
+              "x": 346.0,
+              "y": 85.0
+            },
+            {
+              "t": "T",
+              "x": 192.0,
+              "y": 34.0
+            },
+            {
+              "t": "3 m",
+              "x": 294.0,
+              "y": 204.0
+            },
+            {
+              "t": "hollow, 300 mm OD &#215; 6 mm wall",
+              "x": 210.0,
+              "y": 360.0
+            }
+          ]
+        },
+        {
+          "id": "sit-19",
+          "file": "psad-2023-04/sit-19.svg",
+          "situation": 19,
+          "viewBox": "0 0 520 340",
+          "format": "svg",
+          "archetype": "web splice bolt group",
+          "tags": [
+            "bolted-connection",
+            "splice",
+            "bolt-group"
+          ],
+          "reusedFrom": null,
+          "labelCount": 7,
+          "labels": [
+            {
+              "t": "P",
+              "x": 406.0,
+              "y": 235.0
+            },
+            {
+              "t": "s&#8322;",
+              "x": 56.0,
+              "y": 134.0
+            },
+            {
+              "t": "s&#8322;",
+              "x": 56.0,
+              "y": 234.0
+            },
+            {
+              "t": "s&#8322;",
+              "x": 56.0,
+              "y": 334.0
+            },
+            {
+              "t": "s&#8321;",
+              "x": 190.0,
+              "y": 14.0
+            },
+            {
+              "t": "s&#8321;",
+              "x": 230.0,
+              "y": 14.0
+            },
+            {
+              "t": "web splice &#183; 8 bolts of 22 mm through two 15 mm plates",
+              "x": 260.0,
+              "y": 322.0
+            }
+          ]
+        },
+        {
+          "id": "sit-20",
+          "file": "psad-2023-04/sit-20.svg",
+          "situation": 20,
+          "viewBox": "0 0 420 360",
+          "format": "svg",
+          "archetype": "rectangular tied column, shear about both axes",
+          "tags": [
+            "column-shear",
+            "ties",
+            "axial-capacity"
+          ],
+          "reusedFrom": "psad-2024-11/sit-18.svg",
+          "labelCount": 6,
+          "labels": [
+            {
+              "t": "Y",
+              "x": 200.0,
+              "y": 57.0
+            },
+            {
+              "t": "X",
+              "x": 372.0,
+              "y": 195.0
+            },
+            {
+              "t": "V&#8341;&#7527;",
+              "x": 252.0,
+              "y": 99.0
+            },
+            {
+              "t": "V&#8341;&#8339;",
+              "x": 350.0,
+              "y": 160.0
+            },
+            {
+              "t": "B",
+              "x": 200.0,
+              "y": 299.0
+            },
+            {
+              "t": "H",
+              "x": 52.0,
+              "y": 194.0
+            }
+          ]
+        },
+        {
+          "id": "sit-22",
+          "file": "psad-2023-04/sit-22.svg",
+          "situation": 22,
+          "viewBox": "0 0 480 460",
+          "format": "svg",
+          "archetype": "pile cap under axial load plus moment",
+          "tags": [
+            "pile-cap",
+            "pile-group",
+            "punching-shear"
+          ],
+          "reusedFrom": "psad-2025-04/sit-22.svg",
+          "labelCount": 20,
+          "labels": [
+            {
+              "t": "1",
+              "x": 142.0,
+              "y": 139.0
+            },
+            {
+              "t": "4",
+              "x": 142.0,
+              "y": 245.0
+            },
+            {
+              "t": "7",
+              "x": 142.0,
+              "y": 351.0
+            },
+            {
+              "t": "2",
+              "x": 230.0,
+              "y": 139.0
+            },
+            {
+              "t": "5",
+              "x": 230.0,
+              "y": 245.0
+            },
+            {
+              "t": "8",
+              "x": 230.0,
+              "y": 351.0
+            },
+            {
+              "t": "3",
+              "x": 318.0,
+              "y": 139.0
+            },
+            {
+              "t": "6",
+              "x": 318.0,
+              "y": 245.0
+            },
+            {
+              "t": "9",
+              "x": 318.0,
+              "y": 351.0
+            },
+            {
+              "t": "X",
+              "x": 448.0,
+              "y": 245.0
+            },
+            {
+              "t": "Y",
+              "x": 230.0,
+              "y": 7.0
+            },
+            {
+              "t": "M&#8341;&#8339;",
+              "x": 326.0,
+              "y": 65.0
+            },
+            {
+              "t": "M&#8341;&#8342;",
+              "x": 134.0,
+              "y": 35.0
+            },
+            {
+              "t": "a",
+              "x": 14.0,
+              "y": 82.5
+            },
+            {
+              "t": "b",
+              "x": 14.0,
+              "y": 244.0
+            },
+            {
+              "t": "a",
+              "x": 14.0,
+              "y": 405.5
+            },
+            {
+              "t": "d",
+              "x": 88.0,
+              "y": 471.0
+            },
+            {
+              "t": "c",
+              "x": 175.0,
+              "y": 471.0
+            },
+            {
+              "t": "c",
+              "x": 285.0,
+              "y": 471.0
+            },
+            {
+              "t": "d",
+              "x": 372.0,
+              "y": 471.0
+            }
+          ]
+        }
+      ]
+    },
+    "psad-2024-04": {
+      "source": "PSAD_APRIL_2024_BOARD.pdf (JDCELearn born-digital)",
+      "figures": [
+        {
+          "id": "sit-01",
+          "file": "psad-2024-04/sit-01.svg",
+          "situation": 1,
+          "viewBox": "0 0 480 300",
+          "format": "svg",
+          "archetype": "crate pushed by an inclined force: sliding vs tipping",
+          "tags": [
+            "friction",
+            "tipping",
+            "resultant-location"
+          ],
+          "reusedFrom": null,
+          "labelCount": 6,
+          "labels": [
+            {
+              "t": "P",
+              "x": 56.0,
+              "y": 108.0
+            },
+            {
+              "t": "&#952;",
+              "x": 136.0,
+              "y": 142.0
+            },
+            {
+              "t": "O",
+              "x": 356.0,
+              "y": 256.0
+            },
+            {
+              "t": "W",
+              "x": 258.0,
+              "y": 268.0
+            },
+            {
+              "t": "1.2 m",
+              "x": 240.0,
+              "y": 278.0
+            },
+            {
+              "t": "0.5 m",
+              "x": 392.0,
+              "y": 202.0
+            }
+          ]
+        },
+        {
+          "id": "sit-02",
+          "file": "psad-2024-04/sit-02.svg",
+          "situation": 2,
+          "viewBox": "0 0 480 420",
+          "format": "svg",
+          "archetype": "flagpole guyed by three cables (3-D)",
+          "tags": [
+            "3d-statics",
+            "cables",
+            "direction-cosines"
+          ],
+          "reusedFrom": "psad-2024-11/sit-02.svg",
+          "labelCount": 10,
+          "labels": [
+            {
+              "t": "G",
+              "x": 226.0,
+              "y": 74.0
+            },
+            {
+              "t": "F",
+              "x": 192.0,
+              "y": 181.0
+            },
+            {
+              "t": "A",
+              "x": 64.0,
+              "y": 356.0
+            },
+            {
+              "t": "C",
+              "x": 356.0,
+              "y": 356.0
+            },
+            {
+              "t": "B",
+              "x": 138.0,
+              "y": 290.0
+            },
+            {
+              "t": "D",
+              "x": 282.0,
+              "y": 290.0
+            },
+            {
+              "t": "P",
+              "x": 122.0,
+              "y": 97.0
+            },
+            {
+              "t": "h",
+              "x": 272.0,
+              "y": 204.0
+            },
+            {
+              "t": "a",
+              "x": 275.0,
+              "y": 152.0
+            },
+            {
+              "t": "four cables from F; anchors at radius a, attachment height b",
+              "x": 240.0,
+              "y": 398.0
+            }
+          ]
+        },
+        {
+          "id": "sit-03",
+          "file": "psad-2024-04/sit-03.svg",
+          "situation": 3,
+          "viewBox": "0 0 620 340",
+          "format": "svg",
+          "archetype": "Fink roof truss with roof and ceiling loads",
+          "tags": [
+            "truss",
+            "method-of-sections",
+            "roof"
+          ],
+          "reusedFrom": "psad-2023-04/sit-02.svg",
+          "labelCount": 14,
+          "labels": [
+            {
+              "t": "P",
+              "x": 86.0,
+              "y": 195.0
+            },
+            {
+              "t": "P",
+              "x": 146.0,
+              "y": 150.0
+            },
+            {
+              "t": "P",
+              "x": 206.0,
+              "y": 105.0
+            },
+            {
+              "t": "P",
+              "x": 266.0,
+              "y": 60.0
+            },
+            {
+              "t": "A",
+              "x": 52.0,
+              "y": 256.0
+            },
+            {
+              "t": "B",
+              "x": 568.0,
+              "y": 256.0
+            },
+            {
+              "t": "C",
+              "x": 310.0,
+              "y": 76.0
+            },
+            {
+              "t": "a",
+              "x": 100.0,
+              "y": 312.0
+            },
+            {
+              "t": "a",
+              "x": 160.0,
+              "y": 312.0
+            },
+            {
+              "t": "b",
+              "x": 250.0,
+              "y": 312.0
+            },
+            {
+              "t": "b",
+              "x": 370.0,
+              "y": 312.0
+            },
+            {
+              "t": "a",
+              "x": 460.0,
+              "y": 312.0
+            },
+            {
+              "t": "a",
+              "x": 520.0,
+              "y": 312.0
+            },
+            {
+              "t": "loads act perpendicular to the rafter, spaced s along it",
+              "x": 310.0,
+              "y": 322.0
+            }
+          ]
+        },
+        {
+          "id": "sit-04",
+          "file": "psad-2024-04/sit-04.svg",
+          "situation": 4,
+          "viewBox": "0 0 560 340",
+          "format": "svg",
+          "archetype": "gravity dam with inclined downstream thrust",
+          "tags": [
+            "retaining",
+            "sliding",
+            "eccentricity"
+          ],
+          "reusedFrom": "psad-2023-04/sit-09.svg",
+          "labelCount": 4,
+          "labels": [
+            {
+              "t": "a",
+              "x": 331.0,
+              "y": 46.0
+            },
+            {
+              "t": "H&#8322;",
+              "x": 56.0,
+              "y": 217.5
+            },
+            {
+              "t": "H&#8321;",
+              "x": 402.0,
+              "y": 192.0
+            },
+            {
+              "t": "b",
+              "x": 229.0,
+              "y": 332.0
+            }
+          ]
+        },
+        {
+          "id": "sit-05",
+          "file": "psad-2024-04/sit-05.svg",
+          "situation": 5,
+          "viewBox": "0 0 480 300",
+          "format": "svg",
+          "archetype": "cylindrical pressure tank with a bolted end flange",
+          "tags": [
+            "pressure-vessel",
+            "hoop-stress",
+            "bolts"
+          ],
+          "reusedFrom": null,
+          "labelCount": 4,
+          "labels": [
+            {
+              "t": "bolts",
+              "x": 390.0,
+              "y": 72.0
+            },
+            {
+              "t": "p",
+              "x": 200.0,
+              "y": 156.0
+            },
+            {
+              "t": "1.2 m",
+              "x": 44.0,
+              "y": 154.0
+            },
+            {
+              "t": "6 mm wall &#183; 24 bolts on the end flange",
+              "x": 240.0,
+              "y": 272.0
+            }
+          ]
+        },
+        {
+          "id": "sit-06",
+          "file": "psad-2024-04/sit-06.svg",
+          "situation": 6,
+          "viewBox": "0 0 520 300",
+          "format": "svg",
+          "archetype": "wrench applying torque to a shaft",
+          "tags": [
+            "torsion",
+            "angle-of-twist",
+            "hollow-shaft"
+          ],
+          "reusedFrom": null,
+          "labelCount": 4,
+          "labels": [
+            {
+              "t": "P",
+              "x": 430.0,
+              "y": 68.0
+            },
+            {
+              "t": "a",
+              "x": 260.0,
+              "y": 206.0
+            },
+            {
+              "t": "b",
+              "x": 400.0,
+              "y": 206.0
+            },
+            {
+              "t": "c",
+              "x": 74.0,
+              "y": 209.0
+            }
+          ]
+        },
+        {
+          "id": "sit-07",
+          "file": "psad-2024-04/sit-07.svg",
+          "situation": 7,
+          "viewBox": "0 0 520 320",
+          "format": "svg",
+          "archetype": "Mohr's circle of an element",
+          "tags": [
+            "mohr-circle",
+            "stress-transformation",
+            "conceptual"
+          ],
+          "reusedFrom": null,
+          "labelCount": 11,
+          "labels": [
+            {
+              "t": "&#963;",
+              "x": 462.0,
+              "y": 185.0
+            },
+            {
+              "t": "&#964;",
+              "x": 96.0,
+              "y": 22.0
+            },
+            {
+              "t": "O",
+              "x": 98.0,
+              "y": 196.0
+            },
+            {
+              "t": "A",
+              "x": 108.0,
+              "y": 196.0
+            },
+            {
+              "t": "B",
+              "x": 412.0,
+              "y": 196.0
+            },
+            {
+              "t": "C",
+              "x": 248.0,
+              "y": 170.0
+            },
+            {
+              "t": "F",
+              "x": 202.0,
+              "y": 196.0
+            },
+            {
+              "t": "G",
+              "x": 318.0,
+              "y": 196.0
+            },
+            {
+              "t": "E",
+              "x": 202.0,
+              "y": 38.0
+            },
+            {
+              "t": "D",
+              "x": 318.0,
+              "y": 328.0
+            },
+            {
+              "t": "Mohr&#8217;s circle for the element",
+              "x": 260.0,
+              "y": 300.0
+            }
+          ]
+        },
+        {
+          "id": "sit-08",
+          "file": "psad-2024-04/sit-08.svg",
+          "situation": 8,
+          "viewBox": "0 0 620 300",
+          "format": "svg",
+          "archetype": "shear diagram of a beam with overhangs",
+          "tags": [
+            "shear-diagram",
+            "back-analysis"
+          ],
+          "reusedFrom": "psad-2023-04/sit-07.svg",
+          "labelCount": 13,
+          "labels": [
+            {
+              "t": "A",
+              "x": 80.0,
+              "y": 88.0
+            },
+            {
+              "t": "B",
+              "x": 168.0,
+              "y": 88.0
+            },
+            {
+              "t": "C",
+              "x": 300.0,
+              "y": 88.0
+            },
+            {
+              "t": "D",
+              "x": 432.0,
+              "y": 88.0
+            },
+            {
+              "t": "E",
+              "x": 520.0,
+              "y": 88.0
+            },
+            {
+              "t": "V&#7386;&#8343;",
+              "x": 190.0,
+              "y": 283.0
+            },
+            {
+              "t": "V&#7386;&#7580;",
+              "x": 234.0,
+              "y": 199.0
+            },
+            {
+              "t": "V&#7580;&#7496;",
+              "x": 366.0,
+              "y": 257.0
+            },
+            {
+              "t": "V&#7496;&#8341;",
+              "x": 408.0,
+              "y": 169.0
+            },
+            {
+              "t": "a",
+              "x": 124.0,
+              "y": 162.0
+            },
+            {
+              "t": "b",
+              "x": 234.0,
+              "y": 162.0
+            },
+            {
+              "t": "b",
+              "x": 366.0,
+              "y": 162.0
+            },
+            {
+              "t": "a",
+              "x": 476.0,
+              "y": 162.0
+            }
+          ]
+        },
+        {
+          "id": "sit-09",
+          "file": "psad-2024-04/sit-09.svg",
+          "situation": 9,
+          "viewBox": "0 0 560 300",
+          "format": "svg",
+          "archetype": "wide flange, channel and built-up sections",
+          "tags": [
+            "built-up-section",
+            "section-properties",
+            "flexure"
+          ],
+          "reusedFrom": null,
+          "labelCount": 4,
+          "labels": [
+            {
+              "t": "WIDE FLANGE",
+              "x": 110.0,
+              "y": 268.0
+            },
+            {
+              "t": "CHANNEL",
+              "x": 280.0,
+              "y": 268.0
+            },
+            {
+              "t": "x&#7580;",
+              "x": 346.1,
+              "y": 156.0
+            },
+            {
+              "t": "BUILT-UP",
+              "x": 450.0,
+              "y": 268.0
+            }
+          ]
+        },
+        {
+          "id": "sit-10",
+          "file": "psad-2024-04/sit-10.svg",
+          "situation": 10,
+          "viewBox": "0 0 580 392",
+          "format": "svg",
+          "archetype": "purlin on a sloped truss top chord",
+          "tags": [
+            "purlin",
+            "biaxial-bending",
+            "roof"
+          ],
+          "reusedFrom": "psad-2026-03/sit-16.svg",
+          "labelCount": 8,
+          "labels": [
+            {
+              "t": "θ",
+              "x": 118.0,
+              "y": 316.0
+            },
+            {
+              "t": "Roof Truss",
+              "x": 390.0,
+              "y": 214.0
+            },
+            {
+              "t": "x",
+              "x": 350.7,
+              "y": 180.1
+            },
+            {
+              "t": "y",
+              "x": 186.7,
+              "y": 107.1
+            },
+            {
+              "t": "w",
+              "x": 213.8,
+              "y": 50.4
+            },
+            {
+              "t": "LL",
+              "x": 229.8,
+              "y": 54.4
+            },
+            {
+              "t": "w",
+              "x": 239.0,
+              "y": 126.7
+            },
+            {
+              "t": "DL",
+              "x": 255.0,
+              "y": 130.7
+            }
+          ]
+        },
+        {
+          "id": "sit-11",
+          "file": "psad-2024-04/sit-11.svg",
+          "situation": 11,
+          "viewBox": "0 0 440 400",
+          "format": "svg",
+          "archetype": "pole under a trapezoidal wind load",
+          "tags": [
+            "cantilever",
+            "wind-load",
+            "combined-stress"
+          ],
+          "reusedFrom": null,
+          "labelCount": 4,
+          "labels": [
+            {
+              "t": "w&#8321;",
+              "x": 330.0,
+              "y": 76.0
+            },
+            {
+              "t": "w&#8322;",
+              "x": 286.0,
+              "y": 334.0
+            },
+            {
+              "t": "L",
+              "x": 126.0,
+              "y": 209.0
+            },
+            {
+              "t": "hollow pole, 364 mm OD / 302 mm ID",
+              "x": 210.0,
+              "y": 382.0
+            }
+          ]
+        },
+        {
+          "id": "sit-12",
+          "file": "psad-2024-04/sit-12.svg",
+          "situation": 12,
+          "viewBox": "0 0 520 420",
+          "format": "svg",
+          "archetype": "rectangular prestressed beam section",
+          "tags": [
+            "prestressed",
+            "eccentricity",
+            "fibre-stress"
+          ],
+          "reusedFrom": "psad-2025-11/sit-13.svg",
+          "labelCount": 8,
+          "labels": [
+            {
+              "t": "N.A.",
+              "x": 355.0,
+              "y": 202.0
+            },
+            {
+              "t": "50",
+              "x": 355.0,
+              "y": 352.0
+            },
+            {
+              "t": "50",
+              "x": 355.0,
+              "y": 332.0
+            },
+            {
+              "t": "50",
+              "x": 355.0,
+              "y": 312.0
+            },
+            {
+              "t": "50",
+              "x": 355.0,
+              "y": 292.0
+            },
+            {
+              "t": "10@75 mm",
+              "x": 210.0,
+              "y": 404.0
+            },
+            {
+              "t": "h",
+              "x": 61.0,
+              "y": 214.0
+            },
+            {
+              "t": "y&#7495;",
+              "x": 407.0,
+              "y": 295.0
+            }
+          ]
+        },
+        {
+          "id": "sit-13",
+          "file": "psad-2024-04/sit-13.svg",
+          "situation": 13,
+          "viewBox": "0 0 640 200",
+          "format": "svg",
+          "archetype": "four-span beam for moment-distribution factors",
+          "tags": [
+            "moment-distribution",
+            "stiffness",
+            "overhang"
+          ],
+          "reusedFrom": null,
+          "labelCount": 9,
+          "labels": [
+            {
+              "t": "A",
+              "x": 70.0,
+              "y": 78.0
+            },
+            {
+              "t": "B",
+              "x": 175.0,
+              "y": 78.0
+            },
+            {
+              "t": "C",
+              "x": 315.0,
+              "y": 78.0
+            },
+            {
+              "t": "D",
+              "x": 483.0,
+              "y": 78.0
+            },
+            {
+              "t": "E",
+              "x": 518.0,
+              "y": 78.0
+            },
+            {
+              "t": "L&#8321;",
+              "x": 122.5,
+              "y": 156.0
+            },
+            {
+              "t": "L&#8322;",
+              "x": 245.0,
+              "y": 156.0
+            },
+            {
+              "t": "L&#8323;",
+              "x": 399.0,
+              "y": 156.0
+            },
+            {
+              "t": "L&#8324;",
+              "x": 500.5,
+              "y": 156.0
+            }
+          ]
+        },
+        {
+          "id": "sit-14",
+          "file": "psad-2024-04/sit-14.svg",
+          "situation": 14,
+          "viewBox": "0 0 600 220",
+          "format": "svg",
+          "archetype": "fixed-ended two-span beam under uniform load",
+          "tags": [
+            "moment-distribution",
+            "reactions",
+            "beam-diagrams"
+          ],
+          "reusedFrom": null,
+          "labelCount": 6,
+          "labels": [
+            {
+              "t": "w",
+              "x": 298.0,
+              "y": 48.0
+            },
+            {
+              "t": "A",
+              "x": 100.0,
+              "y": 144.0
+            },
+            {
+              "t": "B",
+              "x": 270.0,
+              "y": 144.0
+            },
+            {
+              "t": "C",
+              "x": 496.0,
+              "y": 144.0
+            },
+            {
+              "t": "L&#8321;",
+              "x": 185.0,
+              "y": 176.0
+            },
+            {
+              "t": "L&#8322;",
+              "x": 383.0,
+              "y": 176.0
+            }
+          ]
+        },
+        {
+          "id": "sit-15",
+          "file": "psad-2024-04/sit-15.svg",
+          "situation": 15,
+          "viewBox": "0 0 560 320",
+          "format": "svg",
+          "archetype": "grillage: beam fixed at one end, carried by a girder",
+          "tags": [
+            "compatibility",
+            "deflection",
+            "grillage"
+          ],
+          "reusedFrom": null,
+          "labelCount": 8,
+          "labels": [
+            {
+              "t": "A",
+              "x": 94.0,
+              "y": 102.0
+            },
+            {
+              "t": "B",
+              "x": 230.0,
+              "y": 98.0
+            },
+            {
+              "t": "D",
+              "x": 366.0,
+              "y": 102.0
+            },
+            {
+              "t": "C",
+              "x": 318.0,
+              "y": 276.0
+            },
+            {
+              "t": "w",
+              "x": 290.0,
+              "y": 64.0
+            },
+            {
+              "t": "L&#8321;",
+              "x": 170.0,
+              "y": 174.0
+            },
+            {
+              "t": "L&#8322;",
+              "x": 290.0,
+              "y": 174.0
+            },
+            {
+              "t": "beam BD is fixed at D and carried by girder AC at B",
+              "x": 300.0,
+              "y": 296.0
+            }
+          ]
+        },
+        {
+          "id": "sit-16",
+          "file": "psad-2024-04/sit-16.svg",
+          "situation": 16,
+          "viewBox": "0 0 660 250",
+          "format": "svg",
+          "archetype": "bridge girder with an internal hinge",
+          "tags": [
+            "influence-line",
+            "moving-load",
+            "compound-girder"
+          ],
+          "reusedFrom": "psad-2025-04/sit-12.svg",
+          "labelCount": 8,
+          "labels": [
+            {
+              "t": "hinge",
+              "x": 427.0,
+              "y": 70.0
+            },
+            {
+              "t": "A",
+              "x": 62.0,
+              "y": 82.0
+            },
+            {
+              "t": "B",
+              "x": 231.0,
+              "y": 110.0
+            },
+            {
+              "t": "C",
+              "x": 427.0,
+              "y": 128.0
+            },
+            {
+              "t": "D",
+              "x": 620.0,
+              "y": 82.0
+            },
+            {
+              "t": "L",
+              "x": 166.5,
+              "y": 198.0
+            },
+            {
+              "t": "L",
+              "x": 340.0,
+              "y": 198.0
+            },
+            {
+              "t": "L",
+              "x": 513.5,
+              "y": 198.0
+            }
+          ]
+        },
+        {
+          "id": "sit-17",
+          "file": "psad-2024-04/sit-17.svg",
+          "situation": 17,
+          "viewBox": "0 0 420 340",
+          "format": "svg",
+          "archetype": "welded box column from four plates",
+          "tags": [
+            "built-up-column",
+            "slenderness",
+            "buckling"
+          ],
+          "reusedFrom": null,
+          "labelCount": 3,
+          "labels": [
+            {
+              "t": "b + 2t",
+              "x": 210.0,
+              "y": 314.0
+            },
+            {
+              "t": "t",
+              "x": 374.0,
+              "y": 56.0
+            },
+            {
+              "t": "four plates b &#215; t welded at their tips",
+              "x": 210.0,
+              "y": 320.0
+            }
+          ]
+        },
+        {
+          "id": "sit-18",
+          "file": "psad-2024-04/sit-18.svg",
+          "situation": 18,
+          "viewBox": "0 0 600 300",
+          "format": "svg",
+          "archetype": "collinear bolt group with eccentric load",
+          "tags": [
+            "bolted-connection",
+            "bolt-group",
+            "torsion"
+          ],
+          "reusedFrom": null,
+          "labelCount": 10,
+          "labels": [
+            {
+              "t": "a",
+              "x": 90.0,
+              "y": 86.0
+            },
+            {
+              "t": "b",
+              "x": 183.0,
+              "y": 86.0
+            },
+            {
+              "t": "c",
+              "x": 276.0,
+              "y": 86.0
+            },
+            {
+              "t": "d",
+              "x": 431.0,
+              "y": 86.0
+            },
+            {
+              "t": "P",
+              "x": 325.0,
+              "y": 279.8
+            },
+            {
+              "t": "s&#8321;",
+              "x": 136.5,
+              "y": 22.0
+            },
+            {
+              "t": "s&#8322;",
+              "x": 229.5,
+              "y": 22.0
+            },
+            {
+              "t": "s&#8323;",
+              "x": 353.5,
+              "y": 22.0
+            },
+            {
+              "t": "s&#8324;",
+              "x": 369.0,
+              "y": 268.0
+            },
+            {
+              "t": "four 20 mm bolts in single shear",
+              "x": 300.0,
+              "y": 282.0
+            }
+          ]
+        },
+        {
+          "id": "sit-19",
+          "file": "psad-2024-04/sit-19.svg",
+          "situation": 19,
+          "viewBox": "0 0 520 340",
+          "format": "svg",
+          "archetype": "bracket plate fillet-welded to a tee column",
+          "tags": [
+            "welded-connection",
+            "weld-group",
+            "eccentric-load"
+          ],
+          "reusedFrom": "psad-2024-11/sit-16.svg",
+          "labelCount": 5,
+          "labels": [
+            {
+              "t": "fillet weld",
+              "x": 400.0,
+              "y": 94.0
+            },
+            {
+              "t": "P",
+              "x": 374.0,
+              "y": 250.0
+            },
+            {
+              "t": "e",
+              "x": 261.0,
+              "y": 96.0
+            },
+            {
+              "t": "L",
+              "x": 120.0,
+              "y": 184.0
+            },
+            {
+              "t": "welded on each side of the 12 mm plate",
+              "x": 270.0,
+              "y": 322.0
+            }
+          ]
+        },
+        {
+          "id": "sit-20",
+          "file": "psad-2024-04/sit-20.svg",
+          "situation": 20,
+          "viewBox": "0 0 400 400",
+          "format": "svg",
+          "archetype": "doubly reinforced continuous beam section",
+          "tags": [
+            "rc-beam",
+            "shear",
+            "flexure"
+          ],
+          "reusedFrom": "psad-2023-04/sit-14.svg",
+          "labelCount": 3,
+          "labels": [
+            {
+              "t": "b",
+              "x": 200.0,
+              "y": 353.0
+            },
+            {
+              "t": "h",
+              "x": 338.0,
+              "y": 194.0
+            },
+            {
+              "t": "A&#8347; = 6-28 mm bottom &#183; A&#8347;&#8242; = 4-28 mm top &#183; 10 mm ties",
+              "x": 200.0,
+              "y": 378.0
+            }
+          ]
+        },
+        {
+          "id": "sit-21",
+          "file": "psad-2024-04/sit-21.svg",
+          "situation": 21,
+          "viewBox": "0 0 480 460",
+          "format": "svg",
+          "archetype": "pile footing on a 3x3 pile group",
+          "tags": [
+            "pile-cap",
+            "punching-shear",
+            "wide-beam-shear"
+          ],
+          "reusedFrom": "psad-2025-04/sit-22.svg",
+          "labelCount": 20,
+          "labels": [
+            {
+              "t": "1",
+              "x": 142.0,
+              "y": 139.0
+            },
+            {
+              "t": "4",
+              "x": 142.0,
+              "y": 245.0
+            },
+            {
+              "t": "7",
+              "x": 142.0,
+              "y": 351.0
+            },
+            {
+              "t": "2",
+              "x": 230.0,
+              "y": 139.0
+            },
+            {
+              "t": "5",
+              "x": 230.0,
+              "y": 245.0
+            },
+            {
+              "t": "8",
+              "x": 230.0,
+              "y": 351.0
+            },
+            {
+              "t": "3",
+              "x": 318.0,
+              "y": 139.0
+            },
+            {
+              "t": "6",
+              "x": 318.0,
+              "y": 245.0
+            },
+            {
+              "t": "9",
+              "x": 318.0,
+              "y": 351.0
+            },
+            {
+              "t": "X",
+              "x": 448.0,
+              "y": 245.0
+            },
+            {
+              "t": "Y",
+              "x": 230.0,
+              "y": 7.0
+            },
+            {
+              "t": "M&#8341;&#8339;",
+              "x": 326.0,
+              "y": 65.0
+            },
+            {
+              "t": "M&#8341;&#8342;",
+              "x": 134.0,
+              "y": 35.0
+            },
+            {
+              "t": "a",
+              "x": 14.0,
+              "y": 82.5
+            },
+            {
+              "t": "b",
+              "x": 14.0,
+              "y": 244.0
+            },
+            {
+              "t": "a",
+              "x": 14.0,
+              "y": 405.5
+            },
+            {
+              "t": "d",
+              "x": 88.0,
+              "y": 471.0
+            },
+            {
+              "t": "c",
+              "x": 175.0,
+              "y": 471.0
+            },
+            {
+              "t": "c",
+              "x": 285.0,
+              "y": 471.0
+            },
+            {
+              "t": "d",
+              "x": 372.0,
+              "y": 471.0
+            }
+          ]
+        },
+        {
+          "id": "sit-22",
+          "file": "psad-2024-04/sit-22.svg",
+          "situation": 22,
+          "viewBox": "0 0 380 340",
+          "format": "svg",
+          "archetype": "spiral column cross-section",
+          "tags": [
+            "spiral-column",
+            "confinement",
+            "axial-capacity"
+          ],
+          "reusedFrom": null,
+          "labelCount": 2,
+          "labels": [
+            {
+              "t": "D",
+              "x": 190.0,
+              "y": 330.0
+            },
+            {
+              "t": "spiral column &#183; 10 mm spiral at pitch S",
+              "x": 190.0,
+              "y": 322.0
+            }
+          ]
+        }
+      ]
+    },
+    "psad-2023-11": {
+      "source": "PSAD_NOVEMBER_2023_BOARD.pdf (JDCELearn born-digital)",
+      "figures": [
+        {
+          "id": "sit-01",
+          "file": "psad-2023-11/sit-01.svg",
+          "situation": 1,
+          "viewBox": "0 0 560 400",
+          "format": "svg",
+          "archetype": "bent frame on a column, guyed by a cable",
+          "tags": [
+            "statics",
+            "combined-stress",
+            "cable"
+          ],
+          "reusedFrom": null,
+          "labelCount": 15,
+          "labels": [
+            {
+              "t": "T",
+              "x": 55.3,
+              "y": 160.2
+            },
+            {
+              "t": "T",
+              "x": 94.0,
+              "y": 104.0
+            },
+            {
+              "t": "V",
+              "x": 68.7,
+              "y": 182.4
+            },
+            {
+              "t": "H",
+              "x": 52.7,
+              "y": 202.4
+            },
+            {
+              "t": "B",
+              "x": 88.0,
+              "y": 146.0
+            },
+            {
+              "t": "C",
+              "x": 236.0,
+              "y": 146.0
+            },
+            {
+              "t": "D",
+              "x": 406.0,
+              "y": 146.0
+            },
+            {
+              "t": "A",
+              "x": 230.0,
+              "y": 358.0
+            },
+            {
+              "t": "P",
+              "x": 356.0,
+              "y": 38.0
+            },
+            {
+              "t": "F",
+              "x": 478.0,
+              "y": 68.0
+            },
+            {
+              "t": "&#946;",
+              "x": 442.0,
+              "y": 96.0
+            },
+            {
+              "t": "a",
+              "x": 167.0,
+              "y": 70.0
+            },
+            {
+              "t": "b",
+              "x": 293.0,
+              "y": 70.0
+            },
+            {
+              "t": "c",
+              "x": 377.0,
+              "y": 70.0
+            },
+            {
+              "t": "d",
+              "x": 300.0,
+              "y": 250.0
+            }
+          ]
+        },
+        {
+          "id": "sit-02",
+          "file": "psad-2023-11/sit-02.svg",
+          "situation": 2,
+          "viewBox": "0 0 620 340",
+          "format": "svg",
+          "archetype": "roof truss under wind loads normal to the rafter",
+          "tags": [
+            "truss",
+            "wind-load",
+            "method-of-sections"
+          ],
+          "reusedFrom": "psad-2023-04/sit-02.svg",
+          "labelCount": 14,
+          "labels": [
+            {
+              "t": "P",
+              "x": 86.0,
+              "y": 195.0
+            },
+            {
+              "t": "P",
+              "x": 146.0,
+              "y": 150.0
+            },
+            {
+              "t": "P",
+              "x": 206.0,
+              "y": 105.0
+            },
+            {
+              "t": "P",
+              "x": 266.0,
+              "y": 60.0
+            },
+            {
+              "t": "A",
+              "x": 52.0,
+              "y": 256.0
+            },
+            {
+              "t": "B",
+              "x": 568.0,
+              "y": 256.0
+            },
+            {
+              "t": "C",
+              "x": 310.0,
+              "y": 76.0
+            },
+            {
+              "t": "a",
+              "x": 100.0,
+              "y": 312.0
+            },
+            {
+              "t": "a",
+              "x": 160.0,
+              "y": 312.0
+            },
+            {
+              "t": "b",
+              "x": 250.0,
+              "y": 312.0
+            },
+            {
+              "t": "b",
+              "x": 370.0,
+              "y": 312.0
+            },
+            {
+              "t": "a",
+              "x": 460.0,
+              "y": 312.0
+            },
+            {
+              "t": "a",
+              "x": 520.0,
+              "y": 312.0
+            },
+            {
+              "t": "loads act perpendicular to the rafter, spaced s along it",
+              "x": 310.0,
+              "y": 322.0
+            }
+          ]
+        },
+        {
+          "id": "sit-03",
+          "file": "psad-2023-11/sit-03.svg",
+          "situation": 3,
+          "viewBox": "0 0 560 300",
+          "format": "svg",
+          "archetype": "plank on two rough surfaces, one inclined",
+          "tags": [
+            "friction",
+            "equilibrium",
+            "two-surface"
+          ],
+          "reusedFrom": null,
+          "labelCount": 5,
+          "labels": [
+            {
+              "t": "&#952;",
+              "x": 70.0,
+              "y": 260.0
+            },
+            {
+              "t": "A",
+              "x": 116.0,
+              "y": 218.0
+            },
+            {
+              "t": "B",
+              "x": 434.0,
+              "y": 218.0
+            },
+            {
+              "t": "x",
+              "x": 380.0,
+              "y": 92.0
+            },
+            {
+              "t": "L",
+              "x": 275.0,
+              "y": 236.0
+            }
+          ]
+        },
+        {
+          "id": "sit-04",
+          "file": "psad-2023-11/sit-04.svg",
+          "situation": 4,
+          "viewBox": "0 0 340 420",
+          "format": "svg",
+          "archetype": "hanging rod under self weight plus end load",
+          "tags": [
+            "axial-deformation",
+            "self-weight",
+            "ductility"
+          ],
+          "reusedFrom": null,
+          "labelCount": 4,
+          "labels": [
+            {
+              "t": "L",
+              "x": 210.0,
+              "y": 190.0
+            },
+            {
+              "t": "L",
+              "x": 216.0,
+              "y": 194.0
+            },
+            {
+              "t": "P",
+              "x": 170.0,
+              "y": 362.0
+            },
+            {
+              "t": "12 mm diameter steel rod under its own weight",
+              "x": 170.0,
+              "y": 404.0
+            }
+          ]
+        },
+        {
+          "id": "sit-05",
+          "file": "psad-2023-11/sit-05.svg",
+          "situation": 5,
+          "viewBox": "0 0 400 300",
+          "format": "svg",
+          "archetype": "hollow circular timber section",
+          "tags": [
+            "section-properties",
+            "flexure",
+            "shear"
+          ],
+          "reusedFrom": null,
+          "labelCount": 2,
+          "labels": [
+            {
+              "t": "D&#7484;",
+              "x": 200.0,
+              "y": 292.0
+            },
+            {
+              "t": "D&#7522;",
+              "x": 200.0,
+              "y": 6.0
+            }
+          ]
+        },
+        {
+          "id": "sit-06",
+          "file": "psad-2023-11/sit-06.svg",
+          "situation": 6,
+          "viewBox": "0 0 520 320",
+          "format": "svg",
+          "archetype": "Mohr's circle of an element",
+          "tags": [
+            "mohr-circle",
+            "principal-stress",
+            "stress-transformation"
+          ],
+          "reusedFrom": "psad-2024-04/sit-07.svg",
+          "labelCount": 11,
+          "labels": [
+            {
+              "t": "&#963;",
+              "x": 462.0,
+              "y": 185.0
+            },
+            {
+              "t": "&#964;",
+              "x": 96.0,
+              "y": 22.0
+            },
+            {
+              "t": "O",
+              "x": 98.0,
+              "y": 196.0
+            },
+            {
+              "t": "A",
+              "x": 108.0,
+              "y": 196.0
+            },
+            {
+              "t": "B",
+              "x": 412.0,
+              "y": 196.0
+            },
+            {
+              "t": "C",
+              "x": 248.0,
+              "y": 170.0
+            },
+            {
+              "t": "F",
+              "x": 202.0,
+              "y": 196.0
+            },
+            {
+              "t": "G",
+              "x": 318.0,
+              "y": 196.0
+            },
+            {
+              "t": "E",
+              "x": 202.0,
+              "y": 38.0
+            },
+            {
+              "t": "D",
+              "x": 318.0,
+              "y": 328.0
+            },
+            {
+              "t": "Mohr&#8217;s circle for the element",
+              "x": 260.0,
+              "y": 300.0
+            }
+          ]
+        },
+        {
+          "id": "sit-08",
+          "file": "psad-2023-11/sit-08.svg",
+          "situation": 8,
+          "viewBox": "0 0 560 340",
+          "format": "svg",
+          "archetype": "trapezoidal earth dam",
+          "tags": [
+            "retaining",
+            "overturning",
+            "sliding",
+            "eccentricity"
+          ],
+          "reusedFrom": "psad-2025-04/sit-09.svg",
+          "labelCount": 4,
+          "labels": [
+            {
+              "t": "a",
+              "x": 331.0,
+              "y": 46.0
+            },
+            {
+              "t": "H&#8322;",
+              "x": 56.0,
+              "y": 217.5
+            },
+            {
+              "t": "H&#8321;",
+              "x": 402.0,
+              "y": 192.0
+            },
+            {
+              "t": "b",
+              "x": 229.0,
+              "y": 332.0
+            }
+          ]
+        },
+        {
+          "id": "sit-09",
+          "file": "psad-2023-11/sit-09.svg",
+          "situation": 9,
+          "viewBox": "0 0 640 200",
+          "format": "svg",
+          "archetype": "four-point continuous beam for distribution factors",
+          "tags": [
+            "moment-distribution",
+            "modified-stiffness"
+          ],
+          "reusedFrom": "psad-2024-04/sit-13.svg",
+          "labelCount": 9,
+          "labels": [
+            {
+              "t": "A",
+              "x": 70.0,
+              "y": 78.0
+            },
+            {
+              "t": "B",
+              "x": 175.0,
+              "y": 78.0
+            },
+            {
+              "t": "C",
+              "x": 315.0,
+              "y": 78.0
+            },
+            {
+              "t": "D",
+              "x": 483.0,
+              "y": 78.0
+            },
+            {
+              "t": "E",
+              "x": 518.0,
+              "y": 78.0
+            },
+            {
+              "t": "L&#8321;",
+              "x": 122.5,
+              "y": 156.0
+            },
+            {
+              "t": "L&#8322;",
+              "x": 245.0,
+              "y": 156.0
+            },
+            {
+              "t": "L&#8323;",
+              "x": 399.0,
+              "y": 156.0
+            },
+            {
+              "t": "L&#8324;",
+              "x": 500.5,
+              "y": 156.0
+            }
+          ]
+        },
+        {
+          "id": "sit-10",
+          "file": "psad-2023-11/sit-10.svg",
+          "situation": 10,
+          "viewBox": "0 0 660 250",
+          "format": "svg",
+          "archetype": "compound girder with two internal hinges",
+          "tags": [
+            "influence-line",
+            "moving-load",
+            "compound-girder"
+          ],
+          "reusedFrom": "psad-2025-04/sit-12.svg",
+          "labelCount": 8,
+          "labels": [
+            {
+              "t": "hinge",
+              "x": 427.0,
+              "y": 70.0
+            },
+            {
+              "t": "A",
+              "x": 62.0,
+              "y": 82.0
+            },
+            {
+              "t": "B",
+              "x": 231.0,
+              "y": 110.0
+            },
+            {
+              "t": "C",
+              "x": 427.0,
+              "y": 128.0
+            },
+            {
+              "t": "D",
+              "x": 620.0,
+              "y": 82.0
+            },
+            {
+              "t": "L",
+              "x": 166.5,
+              "y": 198.0
+            },
+            {
+              "t": "L",
+              "x": 340.0,
+              "y": 198.0
+            },
+            {
+              "t": "L",
+              "x": 513.5,
+              "y": 198.0
+            }
+          ]
+        },
+        {
+          "id": "sit-11",
+          "file": "psad-2023-11/sit-11.svg",
+          "situation": 11,
+          "viewBox": "0 0 560 260",
+          "format": "svg",
+          "archetype": "cantilever with uniform load and an upward point load",
+          "tags": [
+            "cantilever",
+            "deflection",
+            "superposition"
+          ],
+          "reusedFrom": null,
+          "labelCount": 4,
+          "labels": [
+            {
+              "t": "w",
+              "x": 280.0,
+              "y": 66.0
+            },
+            {
+              "t": "P",
+              "x": 297.0,
+              "y": 222.0
+            },
+            {
+              "t": "x",
+              "x": 203.5,
+              "y": 36.0
+            },
+            {
+              "t": "L",
+              "x": 280.0,
+              "y": 212.0
+            }
+          ]
+        },
+        {
+          "id": "sit-12",
+          "file": "psad-2023-11/sit-12.svg",
+          "situation": 12,
+          "viewBox": "0 0 560 320",
+          "format": "svg",
+          "archetype": "grillage: beam fixed at one end, carried by a girder",
+          "tags": [
+            "grillage",
+            "compatibility",
+            "flexure"
+          ],
+          "reusedFrom": "psad-2024-04/sit-15.svg",
+          "labelCount": 8,
+          "labels": [
+            {
+              "t": "A",
+              "x": 94.0,
+              "y": 102.0
+            },
+            {
+              "t": "B",
+              "x": 230.0,
+              "y": 98.0
+            },
+            {
+              "t": "D",
+              "x": 366.0,
+              "y": 102.0
+            },
+            {
+              "t": "C",
+              "x": 318.0,
+              "y": 276.0
+            },
+            {
+              "t": "w",
+              "x": 290.0,
+              "y": 64.0
+            },
+            {
+              "t": "L&#8321;",
+              "x": 170.0,
+              "y": 174.0
+            },
+            {
+              "t": "L&#8322;",
+              "x": 290.0,
+              "y": 174.0
+            },
+            {
+              "t": "beam BD is fixed at D and carried by girder AC at B",
+              "x": 300.0,
+              "y": 296.0
+            }
+          ]
+        },
+        {
+          "id": "sit-13",
+          "file": "psad-2023-11/sit-13.svg",
+          "situation": 13,
+          "viewBox": "0 0 600 300",
+          "format": "svg",
+          "archetype": "collinear bolt group with perpendicular eccentricity",
+          "tags": [
+            "bolted-connection",
+            "bolt-group",
+            "torsion"
+          ],
+          "reusedFrom": "psad-2024-04/sit-18.svg",
+          "labelCount": 10,
+          "labels": [
+            {
+              "t": "a",
+              "x": 90.0,
+              "y": 86.0
+            },
+            {
+              "t": "b",
+              "x": 183.0,
+              "y": 86.0
+            },
+            {
+              "t": "c",
+              "x": 276.0,
+              "y": 86.0
+            },
+            {
+              "t": "d",
+              "x": 431.0,
+              "y": 86.0
+            },
+            {
+              "t": "P",
+              "x": 325.0,
+              "y": 279.8
+            },
+            {
+              "t": "s&#8321;",
+              "x": 136.5,
+              "y": 22.0
+            },
+            {
+              "t": "s&#8322;",
+              "x": 229.5,
+              "y": 22.0
+            },
+            {
+              "t": "s&#8323;",
+              "x": 353.5,
+              "y": 22.0
+            },
+            {
+              "t": "s&#8324;",
+              "x": 369.0,
+              "y": 268.0
+            },
+            {
+              "t": "four 20 mm bolts in single shear",
+              "x": 300.0,
+              "y": 282.0
+            }
+          ]
+        },
+        {
+          "id": "sit-15",
+          "file": "psad-2023-11/sit-15.svg",
+          "situation": 15,
+          "viewBox": "0 0 600 340",
+          "format": "svg",
+          "archetype": "beam framed to a girder by welded angles",
+          "tags": [
+            "welded-connection",
+            "shear-connection",
+            "bolt-group"
+          ],
+          "reusedFrom": null,
+          "labelCount": 11,
+          "labels": [
+            {
+              "t": "Girder",
+              "x": 187.0,
+              "y": 324.0
+            },
+            {
+              "t": "Beam",
+              "x": 290.0,
+              "y": 192.0
+            },
+            {
+              "t": "2L 75&#215;75&#215;10",
+              "x": 140.0,
+              "y": 80.0
+            },
+            {
+              "t": "fillet weld",
+              "x": 266.0,
+              "y": 78.0
+            },
+            {
+              "t": "4 &#8211; 22 mm bolts",
+              "x": 240.0,
+              "y": 208.0
+            },
+            {
+              "t": "P",
+              "x": 444.0,
+              "y": 66.0
+            },
+            {
+              "t": "e",
+              "x": 324.0,
+              "y": 48.0
+            },
+            {
+              "t": "S&#8321;",
+              "x": 124.0,
+              "y": 105.0
+            },
+            {
+              "t": "S&#8323;",
+              "x": 124.0,
+              "y": 127.0
+            },
+            {
+              "t": "S&#8323;",
+              "x": 124.0,
+              "y": 153.0
+            },
+            {
+              "t": "S&#8324;",
+              "x": 124.0,
+              "y": 180.0
+            }
+          ]
+        },
+        {
+          "id": "sit-16",
+          "file": "psad-2023-11/sit-16.svg",
+          "situation": 16,
+          "viewBox": "0 0 700 300",
+          "format": "svg",
+          "archetype": "floor framing analysed with NSCP coefficients",
+          "tags": [
+            "continuous-beam",
+            "nscp-coefficients",
+            "spandrel"
+          ],
+          "reusedFrom": "psad-2025-04/sit-17.svg",
+          "labelCount": 14,
+          "labels": [
+            {
+              "t": "A",
+              "x": 70.0,
+              "y": 106.0
+            },
+            {
+              "t": "B",
+              "x": 220.2,
+              "y": 106.0
+            },
+            {
+              "t": "C",
+              "x": 358.8,
+              "y": 106.0
+            },
+            {
+              "t": "D",
+              "x": 492.7,
+              "y": 106.0
+            },
+            {
+              "t": "E",
+              "x": 619.8,
+              "y": 106.0
+            },
+            {
+              "t": "F",
+              "x": 145.1,
+              "y": 106.0
+            },
+            {
+              "t": "G",
+              "x": 289.4,
+              "y": 106.0
+            },
+            {
+              "t": "H",
+              "x": 425.7,
+              "y": 106.0
+            },
+            {
+              "t": "I",
+              "x": 556.3,
+              "y": 106.0
+            },
+            {
+              "t": "L1",
+              "x": 145.1,
+              "y": 256.0
+            },
+            {
+              "t": "L2",
+              "x": 289.4,
+              "y": 256.0
+            },
+            {
+              "t": "L3",
+              "x": 425.7,
+              "y": 256.0
+            },
+            {
+              "t": "L4",
+              "x": 556.3,
+              "y": 256.0
+            },
+            {
+              "t": "F, G, H, I are the beam midspans &#183; A&#8211;E are the column joints",
+              "x": 350.0,
+              "y": 276.0
+            }
+          ]
+        },
+        {
+          "id": "sit-17",
+          "file": "psad-2023-11/sit-17.svg",
+          "situation": 17,
+          "viewBox": "0 0 480 460",
+          "format": "svg",
+          "archetype": "pile cap under axial load plus moment",
+          "tags": [
+            "pile-cap",
+            "punching-shear",
+            "pile-group"
+          ],
+          "reusedFrom": "psad-2025-04/sit-22.svg",
+          "labelCount": 20,
+          "labels": [
+            {
+              "t": "1",
+              "x": 142.0,
+              "y": 139.0
+            },
+            {
+              "t": "4",
+              "x": 142.0,
+              "y": 245.0
+            },
+            {
+              "t": "7",
+              "x": 142.0,
+              "y": 351.0
+            },
+            {
+              "t": "2",
+              "x": 230.0,
+              "y": 139.0
+            },
+            {
+              "t": "5",
+              "x": 230.0,
+              "y": 245.0
+            },
+            {
+              "t": "8",
+              "x": 230.0,
+              "y": 351.0
+            },
+            {
+              "t": "3",
+              "x": 318.0,
+              "y": 139.0
+            },
+            {
+              "t": "6",
+              "x": 318.0,
+              "y": 245.0
+            },
+            {
+              "t": "9",
+              "x": 318.0,
+              "y": 351.0
+            },
+            {
+              "t": "X",
+              "x": 448.0,
+              "y": 245.0
+            },
+            {
+              "t": "Y",
+              "x": 230.0,
+              "y": 7.0
+            },
+            {
+              "t": "M&#8341;&#8339;",
+              "x": 326.0,
+              "y": 65.0
+            },
+            {
+              "t": "M&#8341;&#8342;",
+              "x": 134.0,
+              "y": 35.0
+            },
+            {
+              "t": "a",
+              "x": 14.0,
+              "y": 82.5
+            },
+            {
+              "t": "b",
+              "x": 14.0,
+              "y": 244.0
+            },
+            {
+              "t": "a",
+              "x": 14.0,
+              "y": 405.5
+            },
+            {
+              "t": "d",
+              "x": 88.0,
+              "y": 471.0
+            },
+            {
+              "t": "c",
+              "x": 175.0,
+              "y": 471.0
+            },
+            {
+              "t": "c",
+              "x": 285.0,
+              "y": 471.0
+            },
+            {
+              "t": "d",
+              "x": 372.0,
+              "y": 471.0
+            }
+          ]
+        },
+        {
+          "id": "sit-18",
+          "file": "psad-2023-11/sit-18.svg",
+          "situation": 18,
+          "viewBox": "0 0 420 360",
+          "format": "svg",
+          "archetype": "rectangular tied column, shear about both axes",
+          "tags": [
+            "column-shear",
+            "ties",
+            "tie-legs"
+          ],
+          "reusedFrom": "psad-2024-11/sit-18.svg",
+          "labelCount": 6,
+          "labels": [
+            {
+              "t": "Y",
+              "x": 200.0,
+              "y": 57.0
+            },
+            {
+              "t": "X",
+              "x": 372.0,
+              "y": 195.0
+            },
+            {
+              "t": "V&#8341;&#7527;",
+              "x": 252.0,
+              "y": 99.0
+            },
+            {
+              "t": "V&#8341;&#8339;",
+              "x": 350.0,
+              "y": 160.0
+            },
+            {
+              "t": "B",
+              "x": 200.0,
+              "y": 299.0
+            },
+            {
+              "t": "H",
+              "x": 52.0,
+              "y": 194.0
+            }
+          ]
+        },
+        {
+          "id": "sit-21",
+          "file": "psad-2023-11/sit-21.svg",
+          "situation": 21,
+          "viewBox": "0 0 560 360",
+          "format": "svg",
+          "archetype": "rectangular footing with soil overburden",
+          "tags": [
+            "footing",
+            "gross-pressure",
+            "eccentricity",
+            "middle-third"
+          ],
+          "reusedFrom": null,
+          "labelCount": 8,
+          "labels": [
+            {
+              "t": "ground",
+              "x": 60.0,
+              "y": 119.0
+            },
+            {
+              "t": "P",
+              "x": 298.0,
+              "y": 10.0
+            },
+            {
+              "t": "M",
+              "x": 358.0,
+              "y": 28.0
+            },
+            {
+              "t": "concrete",
+              "x": 280.0,
+              "y": 208.0
+            },
+            {
+              "t": "soil",
+              "x": 200.0,
+              "y": 141.0
+            },
+            {
+              "t": "t",
+              "x": 76.0,
+              "y": 206.0
+            },
+            {
+              "t": "H",
+              "x": 484.0,
+              "y": 173.0
+            },
+            {
+              "t": "B",
+              "x": 280.0,
+              "y": 268.0
+            }
+          ]
+        },
+        {
+          "id": "sit-23",
+          "file": "psad-2023-11/sit-23.svg",
+          "situation": 23,
+          "viewBox": "0 0 440 400",
+          "format": "svg",
+          "archetype": "conical pendulum",
+          "tags": [
+            "dynamics",
+            "centrifugal-force",
+            "equilibrium"
+          ],
+          "reusedFrom": "psad-2024-11/sit-23.svg",
+          "labelCount": 5,
+          "labels": [
+            {
+              "t": "&#952;",
+              "x": 240.0,
+              "y": 118.0
+            },
+            {
+              "t": "L",
+              "x": 194.0,
+              "y": 200.0
+            },
+            {
+              "t": "CF",
+              "x": 411.0,
+              "y": 256.9
+            },
+            {
+              "t": "W",
+              "x": 343.0,
+              "y": 321.9
+            },
+            {
+              "t": "&#969;",
+              "x": 109.0,
+              "y": 303.9
+            }
+          ]
+        }
+      ]
     }
   }
 }

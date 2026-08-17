@@ -20,8 +20,16 @@ figures/
 ├── psad-2025-11/
 │   ├── sit-01.svg … sit-20.svg
 │   └── sit-17.html        raster (interaction diagram C4-60.7)
-└── psad-2025-04/
-    └── sit-01.svg … sit-23.svg
+├── psad-2025-04/
+│   └── sit-01.svg … sit-23.svg
+├── psad-2024-11/
+│   └── sit-01.svg … sit-23.svg
+├── psad-2024-04/
+│   └── sit-01.svg … sit-22.svg
+├── psad-2023-11/
+│   └── sit-01.svg … sit-23.svg
+└── psad-2023-04/
+    └── sit-01.svg … sit-22.svg
 ```
 
 Figures carried over between sittings record it in `manifest.json` under `reusedFrom`.
@@ -113,3 +121,23 @@ is an `<img>` element rather than an `<svg>`.
   were renumbered to the `q` series (`af13` → `afq10`, `af9` → `afq12`, `af14` → `afq14`,
   `afn18` → `afq21`). A full sweep across all three sittings now confirms **zero duplicate
   marker IDs** among the 51 SVG figures sharing the document.
+
+- **Four more sittings added (v4.0.0).** `psad-2024-11`, `psad-2024-04`, `psad-2023-11` and
+  `psad-2023-04`, bringing the library to **126 SVG figures across seven exam folders**.
+
+  Reuse climbed steadily as the library filled out — 7 of 18 for November 2024, 6 of 17
+  for April 2023, 10 of 22 for April 2024, and **11 of 18 for November 2023**, where only
+  seven figures needed drawing at all. By the last sitting most new problems were matching
+  an archetype already on the shelf.
+
+  Two adaptations are worth recording because they show the intended workflow rather than
+  plain copying. November 2024 situation 14 needed the November 2025 propped cantilever
+  **mirrored** — this paper props the left end and fixes the right — so the SVG was flipped
+  about its vertical centreline and each `<text>` node counter-flipped so the labels do not
+  read backwards. April 2023 situation 8 reuses the April 2025 earth dam *unchanged*: the
+  two papers set the identical situation with identical data, which is also how the
+  eccentricity discrepancy in both keys was caught.
+
+  Every reused figure had its marker IDs renumbered into its own series. A sweep across all
+  126 files confirms **zero duplicate marker IDs**, which matters now that all seven
+  sittings share one document.
