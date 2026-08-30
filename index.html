@@ -30,6 +30,9 @@
   --sh:rgba(23,34,59,.07); --sh2:rgba(23,34,59,.18); --sh3:rgba(23,34,59,.06);
   --bar:rgba(243,246,251,.86); --barline:#DCE3F0;
   --ovl:rgba(20,30,60,.86);
+  --terms:#7A4BC4;
+  --terms-soft:rgba(122,75,196,.12);
+  --terms-line:rgba(122,75,196,.30);
 }
 html[data-theme="dark"]{
   --paper:#0A0F1E; --ink:#E7EDFA; --ink2:#BAC5DD; --muted:#8B98B6; --card:#131B2E;
@@ -41,6 +44,9 @@ html[data-theme="dark"]{
   --sh:rgba(0,0,0,.45); --sh2:rgba(0,0,0,.60); --sh3:rgba(0,0,0,.40);
   --bar:rgba(10,15,30,.86); --barline:#232D47;
   --ovl:rgba(4,8,18,.90);
+  --terms:#C0A0F0;
+  --terms-soft:rgba(176,139,232,.16);
+  --terms-line:rgba(176,139,232,.38);
 }
 html{color-scheme:light;} html[data-theme="dark"]{color-scheme:dark;}
 *{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent;}
@@ -64,7 +70,29 @@ body{font-family:'Inter',system-ui,sans-serif;background:var(--paper);color:var(
 .optbtn small{display:block;font-weight:500;color:var(--muted);font-size:11px;margin-top:2px;}
 .optbtn.sel{border-color:var(--psad);background:var(--sel-psad);box-shadow:0 0 0 3px rgba(47,75,208,.18);}
 .optbtn.s-psad.sel{border-color:var(--psad);} .optbtn.s-mste.sel{border-color:var(--mste);background:var(--sel-mste);} .optbtn.s-hge.sel{border-color:var(--hge);background:var(--sel-hge);}
-.optbtn.s-terms.sel{border-color:#7A4BC4;background:rgba(122,75,196,.10);box-shadow:0 0 0 3px rgba(122,75,196,.18);}
+.optbtn.s-terms.sel{border-color:var(--terms);background:var(--terms-soft);box-shadow:0 0 0 3px var(--terms-line);}
+/* ===== TERMS sub-picker (v4.8.2) =====================================
+   Deliberately NOT built from .optbtn. Repeating PSAD / MSTE / HGE as a
+   second row of identical cards directly under the subject tabs read as a
+   duplicate of the row above. This is a bordered sub-panel in the TERMS
+   accent colour, with rounded pills instead of cards and the discipline
+   name leading instead of the acronym, so it cannot be mistaken for the
+   subject row. ==================================================== */
+.termpanel{margin-top:12px;border:1px solid var(--terms-line);border-left:4px solid var(--terms);
+  background:var(--terms-soft);border-radius:6px 14px 14px 6px;padding:12px 13px 13px;}
+.termpanel .tphd{font-family:'Sora';font-size:9.5px;letter-spacing:.17em;text-transform:uppercase;
+  color:var(--terms);font-weight:800;margin-bottom:10px;display:flex;align-items:center;gap:6px;}
+.termpills{display:grid;grid-template-columns:1fr;gap:8px;}
+.termpill{border:1.5px solid var(--line2);background:var(--card);border-radius:999px;
+  padding:10px 15px;font-family:'Inter';font-weight:700;font-size:13px;color:var(--ink);
+  cursor:pointer;text-align:left;transition:.15s;display:flex;align-items:baseline;
+  justify-content:space-between;gap:10px;}
+.termpill em{font-style:normal;font-weight:600;font-size:10.5px;color:var(--muted);white-space:nowrap;}
+.termpill.sel{border-color:var(--terms);background:var(--terms-soft);color:var(--terms);
+  box-shadow:0 0 0 3px var(--terms-line);}
+.termpill.sel em{color:var(--terms);}
+.termpill.dis{opacity:.4;pointer-events:none;}
+.termpill:active{transform:scale(.985);}
 .go{width:100%;margin-top:18px;background:linear-gradient(120deg,#1E2F86,#2F4BD0);color:#fff;border:none;border-radius:14px;padding:16px;font-family:'Sora';font-weight:800;font-size:16px;cursor:pointer;box-shadow:0 6px 16px rgba(47,75,208,.35);}
 .go:active{transform:scale(.98);}
 
@@ -149,13 +177,13 @@ sub,sup{font-size:.68em;}
 .scard .sn{font-weight:700;font-size:13px;margin-bottom:6px;}
 .scard .sfx{border-radius:9px;padding:9px 11px;font-family:'Cambria Math',Georgia,serif;font-size:15.5px;text-align:center;margin-bottom:6px;overflow-x:auto;}
 .scard .sh{font-size:12px;color:var(--muted);}
-.backbtn{background:none;border:none;font-family:'Sora';font-weight:800;font-size:13px;color:var(--navy);cursor:pointer;padding:14px 0 0;}
+.backbtn{background:none;border:none;font-family:'Sora';font-weight:800;font-size:13px;color:var(--ink);cursor:pointer;padding:14px 0 0;}
 .timer.warn{background:var(--bad);color:#fff;animation:pulse 1s infinite;}
 @keyframes pulse{50%{opacity:.6;}}
 .pacenote{font-size:11.5px;color:var(--muted);margin-top:8px;text-align:center;}
 .credit{margin-top:22px;text-align:center;font-size:12.5px;color:var(--muted);letter-spacing:.03em;}
 .quizctrl{display:flex;gap:10px;margin-top:14px;}
-.ctrlbtn{flex:1;border:2px solid var(--line2);background:var(--card);border-radius:12px;padding:12px;font-family:'Sora';font-weight:800;font-size:12.5px;color:var(--navy);cursor:pointer;}
+.ctrlbtn{flex:1;border:2px solid var(--line2);background:var(--card);border-radius:12px;padding:12px;font-family:'Sora';font-weight:800;font-size:12.5px;color:var(--ink);cursor:pointer;}
 .ctrlbtn.danger{border-color:var(--bad);color:var(--bad);}
 .pauseovl{display:none;position:fixed;inset:0;background:var(--ovl);z-index:99;align-items:center;justify-content:center;padding:24px;}
 .pauseovl.on{display:flex;}
@@ -378,6 +406,24 @@ html[data-theme="dark"] .timer{background:#26324F;}
   letter-spacing:.13em;color:var(--mste);margin-bottom:3px;}
 .pq-foot{font-size:11.5px;color:var(--muted);line-height:1.65;margin-top:18px;
   padding-top:14px;border-top:1px solid var(--line);}
+
+/* ===== v4.8.2 CONTRAST CORRECTIONS ==================================
+   Audited every rule that sets a text colour and a background colour, in
+   BOTH themes, against a 4.5:1 threshold. The dark palette lightens
+   --good / --bad / --accent so they read as TEXT on a dark page, but the
+   same tokens are also used as badge BACKGROUNDS carrying white text, so
+   white-on-pastel came out at 1.7:1 to 2.8:1. Those badges take dark ink
+   in dark mode. Two light-mode chips were also too pale on their own tint.
+   ================================================================= */
+html[data-theme="dark"] .choice.correct .lbl,
+html[data-theme="dark"] .choice.wrong .lbl,
+html[data-theme="dark"] .step .n,
+html[data-theme="dark"] .timer.warn,
+html[data-theme="dark"] .mdbtns .yes{color:#0A0F1E;}
+.pq-b-vl{color:#8A5400;}
+html[data-theme="dark"] .pq-b-vl{color:var(--mste);}
+.pq-f{color:#0A6F6F;}
+html[data-theme="dark"] .pq-f{color:var(--hge);}
 </style>
 </head>
 <body>
@@ -419,7 +465,7 @@ html[data-theme="dark"] .timer{background:#26324F;}
       <button class="modecard mc-pred" onclick="openPred()">🎯 PREDICTED SETS<small>High-probability topics for September 2026</small></button>
     </div>
     <div id="homedash"></div>
-    <div class="credit">Created by <a href="https://darkwizlab.com" target="_blank" rel="noopener"><b>DarkWiz Lab</b></a> · 2026 · <span style="opacity:.75">v4.8.0</span></div>
+    <div class="credit">Created by <a href="https://darkwizlab.com" target="_blank" rel="noopener"><b>DarkWiz Lab</b></a> · 2026 · <span style="opacity:.75">v4.8.2</span></div>
   </div>
 
   <!-- STUDY -->
@@ -449,7 +495,11 @@ html[data-theme="dark"] .timer{background:#26324F;}
         <button class="optbtn s-psad sel" data-subj="PSAD">🏗 PSAD<small>Structural · 35%</small></button>
         <button class="optbtn s-mste" data-subj="MSTE">📐 MSTE<small>Math · Surveying · CM · 35%</small></button>
         <button class="optbtn s-hge" data-subj="HGE">💧 HGE<small>Hydraulics · Geotech · 30%</small></button>
-        <button class="optbtn s-terms" data-subj="TERMS">📘 TERMS<small>Definitions · all three subjects</small></button>
+        <button class="optbtn s-terms" data-subj="TERMS">📘 TERMS<small>Definitions &amp; recall</small></button>
+      </div>
+      <div id="termpanel" class="termpanel" style="display:none;">
+        <div class="tphd">📘 Terminology set — choose the paper</div>
+        <div id="termrow" class="termpills"></div>
       </div>
     </div>
     <div class="panel">
@@ -577,7 +627,7 @@ var BANK=[];   /* bank rebuilt from source — see transcription block */
 </script>
 <script>
 /* ---------- APP LOGIC ---------- */
-var cfg={subj:'PSAD',n:'5',mode:'practice',year:null};
+var cfg={subj:'PSAD',n:'5',mode:'practice',year:null,termSubj:'PSAD'};
 var quiz=[],idx=0,picks=[],score=0,t0=0,tick=null,answered=false,totalTime=0,timeLeft=0,pausedAt=0;
 var SUBJCOLORS={PSAD:'#2F4BD0',MSTE:'#E08A00',HGE:'#0E8F8F'};
 /* board pacing (min/item): PSAD 75 items/6 h · MSTE 75/5 h · HGE 50 items/4 h */
@@ -619,9 +669,43 @@ function isTermItem(q){
   if(q.s==='PSAD') return TERMS_PSAD_SETS.indexOf(q.set)>=0;
   return /Definition item/.test(q.sol||'');
 }
-function termsPool(){ return BANK.filter(isTermItem); }
+function termsPool(subj){
+  return BANK.filter(function(q){ return isTermItem(q) && (!subj || q.s===subj); });
+}
 
 function selRow(rowId,btn){var row=document.getElementById(rowId);row.querySelectorAll('.optbtn').forEach(function(x){x.classList.remove('sel');});btn.classList.add('sel');}
+
+/* v4.8.1 - TERMS asks which paper's terminology to drill. The three buttons are
+   built from the live pool, so the counts can never drift from the bank. */
+/* Discipline name leads, acronym and count trail. Never the same shape or the
+   same colour family as the subject tabs directly above it. */
+var TERM_LABEL={PSAD:'Structural theory',
+                MSTE:'Math, surveying \u0026 management',
+                HGE :'Hydraulics \u0026 geotechnical'};
+function selPill(row,btn){
+  row.querySelectorAll('.termpill').forEach(function(x){x.classList.remove('sel');});
+  btn.classList.add('sel');
+}
+function buildTermRow(){
+  var row=document.getElementById('termrow'); if(!row)return;
+  row.innerHTML='';
+  var first=null;
+  ['PSAD','MSTE','HGE'].forEach(function(sj){
+    var n=termsPool(sj).length;
+    var b=document.createElement('button');
+    b.className='termpill'+(n?'':' dis');
+    b.dataset.term=sj;
+    b.innerHTML='<span>'+TERM_LABEL[sj]+'</span><em>'+(n?sj+' \u00B7 '+n+' terms':sj+' \u00B7 none yet')+'</em>';
+    if(n){
+      if(first===null)first=sj;
+      b.onclick=function(){selPill(row,b);cfg.termSubj=sj;syncNumRow();};
+    }
+    row.appendChild(b);
+  });
+  if(!cfg.termSubj||!termsPool(cfg.termSubj).length) cfg.termSubj=first;
+  var cur=row.querySelector('[data-term="'+cfg.termSubj+'"]');
+  if(cur) selPill(row,cur);
+}
 /* v4.7.2 - the two short-drill buttons mean different things per subject, so
    their labels follow the selected subject rather than claiming a fixed count. */
 function syncNumRow(){
@@ -632,8 +716,12 @@ function syncNumRow(){
   if(!b5||!b10)return;
   var terms=(cfg.subj==='TERMS');
   if(terms){
-    b5.innerHTML ='5 terms<small>Quick recall drill</small>';
-    b10.innerHTML='10 terms<small>Extended recall drill</small>';
+    var tsj=cfg.termSubj||'PSAD', tn=termsPool(tsj).length;
+    b5.innerHTML ='5 terms<small>'+tsj+' recall drill</small>';
+    b10.innerHTML='10 terms<small>'+tsj+' \u00B7 extended</small>';
+    /* never offer more items than the chosen paper actually has */
+    b10.classList.toggle('dis', tn<10);
+    if(tn<10 && cfg.n==='10'){ cfg.n='5'; selRow('numrow',b5); }
   }else if(SITSUBJ[cfg.subj]){
     b5.innerHTML ='1 problem set<small>3 linked questions</small>';
     b10.innerHTML='3 problem sets<small>9 linked questions</small>';
@@ -657,6 +745,9 @@ document.getElementById('subjrow').addEventListener('click',function(ev){
   var b=ev.target.closest('.optbtn'); if(!b)return;
   selRow('subjrow',b); cfg.subj=b.dataset.subj;
   if(cfg.n==='past')buildYearRow();   /* year availability is subject-specific */
+  var isTerms=(cfg.subj==='TERMS');
+  document.getElementById('termpanel').style.display = isTerms?'block':'none';
+  if(isTerms) buildTermRow();
   syncNumRow();
 });
 document.getElementById('numrow').addEventListener('click',function(ev){
@@ -683,13 +774,11 @@ function syncNumNote(){
     note.style.display='block';
     note.innerHTML='🗂 Select an exam below — the quiz contains only items sourced from that exam, in the bank as transcribed.';
   }else if(cfg.subj==='TERMS'){
-    var tp=termsPool(), byS={};
-    tp.forEach(function(q){byS[q.s]=(byS[q.s]||0)+1;});
+    var tsj2=cfg.termSubj||'PSAD', n2=termsPool(tsj2).length;
     note.style.display='block';
-    note.innerHTML='📘 Terminology only — definition and recall items, no computation. '+
-      'Drawn across all three subjects: <b>PSAD '+(byS.PSAD||0)+'</b> · <b>MSTE '+(byS.MSTE||0)+
-      '</b> · <b>HGE '+(byS.HGE||0)+'</b> = '+tp.length+' items. '+
-      'Timing follows each item\'s own subject pace. Mock and past-board sets are off here — both are board-format simulations.';
+    note.innerHTML='📘 <b>'+tsj2+' terminology</b> — definition and recall items only, no computation. '+
+      n2+' item'+(n2===1?'':'s')+' available, timed at '+tsj2+' board pace. '+
+      'Mock and past-board sets are off here: both are board-format simulations, and this is a recall drill.';
   }else if(SITSUBJ[cfg.subj]){
     note.style.display='block';
     note.innerHTML='📐 '+cfg.subj+' is a situational paper: one stem carries three linked questions. '+
@@ -760,12 +849,12 @@ function startQuiz(){
        definition items are standalone anyway, and if two parts of a PSAD
        definition set happen to be drawn together they share their heading,
        which is how they were printed. */
-    pool = termsPool();
-    if(!pool.length){toast('No terminology items in the bank yet.');return;}
+    var tsubj = cfg.termSubj || 'PSAD';
+    pool = termsPool(tsubj);
+    if(!pool.length){toast('No '+tsubj+' terminology items in the bank yet.');return;}
     target = Math.min(parseInt(cfg.n)||5, pool.length);
-    var tb={}; pool.forEach(function(q){tb[q.s]=(tb[q.s]||0)+1;});
-    bannerMsg='📘 Terminology drill · '+target+' definition item'+(target===1?'':'s')+
-              ' drawn at random from '+pool.length+' across PSAD, MSTE and HGE. Recall only, no computation.';
+    bannerMsg='📘 '+tsubj+' terminology drill · '+target+' definition item'+(target===1?'':'s')+
+              ' drawn at random from '+pool.length+'. Recall only, no computation.';
   }else{
     pool = BANK.filter(function(q){return q.s===cfg.subj;});
     if(cfg.n==='mock'){
@@ -855,18 +944,25 @@ function resumeQuiz(){
     if(timeLeft<=Math.max(30,totalTime*0.15))tEl.classList.add('warn');
   },500);
 }
+/* v4.8.1 - the actual teardown, split out so it can be reached without the
+   dialog. Every step is guarded: if one throws, the screen still changes. */
+function doCancelQuiz(){
+  try{ clearInterval(tick); }catch(e){}
+  try{ var p=document.getElementById('pauseovl'); if(p)p.classList.remove('on'); }catch(e){}
+  try{ closeModal(); }catch(e){}
+  quiz=[]; picks=[]; idx=0; answered=false;
+  try{ goHome(); }
+  catch(e){ if(window.console)console.error('goHome failed on cancel',e); showScreen('scr-home'); }
+  try{ toast('Quiz cancelled — nothing was recorded.'); }catch(e){}
+}
 function cancelQuiz(){
-  /* FIX: native confirm() is suppressed in sandboxed iframes and in some
-     standalone/PWA contexts — it returns false, so the old code silently
-     bailed out and the button appeared dead. Replaced with an in-app modal. */
+  /* native confirm() is suppressed in sandboxed iframes and in some standalone
+     and PWA contexts - it returns false, so the old code silently bailed out
+     and the button appeared dead. An in-app dialog replaces it, and if that
+     dialog cannot be shown, askConfirm calls the teardown directly. */
   askConfirm('&#10006;','Cancel this quiz?',
     'Your progress on this set will not be recorded in your KPIs.',
-    'Yes, cancel','danger',function(){
-      clearInterval(tick);
-      document.getElementById('pauseovl').classList.remove('on');
-      goHome();
-      toast('Quiz cancelled — nothing was recorded.');
-  });
+    'Yes, cancel','danger',doCancelQuiz);
 }
 
 var ITEMCOUNT=0;
@@ -899,14 +995,22 @@ function renderQ(){
   if(!picks[idx])picks[idx]=[];
   var done=0; for(var z=0;z<idx;z++)done+=quiz[z].items.length;
   document.getElementById('qcount').textContent =
-    (g.solo?'Item ':'Problem Set ')+(idx+1)+' of '+quiz.length
+    /* v4.8.1 - g.solo is only true when an item has no set id, and every item
+       in this bank has one (MSTE sets are one item long), so every screen read
+       "Problem Set". Label off the actual number of items on the screen. */
+    ((g.items.length>1)?'Problem Set ':'Item ')+(idx+1)+' of '+quiz.length
     + (g.items.length>1?' \u00B7 '+g.items.length+' items':'');
   document.getElementById('progfill').style.width=(done/ITEMCOUNT*100)+'%';
   var chip=document.getElementById('qsubj');
   chip.textContent=g.s; chip.style.background=SUBJCOLORS[g.s];
 
   /* the stem and the figure appear ONCE per set */
-  document.getElementById('qtext').innerHTML = g.head || g.items[0].q;
+  /* v4.8.1 - a single-item screen printed its stem twice: once here as the
+     question text and again below as the sub-question label, because qs
+     defaults to q for the 492 standalone items that have no separate
+     sub-stem. The stem is now shown once, in whichever slot is correct. */
+  var oneItem = (g.items.length===1);
+  document.getElementById('qtext').innerHTML = g.head || (oneItem ? g.items[0].q : g.items[0].q);
   var fg=document.getElementById('qfig');
   if(g.fig){fg.innerHTML=g.fig;fg.className='qfig on';}else{fg.innerHTML='';fg.className='qfig';}
 
@@ -914,8 +1018,12 @@ function renderQ(){
   var letters=['A','B','C','D'];
   g.items.forEach(function(q,si){
     var wrap=document.createElement('div'); wrap.className='subq';
-    var qt=document.createElement('div'); qt.className='subq-t'; qt.innerHTML=q.qs;
-    wrap.appendChild(qt);
+    var headTxt=(document.getElementById('qtext').textContent||'').replace(/\s+/g,' ').trim();
+    var subTxt=(q.qs||'').replace(/<[^>]*>/g,' ').replace(/&[a-z#0-9]+;/gi,' ').replace(/\s+/g,' ').trim();
+    if(!(oneItem && subTxt && subTxt===headTxt)){
+      var qt=document.createElement('div'); qt.className='subq-t'; qt.innerHTML=q.qs;
+      wrap.appendChild(qt);
+    }
     q.c.forEach(function(txt,i){
       var b=document.createElement('button');
       b.className='choice'; b.dataset.sub=si; b.dataset.i=i;
@@ -980,7 +1088,8 @@ function finish(){
   score=correct;
   var pct=Math.round(correct/flat.length*100);
   saveResult({
-    d:Date.now(), subj:cfg.subj, setType:cfg.n, year:cfg.year, mode:cfg.mode,
+    d:Date.now(), subj:(cfg.subj==='TERMS'?(cfg.termSubj||'PSAD')+' terms':cfg.subj),
+    setType:cfg.n, year:cfg.year, mode:cfg.mode,
     n:flat.length, score:correct, pct:pct, secs:secs, allot:totalTime,
     items:flat.map(function(f){return {s:f.q.s,t:f.q.t,ok:f.pick===f.q.a};})
   });
@@ -1510,18 +1619,59 @@ tickClock(); setInterval(tickClock,1000);
 /* ---------------- IN-APP CONFIRM MODAL ---------------- */
 /* Native confirm()/alert() are blocked inside sandboxed iframes and behave
    inconsistently in installed PWAs. Every destructive action now routes here. */
+/* v4.8.1 - askConfirm hardened. The confirm dialog is the ONLY thing standing
+   between the Cancel Quiz button and the cancel actually happening, so if any
+   part of it fails to come up the button reads as dead. It now:
+     - runs the callback directly if the dialog markup is missing or if the
+       browser will not paint it (display did not become flex);
+     - binds the buttons with addEventListener as well as onclick, so a blocked
+       inline handler is not the single point of failure;
+     - guarantees the callback fires at most once, from whichever path wins;
+     - closes on Escape and on a backdrop tap. */
+var MODAL_CB=null;
+function runModalCb(){
+  var f=MODAL_CB; MODAL_CB=null;
+  if(typeof f==='function'){ try{ f(); }catch(e){ if(window.console)console.error('confirm callback failed',e); } }
+}
 function askConfirm(icon,title,msg,okLabel,kind,cb){
-  var ovl=document.getElementById('modalovl');
-  document.getElementById('mdIc').innerHTML=icon||'&#9888;';
-  document.getElementById('mdTitle').textContent=title;
-  document.getElementById('mdMsg').textContent=msg;
-  var yes=document.getElementById('mdYes');
+  var ovl=document.getElementById('modalovl'),
+      yes=document.getElementById('mdYes'),
+      no =document.getElementById('mdNo');
+  /* dialog markup missing - do the thing rather than nothing */
+  if(!ovl||!yes){ MODAL_CB=cb; runModalCb(); return; }
+  MODAL_CB=cb;
+  var ic=document.getElementById('mdIc'), tt=document.getElementById('mdTitle'), mm=document.getElementById('mdMsg');
+  if(ic)ic.innerHTML=icon||'&#9888;';
+  if(tt)tt.textContent=title;
+  if(mm)mm.textContent=msg;
   yes.textContent=okLabel||'Confirm';
   yes.className='yes'+(kind==='danger'?'':' neutral');
-  yes.onclick=function(){closeModal();setTimeout(function(){cb&&cb();},60);};
+  var accept=function(ev){ if(ev&&ev.preventDefault)ev.preventDefault();
+    closeModal(); setTimeout(runModalCb,60); };
+  var reject=function(ev){ if(ev&&ev.preventDefault)ev.preventDefault();
+    MODAL_CB=null; closeModal(); };
+  yes.onclick=accept; no&&(no.onclick=reject);
+  if(!yes.dataset.bound){ yes.dataset.bound='1'; yes.addEventListener('click',accept); }
+  if(no&&!no.dataset.bound){ no.dataset.bound='1'; no.addEventListener('click',reject); }
+  bindModalOverlay();
   ovl.classList.add('on');
+  /* if the overlay refuses to become visible, don't strand the user */
+  setTimeout(function(){
+    var vis=true;
+    try{ vis=(ovl.ownerDocument.defaultView.getComputedStyle(ovl).display!=='none'); }catch(e){}
+    if(!vis && MODAL_CB){ closeModal(); runModalCb(); }
+  },80);
 }
 function closeModal(){var o=document.getElementById('modalovl');if(o)o.classList.remove('on');}
+function bindModalOverlay(){
+  var ovl=document.getElementById('modalovl');
+  if(!ovl||ovl.dataset.bound)return;
+  ovl.dataset.bound='1';
+  ovl.addEventListener('click',function(ev){ if(ev.target===this){MODAL_CB=null;closeModal();} });
+  document.addEventListener('keydown',function(ev){
+    if(ev.key==='Escape'&&ovl.classList.contains('on')){MODAL_CB=null;closeModal();}
+  });
+}
 
 /* ---------------- TOAST ---------------- */
 var TOASTT=null;
@@ -1546,11 +1696,7 @@ function FIG(svg,cap){
 /* ---------------- INIT (deferred so late-parsed markup exists) ---------------- */
 function uiInit(){
   applyTheme(); syncNav(); tickClock();
-  var ovl=document.getElementById('modalovl');
-  if(ovl && !ovl.dataset.bound){
-    ovl.dataset.bound='1';
-    ovl.addEventListener('click',function(ev){if(ev.target===this)closeModal();});
-  }
+  bindModalOverlay();
 }
 if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',uiInit);
 else uiInit();
@@ -1650,7 +1796,7 @@ SFIG[20] = "<img alt=\"Interaction diagram C4-60.8\" src=\"data:image/png;base64
    23 situations / 69 items · official answer key applied
    Figures hand-redrawn as SVG from the source artwork (see SFIG).
    ===================================================================== */
-var APP_VERSION='4.8.0';
+var APP_VERSION='4.8.2';
 var YR='Mar 2026';
 function SIT(o){
   var head='<b>PROBLEM SET '+o.n+'</b> \u2014 '+o.stem
