@@ -64,6 +64,7 @@ body{font-family:'Inter',system-ui,sans-serif;background:var(--paper);color:var(
 .optbtn small{display:block;font-weight:500;color:var(--muted);font-size:11px;margin-top:2px;}
 .optbtn.sel{border-color:var(--psad);background:var(--sel-psad);box-shadow:0 0 0 3px rgba(47,75,208,.18);}
 .optbtn.s-psad.sel{border-color:var(--psad);} .optbtn.s-mste.sel{border-color:var(--mste);background:var(--sel-mste);} .optbtn.s-hge.sel{border-color:var(--hge);background:var(--sel-hge);}
+.optbtn.s-terms.sel{border-color:#7A4BC4;background:rgba(122,75,196,.10);box-shadow:0 0 0 3px rgba(122,75,196,.18);}
 .go{width:100%;margin-top:18px;background:linear-gradient(120deg,#1E2F86,#2F4BD0);color:#fff;border:none;border-radius:14px;padding:16px;font-family:'Sora';font-weight:800;font-size:16px;cursor:pointer;box-shadow:0 6px 16px rgba(47,75,208,.35);}
 .go:active{transform:scale(.98);}
 
@@ -418,7 +419,7 @@ html[data-theme="dark"] .timer{background:#26324F;}
       <button class="modecard mc-pred" onclick="openPred()">🎯 PREDICTED SETS<small>High-probability topics for September 2026</small></button>
     </div>
     <div id="homedash"></div>
-    <div class="credit">Created by <a href="https://darkwizlab.com" target="_blank" rel="noopener"><b>DarkWiz Lab</b></a> · 2026 · <span style="opacity:.75">v4.7.1</span></div>
+    <div class="credit">Created by <a href="https://darkwizlab.com" target="_blank" rel="noopener"><b>DarkWiz Lab</b></a> · 2026 · <span style="opacity:.75">v4.8.0</span></div>
   </div>
 
   <!-- STUDY -->
@@ -448,6 +449,7 @@ html[data-theme="dark"] .timer{background:#26324F;}
         <button class="optbtn s-psad sel" data-subj="PSAD">🏗 PSAD<small>Structural · 35%</small></button>
         <button class="optbtn s-mste" data-subj="MSTE">📐 MSTE<small>Math · Surveying · CM · 35%</small></button>
         <button class="optbtn s-hge" data-subj="HGE">💧 HGE<small>Hydraulics · Geotech · 30%</small></button>
+        <button class="optbtn s-terms" data-subj="TERMS">📘 TERMS<small>Definitions · all three subjects</small></button>
       </div>
     </div>
     <div class="panel">
@@ -455,6 +457,7 @@ html[data-theme="dark"] .timer{background:#26324F;}
       <div class="optrow" id="numrow">
         <button class="optbtn sel" data-n="5">5 items<small>Quick drill</small></button>
         <button class="optbtn" data-n="10">10 items<small>Full set</small></button>
+        <!-- labels are rewritten by syncNumRow() for the situational subjects -->
         <button class="optbtn" data-n="mock">🎯 Random Mock Set<small>Board-length set drawn from transcribed items</small></button>
         <button class="optbtn" data-n="past">🗂 Past Boards (2023 – 2026)<small>Actual items from a specific exam</small></button>
       </div>
@@ -580,11 +583,81 @@ var SUBJCOLORS={PSAD:'#2F4BD0',MSTE:'#E08A00',HGE:'#0E8F8F'};
 /* board pacing (min/item): PSAD 75 items/6 h · MSTE 75/5 h · HGE 50 items/4 h */
 var PACE={PSAD:4.8, MSTE:4.0, HGE:4.8};
 
+/* v4.7.2 - which subjects are situational papers. Declared here, beside PACE,
+   because syncNumRow() runs at init and this block loads before the quiz
+   engine. Keeping it next to the buildMockPool definitions caused a
+   ReferenceError on first paint. */
+var SITSUBJ={PSAD:true, HGE:true, MSTE:false};
+
+/* ===== TERMS POOL (v4.8.0) =======================================================
+   A terminology item is one answered from definition or recall, with no
+   computation. Three tests, all mechanical and all auditable:
+
+   (a) MSTE and HGE items already carry a green "Definition item" panel, applied
+       during transcription.
+   (b) PSAD carries no such panel, so its five terminology problem sets are named
+       explicitly below. Each was read from the file and is a pure definition set
+       (modulus of rigidity/elasticity/rupture, creep vs shrinkage vs relaxation,
+       ductility, load factor, fatigue vs plasticity vs yielding).
+   (c) Any item with a DIGIT in one of its four choices is rejected, whatever its
+       panel says. A numeric option means a number had to be produced.
+
+   Four items pass (a) and (c) but are still computational, so they are excluded
+   by name: the LOS item needs V/PHF worked out first, and the three USCS items
+   classify from given Cu/Cc and Atterberg numbers against a table. The panel was
+   over-applied on those; the items stay in their own subject, just not here.
+   ================================================================================ */
+var TERMS_PSAD_SETS = ['PSAD-Mar 2026-23','PSAD-Nov 2025-21','PSAD-Nov 2025-22',
+                       'PSAD-Apr 2025-24','PSAD-Nov 2024-24'];
+var TERMS_EXCLUDE = {'MSTE-Nov 2024-31|0':1,
+                     'HGE-Nov 2025-S3|0':1,'HGE-Nov 2025-S3|1':1,'HGE-Nov 2025-S3|2':1};
+function isTermItem(q){
+  if(TERMS_EXCLUDE[(q.set||'')+'|'+(q.sub||0)]) return false;
+  for(var i=0;i<q.c.length;i++){
+    if(/\d/.test(String(q.c[i]).replace(/&[a-z]+;/gi,'').replace(/<[^>]*>/g,''))) return false;
+  }
+  if(q.s==='PSAD') return TERMS_PSAD_SETS.indexOf(q.set)>=0;
+  return /Definition item/.test(q.sol||'');
+}
+function termsPool(){ return BANK.filter(isTermItem); }
+
 function selRow(rowId,btn){var row=document.getElementById(rowId);row.querySelectorAll('.optbtn').forEach(function(x){x.classList.remove('sel');});btn.classList.add('sel');}
+/* v4.7.2 - the two short-drill buttons mean different things per subject, so
+   their labels follow the selected subject rather than claiming a fixed count. */
+function syncNumRow(){
+  var b5=document.querySelector('#numrow [data-n="5"]'),
+      b10=document.querySelector('#numrow [data-n="10"]'),
+      bM=document.querySelector('#numrow [data-n="mock"]'),
+      bP=document.querySelector('#numrow [data-n="past"]');
+  if(!b5||!b10)return;
+  var terms=(cfg.subj==='TERMS');
+  if(terms){
+    b5.innerHTML ='5 terms<small>Quick recall drill</small>';
+    b10.innerHTML='10 terms<small>Extended recall drill</small>';
+  }else if(SITSUBJ[cfg.subj]){
+    b5.innerHTML ='1 problem set<small>3 linked questions</small>';
+    b10.innerHTML='3 problem sets<small>9 linked questions</small>';
+  }else{
+    b5.innerHTML ='5 items<small>Quick drill</small>';
+    b10.innerHTML='10 items<small>Full set</small>';
+  }
+  /* v4.8.0 - TERMS is a cross-subject recall drill, not a board paper. A mock
+     set and a past-board set are both board-format simulations, so neither is
+     meaningful here and both are switched off. */
+  [bM,bP].forEach(function(b){ if(b) b.classList.toggle('dis',terms); });
+  if(terms && (cfg.n==='mock'||cfg.n==='past')){
+    cfg.n='5'; selRow('numrow',b5);
+    document.getElementById('yearrow').style.display='none';
+    var pBtn=document.querySelector('#moderow [data-mode="practice"]');
+    if(pBtn) pBtn.classList.remove('dis');
+  }
+  syncNumNote();
+}
 document.getElementById('subjrow').addEventListener('click',function(ev){
   var b=ev.target.closest('.optbtn'); if(!b)return;
   selRow('subjrow',b); cfg.subj=b.dataset.subj;
   if(cfg.n==='past')buildYearRow();   /* year availability is subject-specific */
+  syncNumRow();
 });
 document.getElementById('numrow').addEventListener('click',function(ev){
   var b=ev.target.closest('.optbtn'); if(!b)return;
@@ -597,11 +670,33 @@ document.getElementById('numrow').addEventListener('click',function(ev){
   else{pBtn.classList.remove('dis');}
   document.getElementById('yearrow').style.display = cfg.n==='past'?'grid':'none';
   if(cfg.n==='past')buildYearRow();
-  var note=document.getElementById('numnote');
-  if(cfg.n==='mock'){note.style.display='block';note.innerHTML='🎯 Board format: <b>75 items</b> for PSAD &amp; MSTE, <b>50 items</b> for HGE, at official pacing. Draws <b>only</b> from verified transcribed board items — generated variants are switched off until transcription is complete, so a set may run shorter than full board length.';}
-  else if(cfg.n==='past'){note.style.display='block';note.innerHTML='🗂 Select an exam below — the quiz contains only items sourced from the reference file of that exam. Sets grow as more items are extracted and verified from the references.';}
-  else note.style.display='none';
+  syncNumNote();
 });
+function syncNumNote(){
+  var note=document.getElementById('numnote'); if(!note)return;
+  if(cfg.n==='mock'){
+    note.style.display='block';
+    note.innerHTML='🎯 Board format: <b>75 items</b> for PSAD &amp; MSTE, <b>50 items</b> for HGE, at official pacing. '+
+      'Every item is transcribed from an actual past board paper — nothing is generated. '+
+      'PSAD and HGE are built from <b>whole problem sets</b>, so a situation is never split across the set.';
+  }else if(cfg.n==='past'){
+    note.style.display='block';
+    note.innerHTML='🗂 Select an exam below — the quiz contains only items sourced from that exam, in the bank as transcribed.';
+  }else if(cfg.subj==='TERMS'){
+    var tp=termsPool(), byS={};
+    tp.forEach(function(q){byS[q.s]=(byS[q.s]||0)+1;});
+    note.style.display='block';
+    note.innerHTML='📘 Terminology only — definition and recall items, no computation. '+
+      'Drawn across all three subjects: <b>PSAD '+(byS.PSAD||0)+'</b> · <b>MSTE '+(byS.MSTE||0)+
+      '</b> · <b>HGE '+(byS.HGE||0)+'</b> = '+tp.length+' items. '+
+      'Timing follows each item\'s own subject pace. Mock and past-board sets are off here — both are board-format simulations.';
+  }else if(SITSUBJ[cfg.subj]){
+    note.style.display='block';
+    note.innerHTML='📐 '+cfg.subj+' is a situational paper: one stem carries three linked questions. '+
+      'This drill serves <b>'+(cfg.n==='5'?'1 complete problem set (3 questions)':'3 complete problem sets (9 questions)')+
+      '</b> in printed order, the way they appear on the board exam.';
+  }else note.style.display='none';
+}
 document.getElementById('moderow').addEventListener('click',function(ev){
   var b=ev.target.closest('.optbtn'); if(!b||b.classList.contains('dis'))return;
   selRow('moderow',b); cfg.mode=b.dataset.mode;
@@ -659,18 +754,51 @@ function startQuiz(){
     pool=BANK.filter(function(q){return q.y===cfg.year&&q.s===cfg.subj;});
     target=pool.length;
     bannerMsg='🗂 '+cfg.subj+' · '+cfg.year+' board set — '+pool.length+' item(s) currently in the bank from this exam.';
+  }else if(cfg.subj==='TERMS'){
+    /* v4.8.0 - cross-subject terminology drill. The count is always the number
+       asked for, 5 or 10. Grouping is left to groupScreens: MSTE and HGE
+       definition items are standalone anyway, and if two parts of a PSAD
+       definition set happen to be drawn together they share their heading,
+       which is how they were printed. */
+    pool = termsPool();
+    if(!pool.length){toast('No terminology items in the bank yet.');return;}
+    target = Math.min(parseInt(cfg.n)||5, pool.length);
+    var tb={}; pool.forEach(function(q){tb[q.s]=(tb[q.s]||0)+1;});
+    bannerMsg='📘 Terminology drill · '+target+' definition item'+(target===1?'':'s')+
+              ' drawn at random from '+pool.length+' across PSAD, MSTE and HGE. Recall only, no computation.';
   }else{
     pool = BANK.filter(function(q){return q.s===cfg.subj;});
     if(cfg.n==='mock'){
       target = cfg.subj==='HGE' ? 50 : 75;
-      var fromBank=Math.min(pool.length,target);
-      pool=buildMockPool(pool,target);
-      bannerMsg='🎯 Full board simulation: '+target+' items — '+fromBank+' from the 2023–2026 bank + '+Math.max(0,target-fromBank)+' freshly generated variants, at official pacing.';
+      pool=buildMockPool(pool,target,cfg.subj);
+      var nsit=splitSituations(pool).sits.length;
+      bannerMsg = SITSUBJ[cfg.subj]
+        ? '🎯 Full board simulation · '+pool.length+' items in '+nsit+' problem set'+(nsit===1?'':'s')+
+          ', every one transcribed from a past board paper. Situations are never split.'
+        : '🎯 Full board simulation · '+pool.length+' items, every one transcribed from a past board paper.';
+      target=pool.length;
+    }else if(SITSUBJ[cfg.subj]){
+      /* v4.7.2 - PSAD and HGE are situational papers, so the short drills draw
+         WHOLE problem sets rather than loose items: 1 set (3 linked questions)
+         or 3 sets (9 linked questions). */
+      var nSets = (cfg.n==='5') ? 1 : 3;
+      var drawn = drawSituations(pool,nSets);
+      if(!drawn.items.length){toast('No problem sets in the bank for '+cfg.subj+' yet.');return;}
+      if(drawn.sets<nSets){
+        bannerMsg='📐 Only '+drawn.available+' problem set(s) available for '+cfg.subj+' — running '+drawn.sets+'.';
+      }else{
+        bannerMsg='📐 '+drawn.sets+' problem set'+(drawn.sets===1?'':'s')+' · '+drawn.items.length+
+                  ' linked questions, in printed order, from '+cfg.subj+' past boards.';
+      }
+      pool=drawn.items; target=pool.length;
     }else{
       target=parseInt(cfg.n);
     }
   }
   if(!pool.length){toast('No items in the bank for that selection yet.');return;}
+  /* v4.7.2 - shuffling the flat list is safe: groupScreens re-collects each set
+     and re-sorts it by printed sub-order, so a situation can never arrive split
+     or out of sequence. Screen ORDER stays random. */
   quiz = shuffle(pool.slice()).slice(0, Math.min(target, pool.length));
   quiz = quiz.map(function(q){
     var order = shuffle([0,1,2,3]);
@@ -687,10 +815,17 @@ function startQuiz(){
   ITEMCOUNT=quiz.length;
   quiz=groupScreens(quiz);
   /* pacing keys off the real item count, not the screen count */
-  totalTime=Math.round(ITEMCOUNT*(PACE[cfg.subj]||4.8)*60);
+  /* v4.8.0 - pace per item by the item's OWN subject. Identical to the old
+     formula for a single-subject quiz, and correct for the mixed TERMS pool. */
+  var paceMin=0;
+  quiz.forEach(function(g){g.items.forEach(function(q){paceMin+=(PACE[q.s]||4.8);});});
+  totalTime=Math.round(paceMin*60);
   timeLeft=totalTime; t0=Date.now();
   var ban=document.getElementById('qbanner');
-  if(bannerMsg){ban.style.display='block';ban.textContent=bannerMsg;}else ban.style.display='none';
+  /* v4.7.2 - clear the text as well as hiding it, so a banner from an earlier
+     attempt can never be read back or flash on the next quiz. */
+  if(bannerMsg){ban.style.display='block';ban.textContent=bannerMsg;}
+  else {ban.style.display='none';ban.textContent='';}
   clearInterval(tick);
   var tEl=document.getElementById('timer');
   tEl.classList.remove('warn'); tEl.textContent='⏳ '+fmt(timeLeft);
@@ -1018,12 +1153,11 @@ function sget(k){try{var v=localStorage.getItem(k);if(v!=null)return JSON.parse(
 function sset(k,v){MEM[k]=v;try{localStorage.setItem(k,JSON.stringify(v));}catch(e){}}
 
 /* ---------- TOPIC & YEAR TAGS (map bank items to Study topics for KPIs) ---------- */
-(function(){
-  var t=[1,2,0,0,2,2,4,3,  3,4,4,2,6,5,0,3,  1,6,3,3,1,3,7,4];
-  t.forEach(function(v,i){if(BANK[i])BANK[i].t=v;});
-  var Y={4:'Nov 2019',16:'Nov 2019',20:'Nov 2019',14:'May 2022',17:'May 2022',18:'May 2022'};
-  Object.keys(Y).forEach(function(i){if(BANK[i])BANK[i].y=Y[i];});
-})();
+/* v4.7.2 - a legacy tagging block used to run here. It overwrote the topic tag
+   of BANK[0..23] and stamped six of them 'Nov 2019' / 'May 2022'. It was inert
+   only because it executes before any bank block loads, so BANK was still empty.
+   Had the script order ever changed it would have silently mislabelled 24 live
+   March 2026 items. Removed. */
 
 /* ---------- BANK EXPANSION: +2 per subject (10 each) ---------- */
 /* legacy items removed */
@@ -1138,6 +1272,7 @@ function goStudyTopic(subj,ti){
 }
 
 /* init */
+syncNumRow();
 renderHome();
 </script>
 <script>
@@ -1146,32 +1281,54 @@ renderHome();
 /* ---------- AUTHENTIC PAST-BOARD ADDITIONS (from uploaded references) ---------- */
 /* legacy items removed */
 
-/* ---------- PARAMETRIC GENERATORS — endless number-randomized variants ---------- */
-function pk(a){return a[Math.floor(Math.random()*a.length)];}
-function r1(x){return Math.round(x*10)/10;}
-function r2(x){return Math.round(x*100)/100;}
-function r3(x){return Math.round(x*1000)/1000;}
-function peso(x){return '\u20B1'+Math.round(x).toLocaleString('en-US');}
-
-/* Random-variant generators removed — variants will be regenerated from the
-   completed PRC transcription, not invented. */
-
-function genUnique(g){
-  var q;
-  for(var k=0;k<8;k++){
-    q=g();
-    var seen={},dup=false;
-    for(var j=0;j<q.c.length;j++){if(seen[q.c[j]]){dup=true;break;}seen[q.c[j]]=1;}
-    if(!dup)return q;
-  }
-  return q; /* extremely rare fallback */
+/* v4.7.2 - the parametric-variant generators and their helpers (pk, r1, r2,
+   r3, peso, genUnique) were removed. Every item this app serves is transcribed
+   from an actual past board paper. Nothing is invented. */
+/* ===== SITUATION-AWARE SET BUILDING (v4.7.2) =====================================
+   PSAD is delivered entirely as situations: every one of its 165 sets is a stem
+   followed by three linked questions, exactly as printed. HGE is a mix - 37
+   situations of three, plus 167 standalone items. MSTE is standalone throughout.
+   So PSAD and HGE draw whole situations and never split one; MSTE keeps drawing
+   individual items, because grouping them would misrepresent that paper.
+   ================================================================================ */
+/* Split a pool into complete situations (2+ linked items) and standalone items. */
+function splitSituations(pool){
+  var g={}, order=[], solo=[];
+  pool.forEach(function(q){
+    if(!q.set){ solo.push(q); return; }
+    if(!g[q.set]){ g[q.set]=[]; order.push(q.set); }
+    g[q.set].push(q);
+  });
+  var sits=[];
+  order.forEach(function(k){
+    if(g[k].length>1){ g[k].sort(function(a,b){return a.sub-b.sub;}); sits.push(g[k]); }
+    else solo.push(g[k][0]);
+  });
+  return {sits:sits, solo:solo};
 }
-function buildMockPool(base,target){
-  /* Authentic items only — no generated variants. If the bank cannot fill a
-     full board-length set, the quiz simply runs shorter and says so. */
-  var out=base.slice();
-  for(var i=out.length-1;i>0;i--){var j=Math.floor(Math.random()*(i+1));var t=out[i];out[i]=out[j];out[j]=t;}
-  return out.slice(0,target);
+
+/* Draw n complete situations at random. Returns a flat list with each
+   situation's printed order intact; groupScreens puts them on one screen. */
+function drawSituations(pool,n){
+  var sp=splitSituations(pool);
+  var picked=shuffle(sp.sits.slice()).slice(0,n), out=[];
+  picked.forEach(function(a){ out=out.concat(a); });
+  return {items:out, sets:picked.length, available:sp.sits.length};
+}
+
+function buildMockPool(base,target,subj){
+  /* Authentic items only - no generated variants. */
+  if(!SITSUBJ[subj]) return shuffle(base.slice()).slice(0,target);
+  /* Situations first, whole and unsplit, then standalone items to reach board
+     length. For PSAD this fills the set exactly (25 situations = 75 items).
+     For HGE the bank holds 37 situations, so a 50-item set runs 16 of them
+     (48 items) plus 2 standalone - which is also how the real HGE papers read. */
+  var sp=splitSituations(base), out=[];
+  shuffle(sp.sits.slice()).forEach(function(a){
+    if(out.length+a.length<=target) out=out.concat(a);
+  });
+  if(out.length<target) out=out.concat(shuffle(sp.solo.slice()).slice(0,target-out.length));
+  return out;
 }
 
 </script>
@@ -1493,7 +1650,7 @@ SFIG[20] = "<img alt=\"Interaction diagram C4-60.8\" src=\"data:image/png;base64
    23 situations / 69 items · official answer key applied
    Figures hand-redrawn as SVG from the source artwork (see SFIG).
    ===================================================================== */
-var APP_VERSION='4.7.1';
+var APP_VERSION='4.8.0';
 var YR='Mar 2026';
 function SIT(o){
   var head='<b>PROBLEM SET '+o.n+'</b> \u2014 '+o.stem
