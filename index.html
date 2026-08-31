@@ -424,6 +424,99 @@ html[data-theme="dark"] .mdbtns .yes{color:#0A0F1E;}
 html[data-theme="dark"] .pq-b-vl{color:var(--mste);}
 .pq-f{color:#0A6F6F;}
 html[data-theme="dark"] .pq-f{color:var(--hge);}
+
+/* ===== FIGURE LIBRARY (v4.9.0) ======================================
+   The library renders the SAME figure objects the quiz renders - it reads
+   BANK and PQ at paint time rather than holding a second copy - so a defect
+   spotted here is a defect in the live item, not in a stale duplicate.
+   ==================================================================== */
+.fl-lede{font-size:12.5px;color:var(--muted);line-height:1.6;margin:2px 0 0;}
+.fllink{display:inline-block;margin-left:4px;padding:2px 9px;border-radius:999px;
+  border:1px solid var(--line2);background:var(--card);color:var(--accent);
+  font-weight:800;font-size:11.5px;letter-spacing:.06em;text-decoration:none;}
+.fllink:active{transform:scale(.96);}
+
+/* source sub-picker - same visual grammar as the TERMS sub-picker */
+.fl-sub{margin-top:12px;border:1px solid var(--line2);border-left:4px solid var(--accent);
+  background:var(--soft2);border-radius:6px 14px 14px 6px;padding:12px 13px 13px;}
+.fl-sub.s-psad{border-left-color:var(--psad);}
+.fl-sub.s-mste{border-left-color:var(--mste);}
+.fl-sub.s-hge{border-left-color:var(--hge);}
+.fl-subhd{font-family:'Sora';font-size:9.5px;letter-spacing:.17em;text-transform:uppercase;
+  font-weight:800;margin-bottom:10px;display:flex;align-items:center;gap:6px;color:var(--accent);}
+.fl-sub.s-psad .fl-subhd{color:var(--psad);}
+.fl-sub.s-mste .fl-subhd{color:var(--mste);}
+.fl-sub.s-hge  .fl-subhd{color:var(--hge);}
+.fl-pills{display:flex;flex-wrap:wrap;gap:7px;}
+.fl-pill{border:1px solid var(--line2);background:var(--card);color:var(--ink2);
+  border-radius:999px;padding:7px 12px;font-family:inherit;font-size:12px;
+  font-weight:700;cursor:pointer;line-height:1.2;}
+.fl-pill .n{opacity:.6;font-weight:600;margin-left:5px;}
+.fl-pill:active{transform:scale(.97);}
+.fl-pill.on{color:#fff;border-color:transparent;}
+.fl-pill.on .n{opacity:.85;}
+.fl-sub.s-psad .fl-pill.on{background:var(--psad);}
+.fl-sub.s-mste .fl-pill.on{background:var(--mste);}
+.fl-sub.s-hge  .fl-pill.on{background:var(--hge);}
+
+/* progress + filters */
+.fl-bar{margin-top:14px;background:var(--card);border:1px solid var(--line);
+  border-radius:14px;padding:13px 14px;box-shadow:0 2px 10px var(--sh);}
+.fl-prog{height:8px;border-radius:99px;background:var(--chip);overflow:hidden;display:flex;}
+.fl-prog i{display:block;height:100%;}
+.fl-prog .ok{background:var(--good);}
+.fl-prog .fix{background:var(--bad);}
+.fl-cnt{display:flex;flex-wrap:wrap;gap:12px;font-size:11.5px;color:var(--muted);margin-top:9px;}
+.fl-cnt b{color:var(--ink);font-weight:800;}
+.fl-fil{display:flex;flex-wrap:wrap;gap:7px;margin-top:11px;}
+.fl-fb{border:1px solid var(--line2);background:var(--card);color:var(--ink2);border-radius:9px;
+  padding:6px 11px;font-family:inherit;font-size:11.5px;font-weight:700;cursor:pointer;}
+.fl-fb.on{background:var(--ink);color:var(--paper);border-color:var(--ink);}
+
+/* figure card */
+.fl-card{background:var(--card);border:1px solid var(--line);border-radius:16px;
+  padding:15px;margin-top:13px;box-shadow:0 2px 10px var(--sh);}
+.fl-card.st-ok{border-color:var(--good);}
+.fl-card.st-fix{border-color:var(--bad);}
+.fl-top{display:flex;align-items:center;gap:8px;flex-wrap:wrap;}
+.fl-idx{font-family:'Sora';font-weight:800;font-size:15px;color:var(--ink);}
+.fl-chip{font-size:10px;font-weight:800;letter-spacing:.06em;padding:3px 9px;border-radius:999px;
+  text-transform:uppercase;background:var(--chip);color:var(--ink2);}
+.fl-chip.src{background:var(--tint);color:var(--accent);}
+.fl-chip.pred{background:var(--mste-soft);color:var(--mste);}
+.fl-chip.done{background:var(--good-soft);color:var(--good);}
+.fl-chip.flag{background:var(--bad-soft);color:var(--bad);}
+.fl-stem{font-size:12px;color:var(--ink2);line-height:1.6;margin-top:9px;}
+.fl-fig{margin-top:10px;cursor:zoom-in;}
+.fl-fig .diagram{margin:0;}
+.fl-fig .diagram svg,.fl-fig .figwrap svg,.fl-fig .pq-fig svg{
+  width:100%;max-width:660px;height:auto;margin:0 auto;}
+.fl-hint{font-size:10.5px;color:var(--muted);text-align:center;margin-top:5px;}
+.fl-rv{display:flex;gap:8px;margin-top:12px;padding-top:12px;border-top:1px dashed var(--line2);}
+.fl-rb{flex:1;border:1px solid var(--line2);background:var(--card);color:var(--muted);
+  border-radius:10px;padding:9px 6px;font-family:inherit;font-size:11.5px;font-weight:800;cursor:pointer;}
+.fl-rb:active{transform:scale(.98);}
+.fl-rb.ok.on{background:var(--good-soft);border-color:var(--good);color:var(--good);}
+.fl-rb.fix.on{background:var(--bad-soft);border-color:var(--bad);color:var(--bad);}
+
+/* empty folder */
+.fl-empty{margin-top:14px;background:var(--card);border:1px dashed var(--line2);
+  border-radius:16px;padding:26px 20px;text-align:center;}
+.fl-empty .ic{font-size:32px;}
+.fl-empty h4{font-family:'Sora';font-size:15px;margin:9px 0 6px;color:var(--ink);}
+.fl-empty p{font-size:12.5px;color:var(--muted);line-height:1.65;margin:0 auto;max-width:430px;}
+
+/* zoom viewer */
+.fl-zoom{position:fixed;inset:0;z-index:120;background:var(--ovl);display:none;
+  padding:18px;overflow:auto;-webkit-overflow-scrolling:touch;}
+.fl-zoom.show{display:block;}
+.fl-zbox{background:#fff;border-radius:16px;padding:14px;max-width:1000px;margin:0 auto;}
+.fl-zbox svg{width:100%;height:auto;}
+.fl-zbox .diagram{margin:0;}
+.fl-zhd{display:flex;align-items:center;gap:10px;max-width:1000px;margin:0 auto 12px;}
+.fl-zhd span{color:#fff;font-family:'Sora';font-weight:800;font-size:13px;flex:1;}
+.fl-zhd button{border:none;background:rgba(255,255,255,.16);color:#fff;border-radius:10px;
+  padding:9px 14px;font-family:'Sora';font-weight:800;font-size:13px;cursor:pointer;}
 </style>
 </head>
 <body>
@@ -465,7 +558,7 @@ html[data-theme="dark"] .pq-f{color:var(--hge);}
       <button class="modecard mc-pred" onclick="openPred()">🎯 PREDICTED SETS<small>High-probability topics for September 2026</small></button>
     </div>
     <div id="homedash"></div>
-    <div class="credit">Created by <a href="https://darkwizlab.com" target="_blank" rel="noopener"><b>DarkWiz Lab</b></a> · 2026 · <span style="opacity:.75">v4.8.2</span></div>
+    <div class="credit">Created by <a href="https://darkwizlab.com" target="_blank" rel="noopener"><b>DarkWiz Lab</b></a> · 2026 · <span style="opacity:.75">v4.9.0</span> · <a href="#" class="fllink" title="Figure Library" onclick="openFigLib();return false;">FL</a></div>
   </div>
 
   <!-- STUDY -->
@@ -598,6 +691,27 @@ html[data-theme="dark"] .pq-f{color:var(--hge);}
     <div class="pq-filters" id="predfilters"></div>
     <div id="predlist"></div>
     <button class="backbtn" onclick="showScreen('scr-home')">◂ BACK TO HOME</button>
+  </div>
+
+  <!-- FIGURE LIBRARY -->
+  <div id="scr-figlib" class="screen">
+    <div class="navrow">
+      <button onclick="goHome()">&#9666; BACK TO HOME</button>
+    </div>
+    <h2 style="font-family:'Sora';font-size:19px;margin:14px 0 2px;">Figure Library</h2>
+    <p class="fl-lede">Every figure the app draws, filed by subject and by the paper it came from.
+      Each card is the live figure &mdash; the same object the quiz renders &mdash; so anything corrected
+      here is corrected everywhere. Tap a figure to open it full screen, then mark it
+      <b>Checked</b> or <b>Needs fix</b>. Marks are stored on this device only.</p>
+    <div class="stabs">
+      <button class="stab st-psad on" onclick="renderFigLib('PSAD',this)">&#127959; PSAD</button>
+      <button class="stab st-hge" onclick="renderFigLib('HGE',this)">&#128167; HGE</button>
+      <button class="stab st-mste" onclick="renderFigLib('MSTE',this)">&#128208; MSTE</button>
+    </div>
+    <div id="flsub"></div>
+    <div id="flbar"></div>
+    <div id="fllist"></div>
+    <button class="backbtn" onclick="showScreen('scr-home')">&#9666; BACK TO HOME</button>
   </div>
 
 </div>
@@ -1796,7 +1910,7 @@ SFIG[20] = "<img alt=\"Interaction diagram C4-60.8\" src=\"data:image/png;base64
    23 situations / 69 items · official answer key applied
    Figures hand-redrawn as SVG from the source artwork (see SFIG).
    ===================================================================== */
-var APP_VERSION='4.8.2';
+var APP_VERSION='4.9.0';
 var YR='Mar 2026';
 function SIT(o){
   var head='<b>PROBLEM SET '+o.n+'</b> \u2014 '+o.stem
@@ -3427,7 +3541,316 @@ for(var i=0;i<H.length;i++){
 
 <!--NEWBANK-->
 
+
+<script>
+/* =====================================================================
+   FIGURE LIBRARY  -  v4.9.0
+   Built at render time from the live BANK and PQ objects. Nothing is
+   duplicated: the card shows the very string the quiz injects, so the
+   library can never drift out of step with the bank it documents.
+
+   Two facts the folders make visible, and which are not defects here:
+     - MSTE items were transcribed as standalone questions with fig:''.
+       Forty figure-dependent MSTE items were deliberately held out.
+     - HGE items likewise carry fig:''. Its reconciliation pass, and the
+       figures that come with it, are still outstanding.
+   Those folders therefore read empty until that work lands.
+   ===================================================================== */
+var FL_SUBJ = 'PSAD';
+var FL_SRC  = {PSAD:'ALL', MSTE:'ALL', HGE:'ALL'};
+var FL_FILT = 'all';
+var FL_ORDER = ['Mar 2026','Nov 2025','Apr 2025','Nov 2024','Apr 2024',
+                'Nov 2023','Apr 2023','Predicted Sets'];
+var FL_KEY = 'cele_figreview';
+var FL_ITEMS = [];
+
+/* ---------- review marks (sget/sset already fall back to MEM) ---------- */
+function flMarks(){ var m = sget(FL_KEY); return (m && typeof m === 'object') ? m : {}; }
+function flMark(id){ return flMarks()[id] || ''; }
+function flSetMark(id, st){
+  var m = flMarks();
+  if(m[id] === st) delete m[id]; else m[id] = st;
+  sset(FL_KEY, m);
+  return m[id] || '';
+}
+
+/* ---------- text helpers ---------- */
+function flStrip(h){
+  return String(h || '').replace(/<[^>]*>/g, ' ').replace(/\s+/g, ' ').trim();
+}
+function flClip(t, n){
+  t = flStrip(t);
+  return t.length > n ? t.slice(0, n - 1).replace(/[\s,;:.]+$/, '') + '\u2026' : t;
+}
+function flEsc(t){
+  return String(t).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')
+                  .replace(/"/g,'&quot;');
+}
+
+/* ---------- id isolation -------------------------------------------------
+   The quiz shows one figure at a time, so duplicate marker ids across
+   figures never collide there. A gallery puts them all in one document,
+   where url(#id) resolves to whichever definition parsed first. Every id in
+   a card is therefore given a card-unique suffix before it is injected.  */
+function flIsolate(html, tag){
+  var map = {};
+  html = String(html).replace(/\sid="([^"]+)"/g, function(all, id){
+    map[id] = id + '__' + tag;
+    return ' id="' + map[id] + '"';
+  });
+  html = html.replace(/url\(#([^)"']+)\)/g, function(all, id){
+    return 'url(#' + (map[id] || id) + ')';
+  });
+  html = html.replace(/(xlink:href|href)="#([^"]+)"/g, function(all, at, id){
+    return at + '="#' + (map[id] || id) + '"';
+  });
+  return html;
+}
+
+/* ---------- build the index for one subject ---------- */
+function flIndex(subj){
+  var out = [], seen = {}, i, x, key;
+
+  if(typeof BANK !== 'undefined' && BANK && BANK.length){
+    for(i = 0; i < BANK.length; i++){
+      x = BANK[i];
+      if(!x || x.s !== subj) continue;
+      if(!x.fig || !String(x.fig).trim()) continue;
+      key = x.set || ('idx-' + i);
+      if(seen[key]) continue;          /* one card per problem set */
+      seen[key] = 1;
+      out.push({
+        id   : subj + '|' + key,
+        src  : x.y || 'Undated',
+        kind : 'board',
+        label: 'Set ' + (x.setNo != null ? x.setNo : '?'),
+        stem : flClip(x.head || x.q || '', 260),
+        fig  : String(x.fig)
+      });
+    }
+  }
+
+  if(typeof PQ !== 'undefined' && PQ[subj]){
+    for(i = 0; i < PQ[subj].length; i++){
+      var p = PQ[subj][i];
+      if(!p.fig || !String(p.fig).trim()) continue;
+      out.push({
+        id   : subj + '|PRED|' + p.c,
+        src  : 'Predicted Sets',
+        kind : 'pred',
+        label: p.c,
+        stem : flClip((p.t ? p.t + ' \u2014 ' : '') + (p.head || ''), 260),
+        fig  : '<div class="pq-fig">' + p.fig + '</div>'
+      });
+    }
+  }
+
+  out.sort(function(a, b){
+    var ia = FL_ORDER.indexOf(a.src), ib = FL_ORDER.indexOf(b.src);
+    if(ia < 0) ia = 99;
+    if(ib < 0) ib = 99;
+    if(ia !== ib) return ia - ib;
+    var na = parseInt(String(a.label).replace(/\D+/g, ''), 10);
+    var nb = parseInt(String(b.label).replace(/\D+/g, ''), 10);
+    if(isNaN(na)) na = 0;
+    if(isNaN(nb)) nb = 0;
+    return na - nb;
+  });
+  return out;
+}
+
+/* ---------- render ---------- */
+function renderFigLib(subj, btn){
+  if(subj) FL_SUBJ = subj;
+  subj = FL_SUBJ;
+
+  var tabs = document.querySelectorAll('#scr-figlib .stab');
+  for(var t = 0; t < tabs.length; t++) tabs[t].classList.remove('on');
+  if(btn) btn.classList.add('on');
+  else if(tabs.length){
+    var want = {PSAD:0, HGE:1, MSTE:2}[subj] || 0;
+    if(tabs[want]) tabs[want].classList.add('on');
+  }
+
+  FL_ITEMS = flIndex(subj);
+  var cls = subj.toLowerCase();
+
+  /* ---- folder picker ---- */
+  var srcs = [], cnt = {}, i;
+  for(i = 0; i < FL_ITEMS.length; i++){
+    if(cnt[FL_ITEMS[i].src] == null){ cnt[FL_ITEMS[i].src] = 0; srcs.push(FL_ITEMS[i].src); }
+    cnt[FL_ITEMS[i].src]++;
+  }
+  var cur = FL_SRC[subj] || 'ALL';
+  if(cur !== 'ALL' && cnt[cur] == null){ cur = 'ALL'; FL_SRC[subj] = 'ALL'; }
+
+  var sub = document.getElementById('flsub');
+  if(!FL_ITEMS.length){
+    sub.innerHTML = '';
+    sub.className = '';
+  } else {
+    var pills = '<button type="button" class="fl-pill' + (cur === 'ALL' ? ' on' : '') +
+                '" onclick="flPick(\'ALL\')">All folders<span class="n">' + FL_ITEMS.length + '</span></button>';
+    for(i = 0; i < srcs.length; i++){
+      pills += '<button type="button" class="fl-pill' + (cur === srcs[i] ? ' on' : '') +
+               '" onclick="flPick(\'' + srcs[i] + '\')">' + srcs[i] +
+               '<span class="n">' + cnt[srcs[i]] + '</span></button>';
+    }
+    sub.className = 'fl-sub s-' + cls;
+    sub.innerHTML = '<div class="fl-subhd">\uD83D\uDCC1 ' + subj +
+                    ' \u2014 choose a source folder</div><div class="fl-pills">' + pills + '</div>';
+  }
+
+  /* ---- the visible slice ---- */
+  var shown = [];
+  for(i = 0; i < FL_ITEMS.length; i++){
+    var it = FL_ITEMS[i];
+    if(cur !== 'ALL' && it.src !== cur) continue;
+    var st = flMark(it.id);
+    if(FL_FILT === 'todo' && st) continue;
+    if(FL_FILT === 'ok'   && st !== 'ok') continue;
+    if(FL_FILT === 'fix'  && st !== 'fix') continue;
+    shown.push(it);
+  }
+
+  /* ---- progress ---- */
+  var scope = [], nOK = 0, nFIX = 0;
+  for(i = 0; i < FL_ITEMS.length; i++){
+    if(cur === 'ALL' || FL_ITEMS[i].src === cur) scope.push(FL_ITEMS[i]);
+  }
+  for(i = 0; i < scope.length; i++){
+    var m = flMark(scope[i].id);
+    if(m === 'ok') nOK++; else if(m === 'fix') nFIX++;
+  }
+  var tot = scope.length || 1;
+  var bar = document.getElementById('flbar');
+  if(!scope.length){
+    bar.innerHTML = '';
+  } else {
+    bar.innerHTML =
+      '<div class="fl-bar">' +
+        '<div class="fl-prog">' +
+          '<i class="ok" style="width:' + (nOK / tot * 100).toFixed(2) + '%"></i>' +
+          '<i class="fix" style="width:' + (nFIX / tot * 100).toFixed(2) + '%"></i>' +
+        '</div>' +
+        '<div class="fl-cnt">' +
+          '<span><b>' + scope.length + '</b> figures in view</span>' +
+          '<span>\u2713 <b>' + nOK + '</b> checked</span>' +
+          '<span>\u2691 <b>' + nFIX + '</b> need fixing</span>' +
+          '<span>\u25CB <b>' + (scope.length - nOK - nFIX) + '</b> not yet reviewed</span>' +
+        '</div>' +
+        '<div class="fl-fil">' +
+          flFB('all',  'All') + flFB('todo', 'Not reviewed') +
+          flFB('ok',   '\u2713 Checked') + flFB('fix', '\u2691 Needs fix') +
+        '</div>' +
+      '</div>';
+  }
+
+  /* ---- cards ---- */
+  var list = document.getElementById('fllist'), html = '';
+  if(!FL_ITEMS.length){
+    html = '<div class="fl-empty"><div class="ic">\uD83D\uDDC2</div>' +
+      '<h4>No figures filed under ' + subj + ' yet</h4>' +
+      '<p>The ' + subj + ' items in the bank were transcribed as text-only questions &mdash; every ' +
+      'one carries an empty figure field. ' +
+      (subj === 'MSTE'
+        ? 'The forty figure-dependent MSTE items are the ones held out of the bank; they will appear ' +
+          'in this folder once their figures are reconstructed.'
+        : 'HGE figures arrive with its reconciliation pass, which is still outstanding.') +
+      '</p></div>';
+  } else if(!shown.length){
+    html = '<div class="fl-empty"><div class="ic">\uD83D\uDD0D</div>' +
+      '<h4>Nothing matches this filter</h4>' +
+      '<p>Switch the filter back to <b>All</b> to see the rest of this folder.</p></div>';
+  } else {
+    for(i = 0; i < shown.length; i++) html += flCard(shown[i], i + 1, shown.length);
+  }
+  list.innerHTML = html;
+}
+
+function flFB(v, lab){
+  return '<button type="button" class="fl-fb' + (FL_FILT === v ? ' on' : '') +
+         '" onclick="flFilter(\'' + v + '\')">' + lab + '</button>';
+}
+
+function flCard(it, n, of){
+  var st  = flMark(it.id);
+  var tag = it.id.replace(/[^A-Za-z0-9]+/g, '');
+  var badge = st === 'ok'  ? '<span class="fl-chip done">\u2713 checked</span>'
+            : st === 'fix' ? '<span class="fl-chip flag">\u2691 needs fix</span>' : '';
+  return '<div class="fl-card' + (st ? ' st-' + st : '') + '" id="flc-' + tag + '">' +
+    '<div class="fl-top">' +
+      '<span class="fl-idx">' + n + '<span style="opacity:.45;font-weight:600"> / ' + of + '</span></span>' +
+      '<span class="fl-chip ' + (it.kind === 'pred' ? 'pred' : 'src') + '">' + it.src + '</span>' +
+      '<span class="fl-chip">' + flEsc(it.label) + '</span>' + badge +
+    '</div>' +
+    (it.stem ? '<div class="fl-stem">' + it.stem + '</div>' : '') +
+    '<div class="fl-fig" onclick="flZoom(\'' + tag + '\')">' + flIsolate(it.fig, tag) + '</div>' +
+    '<div class="fl-hint">tap the figure to enlarge</div>' +
+    '<div class="fl-rv">' +
+      '<button type="button" class="fl-rb ok' + (st === 'ok' ? ' on' : '') +
+        '" onclick="flReview(\'' + it.id + '\',\'ok\')">\u2713 CHECKED</button>' +
+      '<button type="button" class="fl-rb fix' + (st === 'fix' ? ' on' : '') +
+        '" onclick="flReview(\'' + it.id + '\',\'fix\')">\u2691 NEEDS FIX</button>' +
+    '</div></div>';
+}
+
+function flPick(src){ FL_SRC[FL_SUBJ] = src; renderFigLib(); window.scrollTo(0, 0); }
+function flFilter(v){ FL_FILT = v; renderFigLib(); }
+
+function flReview(id, st){
+  var now = flSetMark(id, st);
+  var tag = id.replace(/[^A-Za-z0-9]+/g, '');
+  var keep = document.getElementById('flc-' + tag);
+  var y = keep ? keep.getBoundingClientRect().top : null;
+  renderFigLib();
+  if(y != null){
+    var again = document.getElementById('flc-' + tag);
+    if(again) window.scrollBy(0, again.getBoundingClientRect().top - y);
+  }
+  toast(now === 'ok'  ? 'Marked checked'
+      : now === 'fix' ? 'Flagged for correction'
+      : 'Mark cleared');
+}
+
+/* ---------- zoom ---------- */
+function flZoom(tag){
+  var card = document.getElementById('flc-' + tag);
+  if(!card) return;
+  var fig = card.querySelector('.fl-fig');
+  var ttl = card.querySelectorAll('.fl-chip');
+  var name = '';
+  for(var i = 0; i < ttl.length && i < 2; i++) name += (i ? ' \u00b7 ' : '') + ttl[i].textContent;
+  document.getElementById('flzttl').textContent = name;
+  document.getElementById('flzbox').innerHTML = flIsolate(fig.innerHTML, tag + 'zoom');
+  document.getElementById('flzoom').classList.add('show');
+  document.body.style.overflow = 'hidden';
+}
+function flZoomClose(e){
+  if(e && e.target && e.target.closest && e.target.closest('.fl-zbox')) return;
+  document.getElementById('flzoom').classList.remove('show');
+  document.getElementById('flzbox').innerHTML = '';
+  document.body.style.overflow = '';
+}
+document.addEventListener('keydown', function(e){
+  if(e.key === 'Escape'){
+    var z = document.getElementById('flzoom');
+    if(z && z.classList.contains('show')) flZoomClose();
+  }
+});
+
+function openFigLib(){
+  showScreen('scr-figlib');
+  FL_FILT = 'all';
+  renderFigLib(FL_SUBJ, null);
+}
+</script>
+
 <!-- IN-APP CONFIRM (native confirm() is blocked in sandboxed / standalone contexts) -->
+<div id="flzoom" class="fl-zoom" onclick="flZoomClose(event)">
+  <div class="fl-zhd"><span id="flzttl"></span><button type="button" onclick="flZoomClose()">&#10005; CLOSE</button></div>
+  <div class="fl-zbox" id="flzbox"></div>
+</div>
 <div id="modalovl" class="modalovl">
   <div class="modalbox">
     <div class="mdic" id="mdIc">&#9888;</div>
